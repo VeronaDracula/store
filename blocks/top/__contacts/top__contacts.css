@@ -1,0 +1,11 @@
+.top__contacts {
+    margin: 0;
+    color: #939393;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.top__contacts:hover {
+    color: #9174ce;
+}

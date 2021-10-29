@@ -1,3 +1,15 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/page/__content/page__content.css);
+
+@import url(../blocks/top/top.css);
+@import url(../blocks/top/__contacts/top__contacts.css);
+@import url(../blocks/top/__links/top__links.css);
+@import url(../blocks/top/__link/top__link.css);
+@import url(../blocks/top/__link-img/top__link-img.css);
+@import url(../blocks/top/__link-text/top__link-text.css);
 
 
 
