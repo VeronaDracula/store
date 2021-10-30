@@ -1,4 +1,4 @@
 .header__menu {
-    height: 400px;
-    background-color: black;
+    min-height: 56px;
+    padding: 0 30px;
 }

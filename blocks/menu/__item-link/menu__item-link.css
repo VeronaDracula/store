@@ -1,0 +1,33 @@
+.menu__item-link {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #000;
+    padding: 9px 19px 9px;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu__item-link::after {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.menu__item-link:hover {
+    background: #9174ce;
+    color: #fff;
+}
+.menu__item-link:hover::after {
+    transition: width 500ms ease 0s;
+    width: 100%;
+}
+
