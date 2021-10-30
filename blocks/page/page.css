@@ -6,4 +6,7 @@
     line-height: 20px;
     letter-spacing: 1px;
     background: url('../../images/bg.jpg') fixed;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

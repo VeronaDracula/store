@@ -1,0 +1,13 @@
+.user-actions__link-number {
+    color: #fff;
+    background: #9174ce none repeat scroll 0 0;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+    padding: 2px 4px 1px 5px;
+    position: absolute;
+    top: -10px;
+    left: 18px;
+}
+

@@ -1,0 +1,13 @@
+.header__form-input {
+    border: 2px solid #9174ce;
+    border-radius: 5px 0 0 5px;
+    color: #7c7c7c;
+    font-size: 12px;
+    font-weight: 400;
+    height: 40px;
+    width: 447px;
+    letter-spacing: 0.7px;
+    outline: 0 none;
+    padding: 9px 100px 9px 16px;
+    box-sizing: border-box;
+}

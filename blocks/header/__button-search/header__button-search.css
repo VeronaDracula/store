@@ -1,0 +1,12 @@
+.header__button-search {
+    background: #9174ce url('../../../images/Search.png') no-repeat scroll 17px 13px;
+    border: medium none;
+    border-radius: 0 5px 5px 0;
+    height: 40px;
+    width: 49px;
+    box-sizing: border-box;
+}
+
+.header__button-search:hover {
+    cursor: pointer;
+}
