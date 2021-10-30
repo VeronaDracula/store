@@ -16,6 +16,7 @@
 @import url(../blocks/header/__form/header__form.css);
 @import url(../blocks/header/__form-input/header__form-input.css);
 @import url(../blocks/header/__button-search/header__button-search.css);
+@import url(../blocks/header/__menu/header__menu.css);
 
 @import url(../blocks/user-actions/user-actions.css);
 @import url(../blocks/user-actions/__link/user-actions__link.css);
