@@ -1,0 +1,24 @@
+.banner-carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 802px;
+    height: 100%;
+}
+
+.banner-carousel {
+    cursor: pointer;
+}
+
+.banner-carousel:hover > .banner-carousel__carousel-button_type_next{
+    right: 10px;
+    opacity: 1;
+}
+
+.banner-carousel:hover > .banner-carousel__carousel-button_type_prev{
+    left: 10px;
+    opacity: 1;
+}
+
+
+

@@ -30,6 +30,21 @@
 @import url(../blocks/menu/__item/menu__item.css);
 @import url(../blocks/menu/__item-link/menu__item-link.css);
 
+@import url(../blocks/banners-main/banners-main.css);
+
+@import url(../blocks/banner-carousel/banner-carousel.css);
+@import url(../blocks/banner-carousel/__carousel-button/banner-carousel__carousel-button.css);
+@import url(../blocks/banner-carousel/__carousel-button/_type/banner-carousel__carousel-button_type_prev.css);
+@import url(../blocks/banner-carousel/__carousel-button/_type/banner-carousel__carousel-button_type_next.css);
+
+@import url(../blocks/banner-carousel/__carousel/banner-carousel__carousel.css);
+@import url(../blocks/banner-carousel/__carousel-item/banner-carousel__carousel-item.css);
+@import url(../blocks/banner-carousel/__carousel-item-img/banner-carousel__carousel-item-img.css);
+
+
+
+
+
 
 
 

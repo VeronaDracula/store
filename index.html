@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./pages/index.css">
 
 </head>
@@ -67,15 +70,33 @@
                         <a class="menu__item-link" href="">blogs</a>
                     </li>
                 </ul>
-
             </nav>
-
-
-
-
         </header>
 
         <main class="content">
+            <section class="banners-main">
+
+                <div class="banner-carousel">
+                    <button class="banner-carousel__carousel-button banner-carousel__carousel-button_type_prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i></button>
+
+                    <div class="owl-carousel banner-carousel__carousel">
+                        <div class="banner-carousel__carousel-item">
+                            <img class="banner-carousel__carousel-item-img" src="./images/main-banner-1.jpg" alt="">
+                        </div>
+                        <div class="banner-carousel__carousel-item">
+                            <img class="banner-carousel__carousel-item-img" src="./images/main-banner-2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <button class="banner-carousel__carousel-button banner-carousel__carousel-button_type_next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+
+
+
+
+            </section>
 
         </main>
 
@@ -85,6 +106,8 @@
 
     </div>
 </div>
+<script type="text/javascript" src="./scripts/jquery-3.5.1.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="./pages/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+.banner-carousel__carousel-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    line-height: 1;
+    font-size: 30px;
+    padding: 4px 0 0 15px;
+    background: #9174ce;
+    display: flex;
+
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-carousel__carousel-button:hover {
+    cursor: pointer;
+}

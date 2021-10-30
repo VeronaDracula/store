@@ -1,0 +1,5 @@
+.banner-carousel__carousel-button_type_next {
+    opacity: 0;
+    right: -20px;
+    transition: all 0.3s ease 0s;
+}
