@@ -1,0 +1,9 @@
+.sub-banners__banner-text {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0;
+}

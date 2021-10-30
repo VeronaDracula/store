@@ -1,0 +1,7 @@
+.sub-banners__banner-content {
+    max-width: 165px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 29px;
+}

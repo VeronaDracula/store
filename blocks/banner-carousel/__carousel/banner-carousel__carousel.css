@@ -1,5 +1,5 @@
 .banner-carousel__carousel {
-    width: 802px;
+    max-width: 802px;
     height: 100%;
 }
 

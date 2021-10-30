@@ -31,15 +31,29 @@
 @import url(../blocks/menu/__item-link/menu__item-link.css);
 
 @import url(../blocks/banners-main/banners-main.css);
+@import url(../blocks/banners-main/__container/banners-main__container.css);
 
 @import url(../blocks/banner-carousel/banner-carousel.css);
 @import url(../blocks/banner-carousel/__carousel-button/banner-carousel__carousel-button.css);
 @import url(../blocks/banner-carousel/__carousel-button/_type/banner-carousel__carousel-button_type_prev.css);
 @import url(../blocks/banner-carousel/__carousel-button/_type/banner-carousel__carousel-button_type_next.css);
-
 @import url(../blocks/banner-carousel/__carousel/banner-carousel__carousel.css);
 @import url(../blocks/banner-carousel/__carousel-item/banner-carousel__carousel-item.css);
 @import url(../blocks/banner-carousel/__carousel-item-img/banner-carousel__carousel-item-img.css);
+
+@import url(../blocks/banner-cat/banner-cat.css);
+@import url(../blocks/banner-cat/__img/banner-cat__img.css);
+
+@import url(../blocks/sub-banners/sub-banners.css);
+@import url(../blocks/sub-banners/__banner-link/sub-banners__banner-link.css);
+@import url(../blocks/sub-banners/__banner/sub-banners__banner.css);
+@import url(../blocks/sub-banners/__banner-img/sub-banners__banner-img.css);
+@import url(../blocks/sub-banners/__banner-content/sub-banners__banner-content.css);
+@import url(../blocks/sub-banners/__banner-title/sub-banners__banner-title.css);
+@import url(../blocks/sub-banners/__banner-text/sub-banners__banner-text.css);
+@import url(../blocks/sub-banners/__banner-color/sub-banners__banner-color.css);
+
+
 
 
 

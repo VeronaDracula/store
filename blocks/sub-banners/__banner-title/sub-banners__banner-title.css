@@ -1,0 +1,10 @@
+.sub-banners__banner-title {
+    color: #010101;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: inline-block;
+    margin: 0 0 10px 0;
+}

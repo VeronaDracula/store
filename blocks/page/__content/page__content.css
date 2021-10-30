@@ -1,5 +1,5 @@
 .page__content {
-    width: 1260px;
+    max-width: 1260px;
     background: #fff;
     margin-right: auto;
     margin-left: auto;
