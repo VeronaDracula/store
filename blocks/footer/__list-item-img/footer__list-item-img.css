@@ -1,0 +1,6 @@
+.footer__list-item-img {
+    background: no-repeat url("../../../images/footer-arrow.png");
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+}
