@@ -6,4 +6,10 @@
     text-transform: capitalize;
     letter-spacing: 0.8px;
     margin: 0;
+    text-decoration: none;
+}
+
+.blog-card__text:hover {
+    color: #9174ce;
+    cursor: pointer;
 }

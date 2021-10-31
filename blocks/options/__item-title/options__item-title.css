@@ -1,0 +1,9 @@
+.options__item-title {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin: 0;
+}

@@ -1,0 +1,20 @@
+.options__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.options__item::after {
+    border-left: 1px solid #eaeaea;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.options__item:last-child::after {
+    height: 0;
+}
