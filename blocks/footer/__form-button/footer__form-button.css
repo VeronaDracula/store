@@ -1,0 +1,11 @@
+.footer__form-button {
+    background: #9174ce;
+    border: medium none;
+    font-size: 12px;
+    height: 45px;
+    width: 84px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}

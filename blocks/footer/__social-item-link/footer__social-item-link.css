@@ -1,0 +1,22 @@
+.footer__social-item-link {
+    line-height: 20px;
+    padding: 2px;
+    transition: all 0.3s ease 0s;
+    border-radius: 50%;
+    background: #f7f7f7;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer__social-item-link:hover {
+    cursor: pointer;
+    background: #9174ce;
+}
+
+.footer__social-item-link:hover > .footer__social-item-img {
+    color: #fff;
+
+}

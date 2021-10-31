@@ -1,0 +1,11 @@
+.footer__social-item-img {
+    font-size: 12px;
+    color: #000;
+    line-height: 28px;
+    font-weight: 400;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
