@@ -1,0 +1,20 @@
+.products-card__button {
+    background-color: #9174ce;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #9174ce;
+    border-radius: 5px;
+    height: 36px;
+    width: 102px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.products-card__button:hover {
+    cursor: pointer;
+    background-color: #000;
+    border: 1px solid #000;
+}

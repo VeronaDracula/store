@@ -1,0 +1,9 @@
+.products-card__discount {
+    background: #9174ce none repeat scroll 0 0;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 5px;
+    padding: 0 2px;
+    font-weight: 600;
+}

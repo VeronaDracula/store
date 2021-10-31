@@ -1,0 +1,18 @@
+.products-card {
+    min-height: 405px;
+    max-width: 214px;
+    margin: 0 15px 10px 15px;
+    position: relative;
+}
+
+.products-card:hover .products-card__open-popup {
+    display: block;
+}
+
+.products-card:hover .products-card__title {
+    color: #9174ce;
+}
+
+.products-card:hover .products-card__button {
+    display: block;
+}

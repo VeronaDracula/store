@@ -1,0 +1,15 @@
+.products__carousel-button {
+    color: #c9c9c9;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.products__carousel-button:hover {
+    color: #9174ce;
+    cursor: pointer;
+}
+

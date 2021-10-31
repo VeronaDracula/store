@@ -1,0 +1,6 @@
+.our-products__items {
+    padding: 0;
+    margin: 0 23px 0 0;
+    display: flex;
+    list-style: none;
+}

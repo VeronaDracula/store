@@ -1,0 +1,13 @@
+.our-products__item-link {
+    color: #000;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.42857;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.our-products__item-link:hover {
+    color: #9174ce;
+}

@@ -1,0 +1,9 @@
+.products__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}

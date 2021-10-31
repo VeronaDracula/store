@@ -1,0 +1,7 @@
+.products-card__old-price {
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: line-through;
+}

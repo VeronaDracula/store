@@ -1,0 +1,6 @@
+.products__carousel-buttons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -15px;
+}
