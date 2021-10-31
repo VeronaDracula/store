@@ -3,6 +3,7 @@
 
 @import url(../blocks/page/page.css);
 @import url(../blocks/page/__content/page__content.css);
+@import url(../blocks/page/__container/page__container.css);
 
 @import url(../blocks/top/top.css);
 @import url(../blocks/top/__contacts/top__contacts.css);
@@ -97,6 +98,8 @@
 @import url(../blocks/banners/__banner-title/banners__banner-title.css);
 @import url(../blocks/banners/__banner-title/_type/banners__banner-title_type_offer-banner.css);
 @import url(../blocks/banners/__banner-text/banners__banner-text.css);
+
+@import url(../blocks/specials/specials.css);
 
 
 
