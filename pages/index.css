@@ -110,6 +110,22 @@
 @import url(../blocks/brand-card/brand-card.css);
 @import url(../blocks/brand-card/__img/brand-card__img.css);
 
+@import url(../blocks/blog/blog.css);
+@import url(../blocks/blog/__container/blog__container.css);
+@import url(../blocks/blog/__title/blog__title.css);
+@import url(../blocks/blog/__carousel/blog__carousel.css);
+
+@import url(../blocks/blog-card/blog-card.css);
+@import url(../blocks/blog-card/__content/blog-card__content.css);
+@import url(../blocks/blog-card/__img-box/blog-card__img-box.css);
+@import url(../blocks/blog-card/__img/blog-card__img.css);
+@import url(../blocks/blog-card/__buttons/blog-card__buttons.css);
+@import url(../blocks/blog-card/__button/blog-card__button.css);
+@import url(../blocks/blog-card/__button/_type/blog-card__button_type_open.css);
+@import url(../blocks/blog-card/__button/_type/blog-card__button_type_link.css);
+@import url(../blocks/blog-card/__data/blog-card__data.css);
+@import url(../blocks/blog-card/__text/blog-card__text.css);
+
 
 
 

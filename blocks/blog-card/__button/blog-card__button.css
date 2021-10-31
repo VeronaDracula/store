@@ -1,0 +1,15 @@
+.blog-card__button {
+    color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+    padding: 10px 12px;
+    transition: all 0.5s ease 0s;
+    background-color: #9174ce;
+}
+
+.blog-card__button:hover {
+    background-color: #000;
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.blog-card {
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    margin-left: 10px;
+    min-height: 282px;
+    max-width: 280px;
+    box-sizing: border-box;
+}
+
+
