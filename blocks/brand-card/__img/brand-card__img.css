@@ -1,0 +1,9 @@
+.brand-card__img {
+    width: 130px;
+    height: 100px;
+    opacity: 0.3;
+}
+
+.brand-card__img:hover {
+    opacity: 0.7;
+}

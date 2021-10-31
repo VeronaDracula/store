@@ -11,7 +11,6 @@ $(function() {
         }
     });
 
-    //$(".next") - находим нашу кнопку
     $(".banner-carousel__carousel-button_type_next").click(function(){
         owl.trigger("next.owl.carousel");
     });
@@ -32,11 +31,31 @@ $(function() {
         }
     });
 
-    //$(".next") - находим нашу кнопку
     $(".products__carousel-button_type_next").click(function(){
         owl.trigger("next.owl.carousel");
     });
     $(".products__carousel-button_type_prev").click(function(){
+        owl.trigger("prev.owl.carousel");
+    });
+});
+
+
+$(function() {
+    var owl=$(".brands-carousel__carousel");
+    owl.owlCarousel({
+        rewind:true,
+        margin: 20,
+        responsive:{
+            0: {
+                items: 6
+            }
+        }
+    });
+
+    $(".products__carousel-button_type_brands-carousel-next").click(function(){
+        owl.trigger("next.owl.carousel");
+    });
+    $(".products__carousel-button_type_brands-carousel-prev").click(function(){
         owl.trigger("prev.owl.carousel");
     });
 });

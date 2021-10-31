@@ -1,0 +1,7 @@
+.products__carousel-button_type_brands-carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    display: none;
+}

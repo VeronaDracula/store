@@ -1,0 +1,16 @@
+.brands-carousel__container {
+    padding: 50px 30px 40px;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.brands-carousel__container:hover > .products__carousel-button_type_brands-carousel-prev {
+    display: block;
+}
+
+.brands-carousel__container:hover > .products__carousel-button_type_brands-carousel-next {
+    display: block;
+}
