@@ -1,0 +1,9 @@
+.banners__banner-title {
+    color: #000000;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 27px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+}

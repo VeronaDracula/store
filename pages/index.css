@@ -85,6 +85,18 @@
 @import url(../blocks/products-card/__old-price/products-card__old-price.css);
 @import url(../blocks/products-card/__button/products-card__button.css);
 
+@import url(../blocks/banners/banners.css);
+@import url(../blocks/banners/__banner/banners__banner.css);
+@import url(../blocks/banners/__banner/_type/banners__banner_type_offer-banner.css);
+@import url(../blocks/banners/__banner-img/banners__banner-img.css);
+@import url(../blocks/banners/__banner-content/banners__banner-content.css);
+@import url(../blocks/banners/__banner-content/_type/banners__banner-content_type_banner-02.css);
+@import url(../blocks/banners/__banner-content/_type/banners__banner-content_type_offer-banner.css);
+@import url(../blocks/banners/__banner-info/banners__banner-info.css);
+@import url(../blocks/banners/__banner-info/_type/banners__banner-info_type_offer-banner.css);
+@import url(../blocks/banners/__banner-title/banners__banner-title.css);
+@import url(../blocks/banners/__banner-title/_type/banners__banner-title_type_offer-banner.css);
+@import url(../blocks/banners/__banner-text/banners__banner-text.css);
 
 
 
