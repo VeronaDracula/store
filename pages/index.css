@@ -155,9 +155,13 @@
 @import url(../blocks/footer/__social-item/footer__social-item.css);
 @import url(../blocks/footer/__social-item-link/footer__social-item-link.css);
 @import url(../blocks/footer/__social-item-img/footer__social-item-img.css);
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/footer.css);
+
+@import url(../blocks/bottom/bottom.css);
+@import url(../blocks/bottom/__copyright/bottom__copyright.css);
+@import url(../blocks/bottom/__cards/bottom__cards.css);
+@import url(../blocks/bottom/__card/bottom__card.css);
+@import url(../blocks/bottom/__card-img/bottom__card-img.css);
+
 
 
 

@@ -1,0 +1,12 @@
+.bottom__card {
+    margin: 0 10px 0 0;
+    opacity: 0.5;
+}
+
+.bottom__card:last-child {
+    margin: 0;
+}
+
+.bottom__card:hover {
+    opacity: 1;
+}
