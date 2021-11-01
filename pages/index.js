@@ -79,3 +79,26 @@ $(function() {
 
 
 
+
+/*$(function () {
+    $('.dropdown').each(function () {
+        $(this).parent().eq(0).hover(function () {
+            $('.dropdown:eq(0)', this).show();
+        }, function () {
+            $('.dropdown:eq(0)', this).hide();
+        });
+    });
+});*/
+
+
+
+jQuery(document).ready(function() {
+    jQuery('ul.sf-menu').superfish(
+        {
+            cssArrows: false,
+            delay: 0,
+        }
+    );
+
+});
+

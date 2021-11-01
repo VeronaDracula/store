@@ -28,8 +28,17 @@
 @import url(../blocks/user-actions/__link-number/user-actions__link-number.css);
 
 @import url(../blocks/menu/menu.css);
+@import url(../blocks/sf-menu/_theme/sf-menu_theme_menu.css);
 @import url(../blocks/menu/__item/menu__item.css);
 @import url(../blocks/menu/__item-link/menu__item-link.css);
+@import url(../blocks/menu/__dropdown/menu__dropdown.css);
+@import url(../blocks/menu/__dropdown-item/menu__dropdown-item.css);
+@import url(../blocks/menu/__dropdown-item/_type/menu__dropdown-item_type_title.css);
+@import url(../blocks/menu/__dropdown-item-link/menu__dropdown-item-link.css);
+@import url(../blocks/menu/__dropdown-item-link/_type/menu__dropdown-item-link_type_title.css);
+
+@import url(../blocks/menu/__dropdown-list/menu__dropdown-list.css);
+@import url(../blocks/menu/__dropdown-list-item/menu__dropdown-list-item.css);
 
 @import url(../blocks/banners-main/banners-main.css);
 @import url(../blocks/banners-main/__container/banners-main__container.css);

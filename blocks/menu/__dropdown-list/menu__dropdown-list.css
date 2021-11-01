@@ -1,0 +1,10 @@
+.sf-menu .menu__dropdown-list {
+    display: flex;
+    background: transparent;
+    border: none;
+}
+
+.sf-menu .menu__dropdown-list:hover {
+    background: transparent;
+    border: none;
+}

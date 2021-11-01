@@ -1,0 +1,9 @@
+.sf-menu .menu__dropdown-list-item {
+    min-width: 160px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.sf-menu .menu__dropdown-list-item:last-child {
+    margin: 0;
+}

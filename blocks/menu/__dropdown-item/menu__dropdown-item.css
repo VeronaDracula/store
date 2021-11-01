@@ -1,0 +1,9 @@
+.sf-menu .menu__dropdown-item {
+    background: transparent;
+    border: none;
+}
+
+.sf-menu .menu__dropdown-item:hover {
+    background: transparent;
+    color: #fff;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
+    <link href="./superfish/superfish.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="./pages/index.css">
 
 </head>
@@ -44,27 +45,75 @@
             </div>
 
             <nav class="header__menu page__container">
-                <ul class="menu">
+                <ul class="menu sf-menu sf-menu_theme_menu">
                     <li class="menu__item">
                         <a class="menu__item-link" href="">home</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__item-link" href="">clothes</a>
+                        <ul class="menu__dropdown">
+                            <li class="menu__dropdown-list">
+                                <div class="menu__dropdown-list-item">
+                                    <a class="menu__dropdown-item-link menu__dropdown-item-link_type_title" href="#">Kids</a>
+                                    <a class="menu__dropdown-item-link" href="#">Capri</a>
+                                    <a class="menu__dropdown-item-link" href="#">Jacket</a>
+                                    <a class="menu__dropdown-item-link" href="#">Shorts</a>
+                                </div>
+                                <div class="menu__dropdown-list-item">
+                                    <a class="menu__dropdown-item-link menu__dropdown-item-link_type_title" href="#">Women</a>
+                                    <a class="menu__dropdown-item-link" href="#">Dresses</a>
+                                    <a class="menu__dropdown-item-link" href="#">Frocks</a>
+                                    <a class="menu__dropdown-item-link" href="#">Saree</a>
+                                    <a class="menu__dropdown-item-link" href="#">Suits</a>
+                                </div>
+                                <div class="menu__dropdown-list-item">
+                                    <a class="menu__dropdown-item-link menu__dropdown-item-link_type_title" href="#">Men</a>
+                                    <a class="menu__dropdown-item-link" href="#">Denim</a>
+                                    <a class="menu__dropdown-item-link" href="#">Jeans</a>
+                                    <a class="menu__dropdown-item-link" href="#">Shirts</a>
+                                    <a class="menu__dropdown-item-link" href="#">T-Shirts</a>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
+
                     <li class="menu__item">
                         <a class="menu__item-link" href="">accessories</a>
+                        <ul class="menu__dropdown">
+                            <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Cap</a></li>
+                            <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Handbags</a></li>
+                        </ul>
                     </li>
+
                     <li class="menu__item">
                         <a class="menu__item-link" href="">art</a>
                     </li>
+
                     <li class="menu__item">
                         <a class="menu__item-link" href="">kitchen accessories</a>
+                        <ul class="menu__dropdown">
+                            <li class="menu__dropdown-item">
+                                <a class="menu__dropdown-item-link" href="#">Blender</a>
+                                <ul class="menu__dropdown">
+                                    <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Grater</a></li>
+                                    <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Whisk</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Colander</a></li>
+                            <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Cutting Board</a></li>
+                            <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Mixing Bowls.</a></li>
+                            <li class="menu__dropdown-item"><a class="menu__dropdown-item-link" href="#">Rolling Pin</a></li>
+                        </ul>
                     </li>
+
                     <li class="menu__item">
                         <a class="menu__item-link" href="">smart watch</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__item-link" href="">more</a>
+                        <a class="menu__item-link" href="">electronics</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="">home accessories</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__item-link" href="">blogs</a>
@@ -919,5 +968,6 @@
 <script type="text/javascript" src="./scripts/jquery-3.5.1.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="./pages/index.js"></script>
+<script src="./superfish/superfish.js"></script>
 </body>
 </html>

@@ -1,4 +1,12 @@
-.menu__item {
+.sf-menu .menu__item {
     padding: 0;
     margin: 0;
+
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+}
+
+.sf-menu .menu__item:hover {
+    background: #9174ce;
 }

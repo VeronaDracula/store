@@ -1,4 +1,4 @@
-.menu__item-link {
+.sf-menu .menu__item-link {
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;
@@ -9,9 +9,11 @@
     padding: 9px 19px 9px;
     text-decoration: none;
     position: relative;
+
+    border: none;
 }
 
-.menu__item-link::after {
+.sf-menu .menu__item-link::after {
     background: #fff none repeat scroll 0 0;
     border-radius: 5px;
     content: "";
@@ -22,12 +24,16 @@
     top: 0;
     width: 0;
 }
-.menu__item-link:hover {
+.sf-menu .menu__item-link:hover {
     background: #9174ce;
     color: #fff;
 }
-.menu__item-link:hover::after {
+.sf-menu .menu__item-link:hover::after {
     transition: width 500ms ease 0s;
     width: 100%;
+}
+
+.sf-menu .menu__item-link:hover .menu__dropdown {
+    transform: translateY(20px);
 }
 

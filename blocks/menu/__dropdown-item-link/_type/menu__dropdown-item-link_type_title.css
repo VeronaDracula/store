@@ -1,0 +1,9 @@
+.sf-menu .menu__dropdown-item-link_type_title {
+    font-weight: 500;
+    color: #9174ce;
+    padding: 5px 0;
+    text-transform: capitalize;
+    font-size: 13px;
+    border-bottom: 1px solid #9174ce;
+    margin-bottom: 10px;
+}
