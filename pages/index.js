@@ -1,3 +1,4 @@
+//карусели
 $(function() {
     var owl=$(".banner-carousel__carousel");
     owl.owlCarousel({
@@ -26,6 +27,10 @@ $(function() {
         rewind:true,
         responsive:{
             0: {
+                items: 3
+            },
+
+            1025: {
                 items: 5
             }
         }
@@ -47,6 +52,10 @@ $(function() {
         margin: 20,
         responsive:{
             0: {
+                items: 3
+            },
+
+            1025: {
                 items: 6
             }
         }
@@ -70,6 +79,10 @@ $(function() {
         autoplayTimeout: 4000,
         responsive:{
             0: {
+                items: 2
+            },
+
+            1025: {
                 items: 4
             }
         }
@@ -79,6 +92,7 @@ $(function() {
 
 
 jQuery(document).ready(function() {
+    //выпадающее меню
     jQuery('ul.sf-menu').superfish(
         {
             cssArrows: false,
@@ -86,6 +100,9 @@ jQuery(document).ready(function() {
             animation:  {opacity:'show', transform: 'translateY(20px)'},
         }
     );
+
+
+    //раскрывающиеся списки
 
     $(".footer__container-table").collapse({
         open: function() {
@@ -97,8 +114,6 @@ jQuery(document).ready(function() {
 
     });
 
-
-
     $(".header__menu-collapse").collapse({
         open: function() {
             this.slideDown(150);
@@ -109,8 +124,6 @@ jQuery(document).ready(function() {
 
     });
 
-
-
     $(".header__menu-collapse-main").collapse({
         open: function() {
             this.slideDown(150);
@@ -120,9 +133,6 @@ jQuery(document).ready(function() {
         }
 
     });
-
-
-
 
 });
 
