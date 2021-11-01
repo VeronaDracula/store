@@ -36,7 +36,6 @@
 @import url(../blocks/menu/__dropdown-item/_type/menu__dropdown-item_type_title.css);
 @import url(../blocks/menu/__dropdown-item-link/menu__dropdown-item-link.css);
 @import url(../blocks/menu/__dropdown-item-link/_type/menu__dropdown-item-link_type_title.css);
-
 @import url(../blocks/menu/__dropdown-list/menu__dropdown-list.css);
 @import url(../blocks/menu/__dropdown-list-item/menu__dropdown-list-item.css);
 
@@ -151,19 +150,26 @@
 @import url(../blocks/footer/__contact/footer__contact.css);
 @import url(../blocks/footer/__contact-img/footer__contact-img.css);
 @import url(../blocks/footer/__title/footer__title.css);
+@import url(../blocks/footer/__title-icon/footer__title-icon.css);
 @import url(../blocks/footer/__list/footer__list.css);
 @import url(../blocks/footer/__list-items/footer__list-items.css);
 @import url(../blocks/footer/__list-item/footer__list-item.css);
 @import url(../blocks/footer/__list-item-link/footer__list-item-link.css);
 @import url(../blocks/footer/__list-item-img/footer__list-item-img.css);
 @import url(../blocks/footer/__mail-form/footer__mail-form.css);
+@import url(../blocks/footer/__mail-form/_type/footer__mail-form_type_collapse.css);
 @import url(../blocks/footer/__form/footer__form.css);
 @import url(../blocks/footer/__form-input/footer__form-input.css);
+@import url(../blocks/footer/__form-input/_type/footer__form-input_type_collapse.css);
 @import url(../blocks/footer/__form-button/footer__form-button.css);
 @import url(../blocks/footer/__social/footer__social.css);
 @import url(../blocks/footer/__social-item/footer__social-item.css);
 @import url(../blocks/footer/__social-item-link/footer__social-item-link.css);
 @import url(../blocks/footer/__social-item-img/footer__social-item-img.css);
+
+@import url(../blocks/footer/__container-table/footer__container-table.css);
+
+
 
 @import url(../blocks/bottom/bottom.css);
 @import url(../blocks/bottom/__copyright/bottom__copyright.css);

@@ -6,4 +6,20 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 0 0 7px 0;
+
+
 }
+
+.footer__title a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__title.open .footer__title-icon::before {
+    content: "\f106";
+    font-family: 'FontAwesome', sans-serif;
+}
+
