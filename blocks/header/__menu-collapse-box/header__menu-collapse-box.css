@@ -1,0 +1,10 @@
+.header__menu-collapse-box {
+    top: 80px;
+    position: absolute;
+    z-index: 100;
+    background: #FFFFFF;
+    padding: 30px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+}

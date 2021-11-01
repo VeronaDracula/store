@@ -97,6 +97,33 @@ jQuery(document).ready(function() {
 
     });
 
+
+
+    $(".header__menu-collapse").collapse({
+        open: function() {
+            this.slideDown(150);
+        },
+        close: function() {
+            this.slideUp(150);
+        }
+
+    });
+
+
+
+    $(".header__menu-collapse-main").collapse({
+        open: function() {
+            this.slideDown(150);
+        },
+        close: function() {
+            this.slideUp(150);
+        }
+
+    });
+
+
+
+
 });
 
 

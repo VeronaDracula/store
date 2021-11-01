@@ -1,0 +1,10 @@
+.header__menu-collapse-main {
+    box-sizing: border-box;
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .header__menu-collapse-main {
+        display: block;
+    }
+}

@@ -18,6 +18,11 @@
 @import url(../blocks/header/__form-input/header__form-input.css);
 @import url(../blocks/header/__button-search/header__button-search.css);
 @import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-collapse-title/header__menu-collapse-title.css);
+@import url(../blocks/header/__menu-collapse-container/header__menu-collapse-container.css);
+@import url(../blocks/header/__menu-collapse-main/header__menu-collapse-main.css);
+@import url(../blocks/header/__menu-collapse-box/header__menu-collapse-box.css);
+@import url(../blocks/header/__menu-collapse-button/header__menu-collapse-button.css);
 
 @import url(../blocks/user-actions/user-actions.css);
 @import url(../blocks/user-actions/__link/user-actions__link.css);
@@ -176,6 +181,9 @@
 @import url(../blocks/bottom/__cards/bottom__cards.css);
 @import url(../blocks/bottom/__card/bottom__card.css);
 @import url(../blocks/bottom/__card-img/bottom__card-img.css);
+
+
+
 
 
 
