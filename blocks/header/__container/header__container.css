@@ -6,3 +6,11 @@
 
     position: relative;
 }
+
+@media screen and (max-width: 1024px) {
+    .header__container {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 119px;
+    }
+}

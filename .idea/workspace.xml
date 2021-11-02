@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e903315-8f83-4e63-ba0e-00bf65a2de45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blocks/header/__content-desktop/header__content-desktop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/header/__content-menu-logo/header__content-menu-logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/header/__form/_type/header__form_type-desktop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/__container/header__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__container/header__container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/__form-input/header__form-input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__form-input/header__form-input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/__form/header__form.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__form/header__form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/__menu-collapse-box/header__menu-collapse-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__menu-collapse-box/header__menu-collapse-box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header/__menu-collapse-button/header__menu-collapse-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__menu-collapse-button/header__menu-collapse-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/user-actions/user-actions.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/user-actions/user-actions.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +69,7 @@
       <updated>1632743062609</updated>
       <workItem from="1632743063644" duration="13172000" />
       <workItem from="1632767497627" duration="54543000" />
-      <workItem from="1635516982802" duration="117723000" />
+      <workItem from="1635516982802" duration="122503000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1632756269260</created>
@@ -348,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635797432820</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="header__menu-collapse">
+      <created>1635798551720</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1635798551720</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,10 +408,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="297" y="238" width="941" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1635712022319" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635797432207">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635798551179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635797432207" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635798551179" />
     <state x="548" y="165" key="FileChooserDialogImpl" timestamp="1635616703567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

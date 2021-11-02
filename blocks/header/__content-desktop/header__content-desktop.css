@@ -1,0 +1,13 @@
+.header__content-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__content-desktop {
+        justify-content: space-between;
+        margin-bottom: 15px
+    }
+}

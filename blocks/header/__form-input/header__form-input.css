@@ -11,3 +11,9 @@
     padding: 9px 100px 9px 16px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 1024px) {
+    .header__form-input {
+        width: calc(100% - 49px);
+    }
+}

@@ -115,6 +115,7 @@ jQuery(document).ready(function() {
     });
 
     $(".header__menu-collapse").collapse({
+        clickQuery: ".footer__title-icon",
         open: function() {
             this.slideDown(150);
         },
