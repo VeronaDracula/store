@@ -4,3 +4,8 @@
     align-items: center;
 }
 
+.brands-carousel__carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+

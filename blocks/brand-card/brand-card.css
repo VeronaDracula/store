@@ -1,5 +1,6 @@
 .brand-card {
     width: 130px;
     height: 100px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
 }

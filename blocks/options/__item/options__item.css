@@ -18,3 +18,25 @@
 .options__item:last-child::after {
     height: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .options__item {
+        margin: 24px 0 19px 0;
+    }
+
+    .options__item:nth-child(2n)::after {
+        height: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .options__item::after {
+        height: 0;
+    }
+
+    .options__item {
+        justify-content: flex-start;
+    }
+
+}

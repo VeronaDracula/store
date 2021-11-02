@@ -60,11 +60,19 @@ $(function() {
         margin: 20,
         responsive:{
             0: {
+                items: 1
+            },
+
+            769: {
                 items: 3
             },
 
             1025: {
-                items: 6
+                items: 4
+            },
+
+            1281: {
+                items: 5
             }
         }
     });
@@ -87,12 +95,16 @@ $(function() {
         autoplayTimeout: 4000,
         responsive:{
             0: {
+                items: 1
+            },
+
+            769: {
                 items: 2
             },
 
             1025: {
                 items: 4
-            }
+            },
         }
     });
 
