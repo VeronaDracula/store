@@ -2,11 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e903315-8f83-4e63-ba0e-00bf65a2de45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__button-img/modal-actions__button-img.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__button/_type/modal-actions__button_type_add.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__button/modal-actions__button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__buttons/modal-actions__buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form-input/modal-actions__form-input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form-label/modal-actions__form-label.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form/modal-actions__form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/modal-actions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-window/__button-close/modal-window__button-close.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-window/__container-img/modal-window__container-img.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-window/__container-info/modal-window__container-info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-window/__container/modal-window__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-window/__product-img/modal-window__product-img.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/modal-window/modal-window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__ex-tax/product-info__ex-tax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__list-item-data/product-info__list-item-data.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__list-item-title/product-info__list-item-title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__list-item/product-info__list-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__list/product-info__list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__price-new/product-info__price-new.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__price-old/product-info__price-old.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__price-tax/product-info__price-tax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__price/product-info__price.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__star-img/product-info__star-img.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__star/product-info__star.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__stars/product-info__stars.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/__title/product-info__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/product-info/product-info.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/blog-card/__button/_type/blog-card__button_type_open.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/blog-card/__button/_type/blog-card__button_type_open.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/blog-card/__button/blog-card__button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/blog-card/__button/blog-card__button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products-card/__link/products-card__link.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/__link/products-card__link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products-card/products-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/products-card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +92,7 @@
       <updated>1632743062609</updated>
       <workItem from="1632743063644" duration="13172000" />
       <workItem from="1632767497627" duration="54543000" />
-      <workItem from="1635516982802" duration="140333000" />
+      <workItem from="1635516982802" duration="153773000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1632756269260</created>
@@ -400,14 +430,20 @@
       <option name="project" value="LOCAL" />
       <updated>1635858162134</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="lightbox">
+      <created>1635865090619</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1635865090619</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="form__button" />
     <MESSAGE value="Buttons" />
     <MESSAGE value="files" />
     <MESSAGE value="top" />
@@ -432,7 +468,8 @@
     <MESSAGE value="our-products adaptive" />
     <MESSAGE value="banners adaptive" />
     <MESSAGE value="options adaptive" />
-    <option name="LAST_COMMIT_MESSAGE" value="options adaptive" />
+    <MESSAGE value="lightbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="lightbox" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632744932589">
@@ -443,10 +480,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="297" y="238" width="941" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1635712022319" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635858161613">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635865090045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635858161613" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635865090045" />
     <state x="548" y="165" key="FileChooserDialogImpl" timestamp="1635616703567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -515,10 +552,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1635793770407" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635858164378">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635865094546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635858164378" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635865094546" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632934619485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

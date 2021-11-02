@@ -1,0 +1,14 @@
+.modal-window__button-close {
+    color: #FFFFFF;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 20px;
+    overflow: visible;
+    z-index: 150;
+}
+
+.modal-window__button-close:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}

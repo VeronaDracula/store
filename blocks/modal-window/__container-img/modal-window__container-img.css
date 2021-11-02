@@ -1,0 +1,8 @@
+.modal-window__container-img {
+    width: 390px;
+    height: 488px;
+
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    margin-right: 30px;
+}

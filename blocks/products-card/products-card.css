@@ -23,3 +23,12 @@
         max-width: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .products-card:hover .products-card__open-popup {
+        display: none;
+    }
+    .products-card:hover .products-card__button {
+        display: none;
+    }
+}

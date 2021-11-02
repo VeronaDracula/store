@@ -1,0 +1,13 @@
+.product-info__list-item {
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 12px;
+    display: flex;
+    margin: 0 0 8px 0;
+}
+
+.product-info__list-item:last-child {
+    margin: 0;
+}

@@ -1,0 +1,11 @@
+.modal-window {
+    width: 900px;
+    height: 506px;
+    padding: 25px 30px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.zoomContainer {
+    z-index: 100000;
+}

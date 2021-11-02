@@ -1,0 +1,7 @@
+.product-info__price-old {
+    font-size: 18px;
+    line-height: 22px;
+    color: #909090;
+    text-decoration: line-through;
+    margin: 0 3px 0 0;
+}

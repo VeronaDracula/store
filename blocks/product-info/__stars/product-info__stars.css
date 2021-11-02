@@ -1,0 +1,6 @@
+.product-info__stars {
+    padding: 0 0 0 7px;
+    margin: 0 0 10px 0;
+    list-style: none;
+    display: flex;
+}

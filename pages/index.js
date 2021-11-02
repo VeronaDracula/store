@@ -161,6 +161,38 @@ jQuery(document).ready(function() {
         'wrapAround': false
     })
 
+    $("#zoom_05").elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair"
+    });
+
+
+
+});
+
+
+
+//модально окно
+jQuery(document).ready(function($){
+    $('[data-fancybox]').fancybox({
+        maxWidth: 900,
+        maxHeight: 506,
+        animationEffect: "fade",
+        animationDuration: 600,
+
+
+        afterShow: function() {
+            $('.modal-window__product-img').elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair",
+                zoomWindowFadeIn: 500,
+                zoomWindowFadeOut: 750
+            })
+        },
+
+
+    });
+
 });
 
 

@@ -195,11 +195,42 @@
 
 @import url(../blocks/products-card/__img-box/products-card__img-box.css);
 @import url(../blocks/banners/__banner-text/_type/banners__banner-text_type_offer-banner.css);
-@import url(../blocks/bottom/bottom.css);
-@import url(../blocks/bottom/bottom.css);
-@import url(../blocks/bottom/bottom.css);
-@import url(../blocks/bottom/bottom.css);
-@import url(../blocks/bottom/bottom.css);
+
+
+@import url(../blocks/modal-window/modal-window.css);
+@import url(../blocks/modal-window/__button-close/modal-window__button-close.css);
+@import url(../blocks/modal-window/__container/modal-window__container.css);
+@import url(../blocks/modal-window/__container-img/modal-window__container-img.css);
+@import url(../blocks/modal-window/__product-img/modal-window__product-img.css);
+@import url(../blocks/modal-window/__container-info/modal-window__container-info.css);
+
+@import url(../blocks/product-info/__title/product-info__title.css);
+@import url(../blocks/product-info/__stars/product-info__stars.css);
+@import url(../blocks/product-info/__star/product-info__star.css);
+@import url(../blocks/product-info/__star-img/product-info__star-img.css);
+@import url(../blocks/product-info/__list/product-info__list.css);
+@import url(../blocks/product-info/__list-item/product-info__list-item.css);
+@import url(../blocks/product-info/__list-item-data/product-info__list-item-data.css);
+@import url(../blocks/product-info/__price/product-info__price.css);
+@import url(../blocks/product-info/__price-new/product-info__price-new.css);
+@import url(../blocks/product-info/__ex-tax/product-info__ex-tax.css);
+@import url(../blocks/product-info/__price-tax/product-info__price-tax.css);
+
+@import url(../blocks/modal-actions/modal-actions.css);
+@import url(../blocks/modal-actions/__form/modal-actions__form.css);
+@import url(../blocks/modal-actions/__form-label/modal-actions__form-label.css);
+@import url(../blocks/modal-actions/__form-input/modal-actions__form-input.css);
+@import url(../blocks/modal-actions/__buttons/modal-actions__buttons.css);
+@import url(../blocks/modal-actions/__button/modal-actions__button.css);
+@import url(../blocks/modal-actions/__button/_type/modal-actions__button_type_add.css);
+@import url(../blocks/modal-actions/__button-img/modal-actions__button-img.css);
+@import url(../blocks/product-info/__list-item-title/product-info__list-item-title.css);
+@import url(../blocks/product-info/__price-old/product-info__price-old.css);
+
+
+
+
+
 
 
 

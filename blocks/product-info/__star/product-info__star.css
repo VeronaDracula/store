@@ -1,0 +1,9 @@
+.product-info__star {
+    font-size: 13px;
+    color: #ccc;
+    margin-right: 15px;
+}
+
+.product-info__star:last-child {
+    margin-right: 0;
+}
