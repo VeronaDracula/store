@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4e903315-8f83-4e63-ba0e-00bf65a2de45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/modal-window/modal-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/modal-window/modal-window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/options/__item-img-box/options__item-img-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/options/__item-img-box/options__item-img-box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/options/__item-img/options__item-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/options/__item-img/options__item-img.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +60,7 @@
       <updated>1632743062609</updated>
       <workItem from="1632743063644" duration="13172000" />
       <workItem from="1632767497627" duration="54543000" />
-      <workItem from="1635516982802" duration="154380000" />
-    </task>
-    <task id="LOCAL-00002" summary="all">
-      <created>1632757346346</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1632757346346</updated>
+      <workItem from="1635516982802" duration="155003000" />
     </task>
     <task id="LOCAL-00003" summary="nojekyll">
       <created>1632757547144</created>
@@ -405,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635878687318</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="modal-window">
+      <created>1635879143759</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1635879143759</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,10 +448,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="297" y="238" width="941" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1635712022319" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635878686547">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635879143208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635878686547" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635879143208" />
     <state x="548" y="165" key="FileChooserDialogImpl" timestamp="1635616703567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -520,10 +520,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1635793770407" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635878689954">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635879145959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635878689954" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635879145959" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632934619485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

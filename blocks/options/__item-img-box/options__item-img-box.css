@@ -6,6 +6,14 @@
     width: 56px;
     margin: 0 10px 0 0;
     position: relative;
-    display: flex;
-    justify-content: center;
+}
+
+.options__item-img-box:hover {
+    background-color: #000;
+}
+
+.options__item-img-box:hover > .options__item-img{
+    background-color: #000;
+    transform: rotate(360deg);
+    transition: transform 0.9s;
 }
