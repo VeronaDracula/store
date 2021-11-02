@@ -4,3 +4,11 @@
     display: flex;
     list-style: none;
 }
+
+@media screen and (max-width: 768px) {
+    .our-products__items {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 26px 0;
+    }
+}

@@ -10,6 +10,6 @@
 @media screen and (max-width: 768px) {
     .banners-main__container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }

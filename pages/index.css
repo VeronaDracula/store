@@ -68,7 +68,6 @@
 @import url(../blocks/sub-banners/__banner-color/sub-banners__banner-color.css);
 
 @import url(../blocks/our-products/our-products.css);
-@import url(../blocks/our-products/__actions/our-products__actions.css);
 @import url(../blocks/our-products/__menu/our-products__menu.css);
 @import url(../blocks/our-products/__items/our-products__items.css);
 @import url(../blocks/our-products/__item/our-products__item.css);
@@ -193,6 +192,14 @@
 
 @import url(../blocks/user-actions/__link-text/_type/user-actions__link-text_type_account.css);
 @import url(../blocks/sub-banners/__banner-color/_type/sub-banners__banner-color_type_left.css);
+
+@import url(../blocks/products-card/__img-box/products-card__img-box.css);
+@import url(../blocks/bottom/bottom.css);
+@import url(../blocks/bottom/bottom.css);
+@import url(../blocks/bottom/bottom.css);
+@import url(../blocks/bottom/bottom.css);
+@import url(../blocks/bottom/bottom.css);
+@import url(../blocks/bottom/bottom.css);
 
 
 

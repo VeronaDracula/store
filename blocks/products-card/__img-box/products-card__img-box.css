@@ -1,0 +1,10 @@
+.products-card__img-box {
+    width: 100%;
+    height: 266px;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+}

@@ -1,4 +1,11 @@
 .products-card__link {
     text-decoration: none;
+
 }
 
+@media screen and (max-width: 768px) {
+    .products-card__link {
+        display: flex;
+        flex-direction: column;
+    }
+}

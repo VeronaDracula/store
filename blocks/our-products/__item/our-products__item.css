@@ -6,3 +6,10 @@
 .our-products__item:last-child {
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .our-products__item {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}

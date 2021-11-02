@@ -27,10 +27,18 @@ $(function() {
         rewind:true,
         responsive:{
             0: {
+                items: 1
+            },
+
+            769: {
                 items: 3
             },
 
             1025: {
+                items: 4
+            },
+
+            1281: {
                 items: 5
             }
         }

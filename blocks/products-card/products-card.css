@@ -16,3 +16,10 @@
 .products-card:hover .products-card__button {
     display: block;
 }
+
+@media screen and (max-width: 768px) {
+    .products-card {
+        min-width: 324px;
+        max-width: none;
+    }
+}

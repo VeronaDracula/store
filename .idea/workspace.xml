@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e903315-8f83-4e63-ba0e-00bf65a2de45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/sub-banners/__banner-color/_type/sub-banners__banner-color_type_left.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/products-card/__img-box/products-card__img-box.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/banner-carousel/banner-carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/banner-carousel/banner-carousel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/banners-main/__container/banners-main__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/banners-main/__container/banners-main__container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/__logo/_type/header__logo_type_mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__logo/_type/header__logo_type_mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/sub-banners/__banner-color/sub-banners__banner-color.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/sub-banners/__banner-color/sub-banners__banner-color.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/sub-banners/__banner-content/sub-banners__banner-content.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/sub-banners/__banner-content/sub-banners__banner-content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/sub-banners/__banner-link/sub-banners__banner-link.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/sub-banners/__banner-link/sub-banners__banner-link.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/sub-banners/__banner-text/sub-banners__banner-text.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/sub-banners/__banner-text/sub-banners__banner-text.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/sub-banners/__banner-title/sub-banners__banner-title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/sub-banners/__banner-title/sub-banners__banner-title.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/sub-banners/__banner/sub-banners__banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/sub-banners/__banner/sub-banners__banner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/sub-banners/sub-banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/sub-banners/sub-banners.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/our-products/__actions/our-products__actions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/our-products/__item/our-products__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/our-products/__item/our-products__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/our-products/__items/our-products__items.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/our-products/__items/our-products__items.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/our-products/__menu/our-products__menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/our-products/__menu/our-products__menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/page/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products-card/__img/products-card__img.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/__img/products-card__img.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products-card/__link/products-card__link.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/__link/products-card__link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products-card/products-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/products-card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products/__carousel-buttons/products__carousel-buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products/__carousel-buttons/products__carousel-buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products/__carousel/products__carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products/__carousel/products__carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products/__header/products__header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products/__header/products__header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <updated>1632743062609</updated>
       <workItem from="1632743063644" duration="13172000" />
       <workItem from="1632767497627" duration="54543000" />
-      <workItem from="1635516982802" duration="126242000" />
+      <workItem from="1635516982802" duration="129582000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1632756269260</created>
@@ -380,14 +383,20 @@
       <option name="project" value="LOCAL" />
       <updated>1635844876341</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="banners-main adaptive">
+      <created>1635846493884</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1635846493884</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="social" />
     <MESSAGE value="timer" />
     <MESSAGE value="user-info icons" />
     <MESSAGE value="user-card-actions mobile" />
@@ -412,7 +421,8 @@
     <MESSAGE value="header__menu-collapse" />
     <MESSAGE value="header table" />
     <MESSAGE value="header adaptive" />
-    <option name="LAST_COMMIT_MESSAGE" value="header adaptive" />
+    <MESSAGE value="banners-main adaptive" />
+    <option name="LAST_COMMIT_MESSAGE" value="banners-main adaptive" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632744932589">
@@ -423,10 +433,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="297" y="238" width="941" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1635712022319" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635844875700">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635846493216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635844875700" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635846493216" />
     <state x="548" y="165" key="FileChooserDialogImpl" timestamp="1635616703567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
