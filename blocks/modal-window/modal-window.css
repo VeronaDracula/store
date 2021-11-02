@@ -4,6 +4,7 @@
     padding: 25px 30px;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    display: none;
 }
 
 .zoomContainer {
