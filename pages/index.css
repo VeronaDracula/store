@@ -89,6 +89,7 @@
 @import url(../blocks/products-card/__link/products-card__link.css);
 @import url(../blocks/products-card/__open-popup/products-card__open-popup.css);
 @import url(../blocks/products-card/__img/products-card__img.css);
+@import url(../blocks/products-card/__img-hover/products-card__img-hover.css);
 @import url(../blocks/products-card/__content/products-card__content.css);
 @import url(../blocks/products-card/__title/products-card__title.css);
 @import url(../blocks/products-card/__stars/products-card__stars.css);
@@ -198,7 +199,6 @@
 
 
 @import url(../blocks/modal-window/modal-window.css);
-@import url(../blocks/modal-window/__button-close/modal-window__button-close.css);
 @import url(../blocks/modal-window/__container/modal-window__container.css);
 @import url(../blocks/modal-window/__container-img/modal-window__container-img.css);
 @import url(../blocks/modal-window/__product-img/modal-window__product-img.css);

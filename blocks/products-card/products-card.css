@@ -17,6 +17,36 @@
     display: block;
 }
 
+.products-card:hover .products-card__img-hover {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.products-card:hover .products-card__img {
+    transition: all 0.5s linear 0s;
+    opacity: 0;
+    transform: translateX(110%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .products-card {
         min-width: 324px;
