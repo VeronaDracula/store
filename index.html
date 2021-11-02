@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
     <link href="./superfish/superfish.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="./fancybox/jquery.fancybox.css" type="text/css" media="screen">
+    <link href="./lightbox/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="./pages/index.css">
 
 </head>
@@ -876,9 +878,11 @@
                     <div class="owl-carousel blog__carousel">
                         <div class="blog-card">
                             <div class="blog-card__img-box">
-                                <img class="blog-card__img" src="./images/blog-6.jpg" alt="blog-6">
+                               <img class="blog-card__img" src="./images/blog-6.jpg" alt="blog-6">
                                 <div class="blog-card__buttons">
-                                    <button  class="blog-card__button blog-card__button_type_open" type="button"><i class="fa fa-search-plus"></i></button>
+                                    <a class="blog-card__button blog-card__button_type_open" data-lightbox="roadtrip"
+                                       data-title="Click to view Full Image" href="./images/blog-6.jpg"  data-caption="">
+                                        <i class="fa fa-search-plus"></i></a>
                                     <button class="blog-card__button blog-card__button_type_link" type="button"><i class="fa fa-link"></i></button>
                                 </div>
                             </div>
@@ -888,9 +892,11 @@
 
                         <div class="blog-card">
                             <div class="blog-card__img-box">
-                                <img class="blog-card__img" src="./images/blog-1.jpg" alt="blog-1">
+                                <img class="blog-card__img" src="./images/blog-1.jpg" alt="blog-1">-->
                                 <div class="blog-card__buttons">
-                                    <button  class="blog-card__button blog-card__button_type_open" type="button"><i class="fa fa-search-plus"></i></button>
+                                    <a class="blog-card__button blog-card__button_type_open" data-lightbox="roadtrip"
+                                       data-title="Click to view Full Image" href="./images/blog-1.jpg"  data-caption="">
+                                        <i class="fa fa-search-plus"></i></a>
                                     <button class="blog-card__button blog-card__button_type_link" type="button"><i class="fa fa-link"></i></button>
                                 </div>
                             </div>
@@ -902,7 +908,9 @@
                             <div class="blog-card__img-box">
                                 <img class="blog-card__img" src="./images/blog-2.jpg" alt="blog-2">
                                 <div class="blog-card__buttons">
-                                    <button  class="blog-card__button blog-card__button_type_open" type="button"><i class="fa fa-search-plus"></i></button>
+                                    <a class="blog-card__button blog-card__button_type_open" data-lightbox="roadtrip" data-title="Click to view Full Image"
+                                       href="./images/blog-2.jpg"  data-caption="">
+                                        <i class="fa fa-search-plus"></i></a>
                                     <button class="blog-card__button blog-card__button_type_link" type="button"><i class="fa fa-link"></i></button>
                                 </div>
                             </div>
@@ -914,7 +922,9 @@
                             <div class="blog-card__img-box">
                                 <img class="blog-card__img" src="./images/blog-3.jpg" alt="blog-3">
                                 <div class="blog-card__buttons">
-                                    <button  class="blog-card__button blog-card__button_type_open" type="button"><i class="fa fa-search-plus"></i></button>
+                                    <a class="blog-card__button blog-card__button_type_open" data-lightbox="roadtrip" data-title="Click to view Full Image"
+                                       href="./images/blog-3.jpg"  data-caption="">
+                                        <i class="fa fa-search-plus"></i></a>
                                     <button class="blog-card__button blog-card__button_type_link" type="button"><i class="fa fa-link"></i></button>
                                 </div>
                             </div>
@@ -926,14 +936,15 @@
                             <div class="blog-card__img-box">
                                 <img class="blog-card__img" src="./images/blog-4.jpg" alt="blog-4">
                                 <div class="blog-card__buttons">
-                                    <button  class="blog-card__button blog-card__button_type_open" type="button"><i class="fa fa-search-plus"></i></button>
+                                    <a class="blog-card__button blog-card__button_type_open" data-lightbox="roadtrip" data-title="Click to view Full Image"
+                                       href="./images/blog-4.jpg"  data-caption="">
+                                        <i class="fa fa-search-plus"></i></a>
                                     <button class="blog-card__button blog-card__button_type_link" type="button"><i class="fa fa-link"></i></button>
                                 </div>
                             </div>
                             <p class="blog-card__data">18, 09, 2018</p>
                             <a class="blog-card__text" href=""> Morbi condimentum molestie Nam enim odio sodales</a>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -1227,5 +1238,7 @@
 <script src="./superfish/superfish.js"></script>
 <script src="./collapse/jquery.collapse.js "></script>
 <script src="./collapse/jquery.collapse_storage.js "></script>
+<script type="text/javascript" src="./fancybox/jquery.fancybox.js"></script>
+<script src="./lightbox/lightbox.js"></script>
 </body>
 </html>

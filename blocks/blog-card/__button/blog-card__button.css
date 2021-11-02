@@ -7,6 +7,9 @@
     padding: 10px 12px;
     transition: all 0.5s ease 0s;
     background-color: #9174ce;
+    box-sizing: border-box;
+    width: 39px;
+    height: 39px;
 }
 
 .blog-card__button:hover {

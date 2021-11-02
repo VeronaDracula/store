@@ -155,6 +155,12 @@ jQuery(document).ready(function() {
 
     });
 
+
+    //галерея
+    lightbox.option({
+        'wrapAround': false
+    })
+
 });
 
 
