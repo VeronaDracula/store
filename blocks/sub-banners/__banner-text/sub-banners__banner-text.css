@@ -7,3 +7,10 @@
     display: inline-block;
     margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .sub-banners__banner-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

@@ -8,3 +8,10 @@
     display: inline-block;
     margin: 0 0 10px 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .sub-banners__banner-title {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}

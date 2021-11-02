@@ -1,3 +1,10 @@
 .sub-banners__banner-link {
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .sub-banners__banner-link {
+        display: flex;
+        justify-content: center;
+    }
+}
