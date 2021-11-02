@@ -188,10 +188,10 @@
 @import url(../blocks/header/__content-desktop/header__content-desktop.css);
 @import url(../blocks/header/__form/_type/header__form_type-desktop.css);
 @import url(../blocks/header/__content-menu-logo/header__content-menu-logo.css);
-@import url(../blocks/header/header.css);
-@import url(../blocks/header/header.css);
-@import url(../blocks/header/header.css);
-@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo/_type/header__logo_type_mobile.css);
+
+@import url(../blocks/user-actions/__link-text/_type/user-actions__link-text_type_account.css);
 @import url(../blocks/header/header.css);
 
 

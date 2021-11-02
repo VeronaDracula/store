@@ -8,3 +8,9 @@
     box-sizing: border-box;
     width: calc(100% - 60px);
 }
+
+@media screen and (max-width: 768px) {
+    .header__menu-collapse-box {
+        top: 150px;
+    }
+}

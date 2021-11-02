@@ -2,3 +2,9 @@
     background: transparent center no-repeat url("../../../../images/icon-human.png");
 }
 
+@media screen and (max-width: 768px) {
+    .user-actions__link-img_type_human {
+        margin-right: 0;
+    }
+}
+

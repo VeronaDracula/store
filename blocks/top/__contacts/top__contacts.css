@@ -9,3 +9,9 @@
 .top__contacts:hover {
     color: #9174ce;
 }
+
+@media screen and (max-width: 1024px) {
+    .top__contacts {
+        display: none;
+    }
+}

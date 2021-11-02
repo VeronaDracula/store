@@ -27,3 +27,10 @@
 .user-actions__link:hover > .user-actions__link-img_type_shopping {
     background: transparent center no-repeat url("../../../images/Shopping_hover.png");
 }
+
+
+@media screen and (max-width: 768px) {
+    .user-actions__link {
+        margin: 0 12px 0 0;
+    }
+}
