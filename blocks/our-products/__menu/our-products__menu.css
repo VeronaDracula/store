@@ -2,7 +2,7 @@
     margin-right: 66px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .our-products__menu {
         margin-right: 0;
     }

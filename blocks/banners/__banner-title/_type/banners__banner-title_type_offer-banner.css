@@ -1,3 +1,5 @@
-.banners__banner-title_type_offer-banner {
-    margin: 0 0 21px 0;
+@media screen and (max-width: 1024px) {
+    .banners__banner-title_type_offer-banner {
+        margin: 0 0 10px 0;
+    }
 }

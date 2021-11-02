@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+    .banners__banner-text_type_offer-banner {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banners__banner-text_type_offer-banner {
+        display: none;
+    }
+}

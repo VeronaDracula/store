@@ -1,3 +1,9 @@
 .banners__banner-content_type_banner-02 {
     right: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .banners__banner-content_type_banner-02 {
+        right: 5.7%;
+    }
+}
