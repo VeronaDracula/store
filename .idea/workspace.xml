@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e903315-8f83-4e63-ba0e-00bf65a2de45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/products-card/__img-hover/products-card__img-hover.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/modal-window/__button-close/modal-window__button-close.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/products-card/__img-box/products-card__img-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/__img-box/products-card__img-box.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/products-card/__img/products-card__img.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/__img/products-card__img.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/products-card/__img-hover/products-card__img-hover.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/__img-hover/products-card__img-hover.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/products-card/products-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/products-card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,14 +60,7 @@
       <updated>1632743062609</updated>
       <workItem from="1632743063644" duration="13172000" />
       <workItem from="1632767497627" duration="54543000" />
-      <workItem from="1635516982802" duration="158004000" />
-    </task>
-    <task id="LOCAL-00004" summary="auction">
-      <created>1632770895449</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1632770895449</updated>
+      <workItem from="1635516982802" duration="159744000" />
     </task>
     <task id="LOCAL-00005" summary="user-card">
       <created>1632829535652</created>
@@ -410,14 +398,20 @@
       <option name="project" value="LOCAL" />
       <updated>1635879868368</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="products-card animate">
+      <created>1635882746104</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1635882746104</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="top" />
     <MESSAGE value="header__container" />
     <MESSAGE value="header__menu" />
     <MESSAGE value="banner-carousel" />
@@ -442,7 +436,8 @@
     <MESSAGE value="lightbox" />
     <MESSAGE value="modal-window" />
     <MESSAGE value="options animate" />
-    <option name="LAST_COMMIT_MESSAGE" value="options animate" />
+    <MESSAGE value="products-card animate" />
+    <option name="LAST_COMMIT_MESSAGE" value="products-card animate" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632744932589">
@@ -453,10 +448,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="297" y="238" width="941" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1635712022319" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635879867887">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1635882745509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635879867887" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635882745509" />
     <state x="548" y="165" key="FileChooserDialogImpl" timestamp="1635616703567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
