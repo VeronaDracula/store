@@ -1,3 +1,8 @@
+.bottom__copyright-link {
+    text-decoration: none;
+    color: #838383;
+}
+
 .bottom__copyright-link:hover {
     color: #9174ce;
     cursor: pointer;

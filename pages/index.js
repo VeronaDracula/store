@@ -117,13 +117,13 @@ jQuery(document).ready(function() {
         {
             cssArrows: false,
             delay: 0,
-            animation:  {opacity:'show', transform: 'translateY(20px)'},
+            animation: {opacity:'show'},
+            speed: 100,
         }
     );
 
 
     //раскрывающиеся списки
-
     $(".footer__container-table").collapse({
         open: function() {
             this.slideDown(150);
