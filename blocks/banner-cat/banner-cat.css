@@ -1,1 +1,24 @@
+.banner-cat {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
 
+
+.banner-cat::after {
+    background-color: #000;
+    bottom: 50%;
+    content: "";
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: all 0.8s ease-out 0s;
+}
+
+.banner-cat:hover::after {
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+}

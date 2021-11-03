@@ -193,9 +193,9 @@ jQuery(document).ready(function($){
         afterClose: function() {
             $('.zoomContainer').remove();
         }
-
-
     });
+
+
 
 });
 
