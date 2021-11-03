@@ -161,13 +161,6 @@ jQuery(document).ready(function() {
         'wrapAround': false
     })
 
-    $("#zoom_05").elevateZoom({
-        zoomType: "inner",
-        cursor: "crosshair"
-    });
-
-
-
 });
 
 
@@ -180,7 +173,7 @@ jQuery(document).ready(function($){
         animationEffect: "fade",
         animationDuration: 600,
 
-
+        //увеличение изображения
         afterShow: function() {
             $('.modal-window__product-img').elevateZoom({
                 zoomType: "inner",
@@ -195,8 +188,25 @@ jQuery(document).ready(function($){
         }
     });
 
+});
 
 
+//кнопка подъема
+jQuery(document).ready(function($){
+    $(window).scroll(function (){
+        if ($(this).scrollTop() > 100){
+            $(".button-up").fadeIn();
+        } else{
+            $(".button-up").fadeOut();
+        }
+    });
+
+    $(function(){
+        $(".button-up").bind('click', function(e){
+            e.preventDefault();
+            $('body,html').animate({scrollTop: 0}, 600);
+        });
+    });
 });
 
 
