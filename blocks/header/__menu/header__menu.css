@@ -3,7 +3,7 @@
     display: block;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1166px){
     .header__menu {
         display: none;
     }
