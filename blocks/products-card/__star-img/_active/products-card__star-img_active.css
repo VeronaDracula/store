@@ -1,3 +1,7 @@
 .products-card__star-img_active {
     color: #E69500;
 }
+
+.products-card__star-img_active::before {
+    content: "\f005";
+}

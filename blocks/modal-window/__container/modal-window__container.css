@@ -1,4 +1,11 @@
 .modal-window__container {
+    width: 883px;
+    height: 506px;
+    padding: 25px 30px;
+    background: #FFF;
+    position: relative;
     display: flex;
 
+    overflow-y: auto;
+    box-sizing: border-box;
 }

@@ -1,0 +1,10 @@
+.modal-window__close {
+    color: red;
+    right: 0;
+    position: absolute;
+
+}
+
+.modal-window__close:hover {
+    cursor: pointer;
+}

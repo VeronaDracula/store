@@ -5,6 +5,7 @@
 @import url(../blocks/page/__content/page__content.css);
 @import url(../blocks/page/__container/page__container.css);
 
+
 @import url(../blocks/top/top.css);
 @import url(../blocks/top/__contacts/top__contacts.css);
 @import url(../blocks/top/__links/top__links.css);
@@ -105,6 +106,7 @@
 @import url(../blocks/products-card/__star/products-card__star.css);
 @import url(../blocks/products-card/__star-img/products-card__star-img.css);
 @import url(../blocks/products-card/__star-img/_active/products-card__star-img_active.css);
+@import url(../blocks/products-card/__price-texts/products-card__price-texts.css);
 @import url(../blocks/products-card/__price/products-card__price.css);
 @import url(../blocks/products-card/__discount/products-card__discount.css);
 @import url(../blocks/products-card/__old-price/products-card__old-price.css);
@@ -195,6 +197,8 @@
 @import url(../blocks/modal-window/__container-img/modal-window__container-img.css);
 @import url(../blocks/modal-window/__product-img/modal-window__product-img.css);
 @import url(../blocks/modal-window/__container-info/modal-window__container-info.css);
+@import url(../blocks/modal-window/_is-opened/modal-window_is-opened.css);
+@import url(../blocks/modal-window/__close/modal-window__close.css);
 
 @import url(../blocks/product-info/__title/product-info__title.css);
 @import url(../blocks/product-info/__stars/product-info__stars.css);
@@ -220,6 +224,9 @@
 @import url(../blocks/modal-actions/__button-img/modal-actions__button-img.css);
 
 @import url(../blocks/button-up/button-up.css);
+
+@import url(../blocks/display-none/display-none.css);
+
 
 
 
