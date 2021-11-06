@@ -204,6 +204,7 @@
 @import url(../blocks/product-info/__stars/product-info__stars.css);
 @import url(../blocks/product-info/__star/product-info__star.css);
 @import url(../blocks/product-info/__star-img/product-info__star-img.css);
+@import url(../blocks/product-info/__star-img/_active/product-info__star-img_active.css);
 @import url(../blocks/product-info/__list/product-info__list.css);
 @import url(../blocks/product-info/__list-item/product-info__list-item.css);
 @import url(../blocks/product-info/__list-item-data/product-info__list-item-data.css);

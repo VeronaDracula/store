@@ -1,7 +1,7 @@
 .modal-window_is-opened {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0s linear;
 }
 
 

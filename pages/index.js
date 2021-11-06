@@ -21,8 +21,8 @@ const availabilityElement = popupGeneralCard.querySelector('.product-info__list-
 const exTaxElement = popupGeneralCard.querySelector('.product-info__price-tax');
 const priceElement = popupGeneralCard.querySelector('.product-info__price-new');
 const oldPriceElement = popupGeneralCard.querySelector('.product-info__price-old');
-
-
+const starsElement = popupGeneralCard.querySelector('.product-info__stars');
+const starsArrayElement = Array.from(starsElement.querySelectorAll('.product-info__star'));
 
 
 
@@ -32,6 +32,10 @@ const oldPriceElement = popupGeneralCard.querySelector('.product-info__price-old
 //функция закрытия popup
 function popupClose (popup){
     popup.classList.remove('modal-window_is-opened');
+
+    for (let i = 0; i < 5; i++) {
+        starsArrayElement[i].querySelector('.product-info__star-img').classList.remove('product-info__star-img_active');
+    }
 }
 
 
@@ -54,6 +58,13 @@ function loadPopupPhotoData(event) {
     exTaxElement.textContent = cardParentsElement.querySelector('.products-card__ex-tax').textContent;
     priceElement.textContent = cardParentsElement.querySelector('.products-card__price').textContent;
     oldPriceElement.textContent = cardParentsElement.querySelector('.products-card__old-price').textContent;
+
+    const starsAmount = cardParentsElement.querySelector('.products-card__stars-amount').textContent;
+
+    for (let i = 0; i < starsAmount; i++) {
+        starsArrayElement[i].querySelector('.product-info__star-img').classList.add('product-info__star-img_active');
+    }
+
 
     const cardBrandsData = cardParentsElement.querySelector('.products-card__brands').textContent;
     const cardBrandsBox = popupGeneralCard.querySelector('.product-info__list-item_type_brands');
@@ -82,7 +93,6 @@ function loadPopupPhotoData(event) {
 
 
 //обработчик для кнопок внутри карточек
-
 function setEventListeners(cardElement) {
     cardElement.querySelector('.products-card__open-popup').addEventListener('click', () => popupOpen(popupGeneralCard));
     cardElement.querySelector('.products-card__open-popup').addEventListener('click', loadPopupPhotoData);
@@ -107,6 +117,8 @@ function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brand
     const availabilityElement = cardElement.querySelector('.products-card__availability');
     const exTaxElement = cardElement.querySelector('.products-card__ex-tax');
 
+    const amountCardStarsElement = cardElement.querySelector('.products-card__stars-amount');
+
     const cardStarsElement = cardElement.querySelector('.products-card__stars');
     const cardStarElements = Array.from(cardStarsElement.querySelectorAll('.products-card__star'));
 
@@ -125,6 +137,7 @@ function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brand
     rewardPointsElement.textContent = rewardPoints;
     availabilityElement.textContent = availability;
     exTaxElement.textContent = exTax;
+    amountCardStarsElement.textContent = stars;
 
     //if (modal === 'ok') {
      //   cardQQ.classList.add('card-modal');
@@ -165,51 +178,32 @@ function addCard (container, cardElement){
 
 
 
-//получение данных из коллекции our products
-ourProductsCards.forEach(function (ourProductsCards) {
-    const name = ourProductsCards.name;
-    const img = ourProductsCards.img;
-    const imgHover = ourProductsCards.imgHover;
-    const price = ourProductsCards.price;
-    const discount = ourProductsCards.discount;
-    const oldPrice = ourProductsCards.oldPrice;
-    const stars = ourProductsCards.stars;
+//получение данных карточек
+function receivingData (cardData, container) {
+    cardData.forEach(function (cardData) {
+        const name = cardData.name;
+        const img = cardData.img;
+        const imgHover = cardData.imgHover;
+        const price = cardData.price;
+        const discount = cardData.discount;
+        const oldPrice = cardData.oldPrice;
+        const stars = cardData.stars;
 
-    const brands = ourProductsCards.brands;
-    const productCode = ourProductsCards.productCode;
-    const rewardPoints = ourProductsCards.rewardPoints;
-    const availability = ourProductsCards.availability;
-    const exTax = ourProductsCards.exTax;
-    //const modal = ourProductsCards.modal;
+        const brands = cardData.brands;
+        const productCode = cardData.productCode;
+        const rewardPoints = cardData.rewardPoints;
+        const availability = cardData.availability;
+        const exTax = cardData.exTax;
+        //const modal = ourProductsCards.modal;
 
-    const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax/*modal*/);
-    addCard(containerOurProductsCards, card);
-})
-
-
-//получение данных из коллекции specials
-specialsCards.forEach(function (specialsCards) {
-    const name = specialsCards.name;
-    const img = specialsCards.img;
-    const imgHover = specialsCards.imgHover;
-    const price = specialsCards.price;
-    const discount = specialsCards.discount;
-    const oldPrice = specialsCards.oldPrice;
-    const stars = specialsCards.stars;
-
-    const brands = specialsCards.brands;
-    const productCode = specialsCards.productCode;
-    const rewardPoints = specialsCards.rewardPoints;
-    const availability = specialsCards.availability;
-    const exTax = specialsCards.exTax;
-
-    const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax);
-    addCard(containerSpecialsCards, card);
-})
+        const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax/*modal*/);
+        addCard(container, card);
+    })
+}
 
 
-
-
+receivingData(ourProductsCards, containerOurProductsCards);
+receivingData(specialsCards, containerSpecialsCards);
 
 //кнопка закрытия popup
 popupGeneralCardCloseButton.addEventListener('click', () => popupClose(popupGeneralCard));

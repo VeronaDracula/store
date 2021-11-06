@@ -253,10 +253,10 @@ const specialsCards = [
         discount: '29%',
         oldPrice: '$337.99',
         brands: 'palm',
-        productCode: 'product 12',
+        productCode: 'product 2',
         rewardPoints: '',
         availability: 'In Stock',
-        exTax: '$100.00',
+        exTax: '$200.00',
         stars: 0
     },
 
