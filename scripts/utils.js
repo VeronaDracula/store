@@ -12,7 +12,7 @@ const ourProductsCards = [
         rewardPoints: '1000',
         availability: 'Pre-Order',
         exTax: '$100.00',
-        stars: 0
+        stars: 0,
     },
 
     {
@@ -195,7 +195,7 @@ const specialsCards = [
         brands: 'canon',
         productCode: 'Product 3',
         rewardPoints: '200',
-        availability: 'Pre-Order',
+        availability: 'In Stock',
         exTax: '$80.00',
         stars: 0
     },
