@@ -14,6 +14,7 @@ const cardElement = cardTemplateContent.cloneNode(true);
 //данные модального окна
 const imageElement = popupGeneralCard.querySelector('.modal-window__product-img');
 const productNameElement = popupGeneralCard.querySelector('.product-info__title');
+const brandsElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_brands');
 const productCodeElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_productCode');
 const rewardPointsElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_rewardPoints');
 const availabilityElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_availability');
@@ -48,15 +49,33 @@ function loadPopupPhotoData(event) {
     imageElement.setAttribute('src', cardParentsElement.querySelector('.products-card__img').getAttribute('src'));
     imageElement.setAttribute('alt', cardParentsElement.querySelector('.products-card__img').getAttribute('alt'));
     productNameElement.textContent = cardParentsElement.querySelector('.products-card__title').textContent;
-
     productCodeElement.textContent = cardParentsElement.querySelector('.products-card__product-code').textContent;
-    rewardPointsElement.textContent = cardParentsElement.querySelector('.products-card__reward-points').textContent;
-
     availabilityElement.textContent = cardParentsElement.querySelector('.products-card__availability').textContent;
     exTaxElement.textContent = cardParentsElement.querySelector('.products-card__ex-tax').textContent;
     priceElement.textContent = cardParentsElement.querySelector('.products-card__price').textContent;
     oldPriceElement.textContent = cardParentsElement.querySelector('.products-card__old-price').textContent;
 
+    const cardBrandsData = cardParentsElement.querySelector('.products-card__brands').textContent;
+    const cardBrandsBox = popupGeneralCard.querySelector('.product-info__list-item_type_brands');
+
+    if ( cardBrandsData === '') {
+        cardBrandsBox.classList.add('display-none');
+    }
+    else {
+        cardBrandsBox.classList.remove('display-none');
+        brandsElement.textContent = cardBrandsData;
+    }
+
+    const cardRewardPointsData = cardParentsElement.querySelector('.products-card__reward-points').textContent;
+    const cardRewardPointsBox = popupGeneralCard.querySelector('.product-info__list-item_type_reward-points');
+
+    if ( cardRewardPointsData === '') {
+        cardRewardPointsBox.classList.add('display-none');
+    }
+    else {
+        cardRewardPointsBox.classList.remove('display-none');
+        rewardPointsElement.textContent = cardRewardPointsData;
+    }
 
 }
 
