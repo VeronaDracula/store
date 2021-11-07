@@ -125,7 +125,7 @@ const ourProductsCards = [
         availability: 'In Stock',
         exTax: '$90.00',
         stars: 0,
-        modal: ''
+        modal: 'large'
     },
 
     {
@@ -177,7 +177,8 @@ const specialsCards = [
         rewardPoints: '700',
         availability: 'In Stock',
         exTax: '$900.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -192,7 +193,8 @@ const specialsCards = [
         rewardPoints: '',
         availability: 'In Stock',
         exTax: '$700.00',
-        stars: 5
+        stars: 5,
+        modal: ''
     },
 
     {
@@ -207,7 +209,8 @@ const specialsCards = [
         rewardPoints: '200',
         availability: 'In Stock',
         exTax: '$80.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -222,7 +225,8 @@ const specialsCards = [
         rewardPoints: '100',
         availability: 'In Stock',
         exTax: '$90.00',
-        stars: 0
+        stars: 0,
+        modal: 'large'
     },
 
     {
@@ -237,7 +241,8 @@ const specialsCards = [
         rewardPoints: '1000',
         availability: 'Pre-Order',
         exTax: '$100.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -252,7 +257,8 @@ const specialsCards = [
         rewardPoints: '800',
         availability: 'In Stock',
         exTax: '$1000.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -267,7 +273,8 @@ const specialsCards = [
         rewardPoints: '',
         availability: 'In Stock',
         exTax: '$200.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -282,7 +289,8 @@ const specialsCards = [
         rewardPoints: '300',
         availability: 'In Stock',
         exTax: '$50.00',
-        stars: 0
+        stars: 0,
+        modal: 'middle'
     },
 
     {
@@ -297,7 +305,8 @@ const specialsCards = [
         rewardPoints: '600',
         availability: 'In Stock',
         exTax: '$400.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -312,6 +321,7 @@ const specialsCards = [
         rewardPoints: '300',
         availability: 'In Stock',
         exTax: '$50.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     }
 ];

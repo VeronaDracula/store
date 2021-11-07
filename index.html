@@ -608,19 +608,19 @@
                             <ul class="product-info__list">
                                 <li class="product-info__list-item product-info__list-item_type_brands">
                                     <p class="product-info__list-item-title">Brands</p>
-                                    <p class="product-info__list-item-data product-info__list-item-data_type_brands">SAM1</p>
+                                    <p class="product-info__list-item-data product-info__list-item-data_type_brands"></p>
                                 </li>
                                 <li class="product-info__list-item">
                                     <p class="product-info__list-item-title">Product Code:</p>
-                                    <p class="product-info__list-item-data product-info__list-item-data_type_productCode">SAM1</p>
+                                    <p class="product-info__list-item-data product-info__list-item-data_type_productCode"></p>
                                 </li>
                                 <li class="product-info__list-item product-info__list-item_type_reward-points">
                                     <p class="product-info__list-item-title">Reward Points:</p>
-                                    <p class="product-info__list-item-data product-info__list-item-data_type_rewardPoints">1000</p>
+                                    <p class="product-info__list-item-data product-info__list-item-data_type_rewardPoints"></p>
                                 </li>
                                 <li class="product-info__list-item">
                                     <p class="product-info__list-item-title">Availability:</p>
-                                    <p class="product-info__list-item-data product-info__list-item-data_type_availability">Pre-Order</p>
+                                    <p class="product-info__list-item-data product-info__list-item-data_type_availability"></p>
                                 </li>
                             </ul>
 
@@ -630,6 +630,8 @@
                             </div>
 
                             <p class="product-info__ex-tax">Ex Tax:<span class="product-info__price-tax">$100.00</span></p>
+
+
 
                             <div class="modal-window__middle-block display-none">
                                 <p class="product-info__price-with-points product-info__ex-tax">Price in reward points:
@@ -649,8 +651,112 @@
                                         </button>
                                     </div>
                                 </form>
-
                             </div>
+
+
+
+                            <div class="modal-window__large-block display-none">
+                                <p class="product-info__price-with-points product-info__ex-tax product-info__price-with-points_type_large-block">
+                                    Price in reward points:
+                                    <span class="product-info__price-tax">400</span>
+                                </p>
+
+                                <ul class="large-block-list">
+                                    <li class="large-block-list__item">10 or more $107.60</li>
+                                    <li class="large-block-list__item">20 or more $94.40</li>
+                                    <li class="large-block-list__item">30 or more $81.20</li>
+                                </ul>
+
+                                <hr class="modal-window__line">
+
+                                <h3 class="modal-actions__form-title">Available Options</h3>
+
+                                <div class="large-block">
+
+                                    <div>
+                                        <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>Radio</h4>
+                                        <ul class="large-block__list">
+                                            <li class="large-block__item"><input class="large-block__item-radio" name="radio-button" type="radio">Small (+$12.00)</li>
+                                            <li class="large-block__item"><input class="large-block__item-radio" name="radio-button" type="radio">Medium (+$24.00)</li>
+                                            <li class="large-block__item"><input class="large-block__item-radio" name="radio-button" type="radio">Large (+$36.00)</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>Checkbox</h4>
+                                        <ul class="large-block__list">
+                                            <li class="large-block__item"><input class="large-block__item-radio" name="radio-button" type="checkbox">Checkbox 1 (+$12.00)</li>
+                                            <li class="large-block__item"><input class="large-block__item-radio" name="radio-button" type="checkbox">Checkbox 2 (+$24.00)</li>
+                                            <li class="large-block__item"><input class="large-block__item-radio" name="radio-button" type="checkbox">Checkbox 3 (+$36.00)</li>
+                                            <li class="large-block__item"><input class="large-block__item-radio" name="radio-button" type="checkbox">Checkbox 4 (+$48.00)</li>
+                                        </ul>
+                                    </div>
+
+                                    <form class="modal-actions__form">
+                                        <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>Text</h4>
+                                        <input type="text" class="modal-actions__form-input modal-actions__form-input_type_large-block"
+                                               id="large-block-text" name="amount" placeholder="test">
+                                    </form>
+
+                                    <form class="modal-actions__form">
+                                        <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>Select</h4>
+                                        <select class="modal-actions__form-input modal-actions__form-input_type_large-block" name="choice">
+                                            <option value="" selected>--- Please Select ---</option>
+                                            <option value="4">Red (+$4.80)</option>
+                                            <option value="3">Blue (+$3.60)</option>
+                                            <option value="1">Green (+$1.20)</option>
+                                            <option value="2">Yellow (+$2.40)</option>
+                                        </select>
+                                    </form>
+
+                                    <form class="modal-actions__form">
+                                        <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>Textarea</h4>
+                                        <textarea class="modal-actions__form-input modal-actions__form-input_type_large-block modal-actions__form-input_type_large-block-textarea"
+                                               id="large-block-textarea" placeholder="Textarea"></textarea>
+                                    </form>
+
+                                    <form class="modal-actions__form modal-actions__form_type_file-button">
+                                        <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>File</h4>
+                                        <input type="file" name="file" id="file" class="large-block__input-file">
+                                        <label for="file" class="large-block__input-label">
+                                            <i class="fa fa-upload"></i>
+                                            <span>Upload File</span>
+                                        </label>
+                                    </form>
+                                </div>
+
+                                <form class='input-group datetimepicker2 modal-actions__form-datetime'
+                                      data-td-target-input='nearest' data-td-target-toggle='nearest'>
+                                    <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>Date</h4>
+                                    <div class="modal-actions__form-input-button">
+                                        <input id='datetimepicker2Input' type='text'
+                                               class='modal-actions__form-input modal-actions__form-input_type_large-block modal-actions__form-input_type_datetime'
+                                               data-td-target='.datetimepicker1'>
+                                        <button class='input-group-text modal-actions__form-datetime-button' type="button" data-td-target='.datetimepicker1'
+                                                data-td-toggle='datetimepicker'>
+                                            <i class='fa fa-calendar'></i>
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <form class='input-group datetimepicker3 modal-actions__form-datetime'
+                                      data-td-target-input='nearest' data-td-target-toggle='nearest'>
+                                    <h4 class="large-block__title"><span class="large-block__title-symbol">*</span>Time</h4>
+                                    <div class="modal-actions__form-input-button">
+                                        <input id='datetimepicker3Input' type='text'
+                                               class='modal-actions__form-input modal-actions__form-input_type_large-block modal-actions__form-input_type_datetime'
+                                               data-td-target='.datetimepicker1'>
+                                        <button class='input-group-text modal-actions__form-datetime-button' type="button" data-td-target='.datetimepicker1'
+                                                data-td-toggle='datetimepicker'>
+                                            <i class='fa fa-clock-o'></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+
 
                             <div class="modal-actions">
                                 <form class="modal-actions__form">
@@ -677,30 +783,6 @@
 
 
         </main>
-
-
-
-
-
-
-
-        <div class='input-group' id='datetimepicker3' data-td-target-input='nearest' data-td-target-toggle='nearest'>
-            <input id='datetimepicker3Input' type='text' class='form-control' data-td-target='#datetimepicker3'>
-            <span class='input-group-text' data-td-target='#datetimepicker3' data-td-toggle='datetimepicker'>
-                <span class='fa fa-clock-o'></span>
-            </span>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
 
         <footer class="footer page__container">
             <div class="footer__container">

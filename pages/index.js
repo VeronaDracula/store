@@ -24,6 +24,7 @@ const oldPriceElement = popupGeneralCard.querySelector('.product-info__price-old
 const starsElement = popupGeneralCard.querySelector('.product-info__stars');
 const starsArrayElement = Array.from(starsElement.querySelectorAll('.product-info__star'));
 const popupMiddleBlock = popupGeneralCard.querySelector('.modal-window__middle-block');
+const popupLargeBlock = popupGeneralCard.querySelector('.modal-window__large-block');
 
 
 
@@ -37,17 +38,27 @@ function popupClose (popup){
     for (let i = 0; i < 5; i++) {
         starsArrayElement[i].querySelector('.product-info__star-img').classList.remove('product-info__star-img_active');
     }
+
+    popupMiddleBlock.classList.add('display-none');
+    popupLargeBlock.classList.add('display-none');
+
+    $('.zoomContainer').remove();
 }
 
 
 //функция открытия popup
 function popupOpen (popup){
     popup.classList.add('modal-window_is-opened');
-    popupMiddleBlock.classList.add('display-none');
+    $('.modal-window__product-img').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+    });
 }
 
 
-//загрузка данных popup__photo
+//загрузка данных в модальное окно
 
 function loadPopupPhotoData(event) {
     const cardParentsElement =  event.target.closest('.products-card');
@@ -62,9 +73,13 @@ function loadPopupPhotoData(event) {
     oldPriceElement.textContent = cardParentsElement.querySelector('.products-card__old-price').textContent;
 
 
-
     if (cardParentsElement.classList.contains('card-modal-middle')) {
         popupMiddleBlock.classList.remove('display-none');
+
+    }
+
+    if (cardParentsElement.classList.contains('card-modal-large')) {
+        popupLargeBlock.classList.remove('display-none');
 
     }
 
@@ -112,7 +127,7 @@ function setEventListeners(cardElement) {
 
 
 //создание карточки
-function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax,modal) {
+function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax, modal) {
     const cardElement = cardTemplateContent.cloneNode(true);
     const cardTitleElement = cardElement.querySelector('.products-card__title');
     const cardImageElement = cardElement.querySelector('.products-card__img');
@@ -150,6 +165,10 @@ function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brand
 
     if (modal === 'middle') {
         cardMainElement.classList.add('card-modal-middle');
+    }
+
+    if (modal === 'large') {
+        cardMainElement.classList.add('card-modal-large');
     }
 
     if (discount === '') {

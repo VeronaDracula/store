@@ -1,0 +1,20 @@
+.large-block__input-label{
+    color: #000;
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    line-height: inherit;
+    font-weight: 500;
+    padding: 6px 12px;
+    height: 34px;
+    width: 120px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display:block;
+    margin-left: 5px;
+}
+
+.large-block__input-label:hover, .large-block__input-label:focus {
+    color: #FFFFFF;
+    background: #9174ce;
+    cursor: pointer;
+}

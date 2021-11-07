@@ -19,8 +19,3 @@
 .modal-window:hover {
     cursor: pointer;
 }
-
-
-.zoomContainer {
-    z-index: 100;
-}

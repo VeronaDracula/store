@@ -18,7 +18,28 @@ new tempusDominus.TempusDominus(document.querySelector('.datetimepicker1'), {
     }
 });
 
-new tempusDominus.TempusDominus(document.getElementById('datetimepicker3'), {
+new tempusDominus.TempusDominus(document.querySelector('.datetimepicker2'), {
+    display: {
+        components: {
+            decades: true,
+            year: true,
+            month: true,
+            date: true,
+            hours: false,
+            minutes: false,
+            seconds: false,
+        },
+        icons: {
+            date: 'fa fa-calendar',
+            previous: 'fa fa-chevron-left',
+            next: 'fa fa-chevron-right',
+            today: 'fa fa-check',
+        },
+    }
+});
+
+
+new tempusDominus.TempusDominus(document.querySelector('.datetimepicker3'), {
     display: {
         viewMode: 'clock',
         components: {
@@ -208,12 +229,12 @@ jQuery(document).ready(function() {
     });
 
     //модально окно
-    //$('.modal-window__product-img').elevateZoom({
-     //   zoomType: "inner",
-     //   cursor: "crosshair",
-      //  zoomWindowFadeIn: 500,
-      //  zoomWindowFadeOut: 750
-   // });
+    $('.modal-window__product-img').elevateZoom({
+         zoomType: "inner",
+         cursor: "crosshair",
+         zoomWindowFadeIn: 500,
+         zoomWindowFadeOut: 750
+    });
 
 });
 
