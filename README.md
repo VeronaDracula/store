@@ -1,3 +1,3 @@
-# test  
+# Тестовое задание от Moguta
 
-https://veronadracula.github.io/test/
+Ссылка для просмотре: https://veronadracula.github.io/test/
