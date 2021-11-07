@@ -27,10 +27,6 @@ const popupMiddleBlock = popupGeneralCard.querySelector('.modal-window__middle-b
 const popupLargeBlock = popupGeneralCard.querySelector('.modal-window__large-block');
 
 
-
-
-
-
 //функция закрытия popup
 function popupClose (popup){
     popup.classList.remove('modal-window_is-opened');
@@ -43,28 +39,41 @@ function popupClose (popup){
     popupLargeBlock.classList.add('display-none');
 
     $('.zoomContainer').remove();
+
+    document.removeEventListener('keydown', closeByEsc);
 }
 
 
 //функция открытия popup
 function popupOpen (popup){
     popup.classList.add('modal-window_is-opened');
-    $('.modal-window__product-img').elevateZoom({
-        zoomType: "inner",
-        cursor: "crosshair",
-        zoomWindowFadeIn: 500,
-        zoomWindowFadeOut: 750
-    });
+
+    document.addEventListener('keydown', closeByEsc);
+}
+
+// закрытие popup по Esc
+function closeByEsc(evt) {
+    const popupIsOpened = document.querySelector('.modal-window_is-opened');
+    if (evt.key === 'Escape') {
+        popupClose(popupIsOpened);
+    }
+}
+
+//закрытие по overlay
+function closePopupByClickOverlay(evt) {
+    const popupIsOpened = document.querySelector('.modal-window_is-opened');
+    if (evt.target === evt.currentTarget){
+        popupClose(popupIsOpened);
+    }
 }
 
 
 //загрузка данных в модальное окно
-
 function loadPopupPhotoData(event) {
     const cardParentsElement =  event.target.closest('.products-card');
 
-    imageElement.setAttribute('src', cardParentsElement.querySelector('.products-card__img').getAttribute('src'));
     imageElement.setAttribute('alt', cardParentsElement.querySelector('.products-card__img').getAttribute('alt'));
+    imageElement.setAttribute('src', cardParentsElement.querySelector('.products-card__img-zoom').textContent);
     productNameElement.textContent = cardParentsElement.querySelector('.products-card__title').textContent;
     productCodeElement.textContent = cardParentsElement.querySelector('.products-card__product-code').textContent;
     availabilityElement.textContent = cardParentsElement.querySelector('.products-card__availability').textContent;
@@ -112,6 +121,15 @@ function loadPopupPhotoData(event) {
         rewardPointsElement.textContent = cardRewardPointsData;
     }
 
+
+    $('.modal-window__product-img').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+    });
+
+
 }
 
 
@@ -127,11 +145,14 @@ function setEventListeners(cardElement) {
 
 
 //создание карточки
-function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax, modal) {
+function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax, modal, imgZoom) {
     const cardElement = cardTemplateContent.cloneNode(true);
     const cardTitleElement = cardElement.querySelector('.products-card__title');
     const cardImageElement = cardElement.querySelector('.products-card__img');
     const cardImageHoverElement = cardElement.querySelector('.products-card__img-hover');
+
+    const cardImageZoomElement = cardElement.querySelector('.products-card__img-zoom');
+
     const cardPriceElement = cardElement.querySelector('.products-card__price');
     const cardOldPriceElement = cardElement.querySelector('.products-card__old-price');
     const cardDiscountElement= cardElement.querySelector('.products-card__discount');
@@ -156,6 +177,7 @@ function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brand
     cardImageHoverElement.setAttribute('alt', name);
     cardPriceElement.textContent = price;
 
+    cardImageZoomElement.textContent = imgZoom;
     brandsElement.textContent = brands;
     productCodeElement.textContent = productCode;
     rewardPointsElement.textContent = rewardPoints;
@@ -223,7 +245,10 @@ function receivingData (cardData, container) {
         const exTax = cardData.exTax;
         const modal = cardData.modal;
 
-        const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax, modal);
+        const imgZoom = cardData.imgZoom;
+
+        const card = renderCard(name, img, imgHover, price, discount, oldPrice,
+            stars, brands, productCode, rewardPoints, availability, exTax, modal, imgZoom);
         addCard(container, card);
     })
 }
@@ -234,3 +259,5 @@ receivingData(specialsCards, containerSpecialsCards);
 
 //кнопка закрытия popup
 popupGeneralCardCloseButton.addEventListener('click', () => popupClose(popupGeneralCard));
+
+popupGeneralCard.addEventListener('click', closePopupByClickOverlay);

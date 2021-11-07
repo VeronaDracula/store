@@ -228,14 +228,6 @@ jQuery(document).ready(function() {
         'wrapAround': false
     });
 
-    //модально окно
-    $('.modal-window__product-img').elevateZoom({
-         zoomType: "inner",
-         cursor: "crosshair",
-         zoomWindowFadeIn: 500,
-         zoomWindowFadeOut: 750
-    });
-
 });
 
 
@@ -247,20 +239,6 @@ jQuery(document).ready(function($){
         maxHeight: 506,
         animationEffect: "fade",
         animationDuration: 600,
-
-        //увеличение изображения
-        //afterShow: function() {
-        //      $('.modal-window__product-img').elevateZoom({
-        //         zoomType: "inner",
-        //          cursor: "crosshair",
-        //          zoomWindowFadeIn: 500,
-        //          zoomWindowFadeOut: 750
-        //      })
-        //  },
-
-        // afterClose: function() {
-        //     $('.zoomContainer').remove();
-        //  }
     });
 
 });

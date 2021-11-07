@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./fancybox/jquery.fancybox.css" type="text/css" media="screen">
     <link href="./lightbox/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="./pages/index.css">
-
 </head>
 <body>
 
@@ -577,6 +576,7 @@
                                 <p class="products-card__availability"></p>
                                 <p class="products-card__ex-tax"></p>
                                 <p class="products-card__stars-amount"></p>
+                                <p class="products-card__img-zoom"></p>
                             </div>
 
                         </div>
@@ -586,12 +586,11 @@
             </section>
 
             <section class="modal-window modal-window_type_general-card">
+                <button class="modal-window__close" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
                 <div class="modal-window__container">
-                    <button class="modal-window__close" type="button">x</button>
+
                     <div class="modal-window__container-img">
-                        <img class="modal-window__product-img" src=""
-                             alt="product-1"
-                             data-zoom-image="http://opencart.templatemela.com/OPCADD3/OPC059/image/cache/catalog/9-1000x1000.jpg">
+                        <img class="modal-window__product-img" src="" alt="" data-zoom-image="">
                     </div>
 
                     <div class="modal-window__container-info">
@@ -631,8 +630,6 @@
 
                             <p class="product-info__ex-tax">Ex Tax:<span class="product-info__price-tax">$100.00</span></p>
 
-
-
                             <div class="modal-window__middle-block display-none">
                                 <p class="product-info__price-with-points product-info__ex-tax">Price in reward points:
                                     <span class="product-info__price-tax">400</span>
@@ -652,8 +649,6 @@
                                     </div>
                                 </form>
                             </div>
-
-
 
                             <div class="modal-window__large-block display-none">
                                 <p class="product-info__price-with-points product-info__ex-tax product-info__price-with-points_type_large-block">
@@ -754,10 +749,6 @@
                                 </form>
                             </div>
 
-
-
-
-
                             <div class="modal-actions">
                                 <form class="modal-actions__form">
                                     <label for="amount" class="modal-actions__form-label">Qty</label>
@@ -778,9 +769,6 @@
                     </div>
                 </div>
             </section>
-
-
-
 
         </main>
 
@@ -1025,9 +1013,6 @@
 
 <script type="text/javascript" src="./scripts/jquery-3.5.1.js"></script>
 
-
-
-
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="./superfish/superfish.js"></script>
 <script src="./collapse/jquery.collapse.js "></script>
@@ -1042,6 +1027,5 @@
 <script type="text/javascript" src="./scripts/utils.js"></script>
 <script type="text/javascript" src="./pages/index.js"></script>
 <script type="text/javascript" src="./scripts/plugins.js"></script>
-
 </body>
 </html>

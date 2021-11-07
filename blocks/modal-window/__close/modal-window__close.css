@@ -1,8 +1,11 @@
 .modal-window__close {
-    color: red;
-    right: 0;
+    color: #fff;
     position: absolute;
-
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    top: 13%;
+    right: 20.5%;
 }
 
 .modal-window__close:hover {
