@@ -1,7 +1,3 @@
-.product-info__star-img_active {
-
-}
-
 .product-info__star-img_active::before {
     content: "\f005";
 }

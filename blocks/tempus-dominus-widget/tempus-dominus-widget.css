@@ -1,0 +1,78 @@
+.tempus-dominus-widget {
+    width: 240px;
+    height: 240px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.tempus-dominus-widget .date-container-days {
+    grid-auto-rows: 30px;
+
+}
+.tempus-dominus-widget .date-container-decades div:not(.no-highlight).today:before,
+.tempus-dominus-widget .date-container-years div:not(.no-highlight).today:before,
+.tempus-dominus-widget .date-container-months div:not(.no-highlight).today:before,
+.tempus-dominus-widget .date-container-days div:not(.no-highlight).today:before,
+.tempus-dominus-widget .time-container-clock div:not(.no-highlight).today:before,
+.tempus-dominus-widget .time-container-hour div:not(.no-highlight).today:before,
+.tempus-dominus-widget .time-container-minute div:not(.no-highlight).today:before,
+.tempus-dominus-widget .time-container-second div:not(.no-highlight).today:before {
+    border: none;
+}
+
+.tempus-dominus-widget .date-container-decades div:not(.no-highlight).active,
+.tempus-dominus-widget .date-container-years div:not(.no-highlight).active,
+.tempus-dominus-widget .date-container-months div:not(.no-highlight).active,
+.tempus-dominus-widget .date-container-days div:not(.no-highlight).active,
+.tempus-dominus-widget .time-container-clock div:not(.no-highlight).active,
+.tempus-dominus-widget .time-container-hour div:not(.no-highlight).active,
+.tempus-dominus-widget .time-container-minute div:not(.no-highlight).active,
+.tempus-dominus-widget .time-container-second div:not(.no-highlight).active {
+    background-color: #000;
+    color: #fff;
+    text-shadow: none;
+    border-radius: 4px;
+}
+
+.tempus-dominus-widget .date-container-decades div:not(.no-highlight),
+.tempus-dominus-widget .date-container-years div:not(.no-highlight),
+.tempus-dominus-widget .date-container-months div:not(.no-highlight),
+.tempus-dominus-widget .date-container-days div:not(.no-highlight),
+.tempus-dominus-widget .time-container-clock div:not(.no-highlight),
+.tempus-dominus-widget .time-container-hour div:not(.no-highlight),
+.tempus-dominus-widget .time-container-minute div:not(.no-highlight),
+.tempus-dominus-widget .time-container-second div:not(.no-highlight) {
+    text-shadow: none;
+    border-radius: 4px;
+}
+
+
+.tempus-dominus-widget .time-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempus-dominus-widget .time-container .time-container-clock{
+    display: grid;
+    grid-template-rows: repeat(3, 65px);
+    grid-template-columns: repeat(3, 65px);
+    grid-auto-rows: 0;
+    grid-auto-columns: 0;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.tempus-dominus-widget .toggleMeridiem {
+    display: none;
+}
+
+
+
+

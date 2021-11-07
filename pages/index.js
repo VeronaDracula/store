@@ -23,6 +23,7 @@ const priceElement = popupGeneralCard.querySelector('.product-info__price-new');
 const oldPriceElement = popupGeneralCard.querySelector('.product-info__price-old');
 const starsElement = popupGeneralCard.querySelector('.product-info__stars');
 const starsArrayElement = Array.from(starsElement.querySelectorAll('.product-info__star'));
+const popupMiddleBlock = popupGeneralCard.querySelector('.modal-window__middle-block');
 
 
 
@@ -42,6 +43,7 @@ function popupClose (popup){
 //функция открытия popup
 function popupOpen (popup){
     popup.classList.add('modal-window_is-opened');
+    popupMiddleBlock.classList.add('display-none');
 }
 
 
@@ -58,6 +60,13 @@ function loadPopupPhotoData(event) {
     exTaxElement.textContent = cardParentsElement.querySelector('.products-card__ex-tax').textContent;
     priceElement.textContent = cardParentsElement.querySelector('.products-card__price').textContent;
     oldPriceElement.textContent = cardParentsElement.querySelector('.products-card__old-price').textContent;
+
+
+
+    if (cardParentsElement.classList.contains('card-modal-middle')) {
+        popupMiddleBlock.classList.remove('display-none');
+
+    }
 
     const starsAmount = cardParentsElement.querySelector('.products-card__stars-amount').textContent;
 
@@ -103,7 +112,7 @@ function setEventListeners(cardElement) {
 
 
 //создание карточки
-function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax /*modal*/) {
+function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax,modal) {
     const cardElement = cardTemplateContent.cloneNode(true);
     const cardTitleElement = cardElement.querySelector('.products-card__title');
     const cardImageElement = cardElement.querySelector('.products-card__img');
@@ -122,7 +131,7 @@ function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brand
     const cardStarsElement = cardElement.querySelector('.products-card__stars');
     const cardStarElements = Array.from(cardStarsElement.querySelectorAll('.products-card__star'));
 
-    //const cardQQ = cardElement.querySelector('.products-card');
+    const cardMainElement = cardElement.querySelector('.products-card');
 
 
     cardTitleElement.textContent = name;
@@ -139,10 +148,9 @@ function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brand
     exTaxElement.textContent = exTax;
     amountCardStarsElement.textContent = stars;
 
-    //if (modal === 'ok') {
-     //   cardQQ.classList.add('card-modal');
-
-    //}
+    if (modal === 'middle') {
+        cardMainElement.classList.add('card-modal-middle');
+    }
 
     if (discount === '') {
         cardDiscountElement.classList.add('display-none');
@@ -194,9 +202,9 @@ function receivingData (cardData, container) {
         const rewardPoints = cardData.rewardPoints;
         const availability = cardData.availability;
         const exTax = cardData.exTax;
-        //const modal = ourProductsCards.modal;
+        const modal = cardData.modal;
 
-        const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax/*modal*/);
+        const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax, modal);
         addCard(container, card);
     })
 }

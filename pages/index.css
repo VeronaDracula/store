@@ -193,6 +193,7 @@
 @import url(../blocks/bottom/__card-img/bottom__card-img.css);
 
 @import url(../blocks/modal-window/modal-window.css);
+@import url(../blocks/modal-window/__middle-block/modal-window__middle-block.css);
 @import url(../blocks/modal-window/__container/modal-window__container.css);
 @import url(../blocks/modal-window/__container-img/modal-window__container-img.css);
 @import url(../blocks/modal-window/__product-img/modal-window__product-img.css);
@@ -214,15 +215,23 @@
 @import url(../blocks/product-info/__price-tax/product-info__price-tax.css);
 @import url(../blocks/product-info/__list-item-title/product-info__list-item-title.css);
 @import url(../blocks/product-info/__price-old/product-info__price-old.css);
+@import url(../blocks/product-info/__price-with-points/product-info__price-with-points.css);
 
 @import url(../blocks/modal-actions/modal-actions.css);
 @import url(../blocks/modal-actions/__form/modal-actions__form.css);
+@import url(../blocks/modal-actions/__form-datetime/modal-actions__form-datetime.css);
 @import url(../blocks/modal-actions/__form-label/modal-actions__form-label.css);
+@import url(../blocks/modal-actions/__form-label-symbol/modal-actions__form-label-symbol.css);
 @import url(../blocks/modal-actions/__form-input/modal-actions__form-input.css);
+@import url(../blocks/modal-actions/__form-input-button/modal-actions__form-input-button.css);
+@import url(../blocks/modal-actions/__form-input/_type/modal-actions__form-input_type_datetime.css);
+@import url(../blocks/modal-actions/__form-datetime-button/modal-actions__form-datetime-button.css);
 @import url(../blocks/modal-actions/__buttons/modal-actions__buttons.css);
 @import url(../blocks/modal-actions/__button/modal-actions__button.css);
 @import url(../blocks/modal-actions/__button/_type/modal-actions__button_type_add.css);
 @import url(../blocks/modal-actions/__button-img/modal-actions__button-img.css);
+
+@import url(../blocks/tempus-dominus-widget/tempus-dominus-widget.css);
 
 @import url(../blocks/button-up/button-up.css);
 

@@ -13,6 +13,7 @@ const ourProductsCards = [
         availability: 'Pre-Order',
         exTax: '$100.00',
         stars: 0,
+        modal: ''
     },
 
     {
@@ -27,7 +28,8 @@ const ourProductsCards = [
         rewardPoints: '',
         availability: 'In Stock',
         exTax: '$100.00',
-        stars: 3
+        stars: 3,
+        modal: ''
     },
 
     {
@@ -42,7 +44,8 @@ const ourProductsCards = [
         rewardPoints: '300',
         availability: 'In Stock',
         exTax: '$50.00',
-        stars: 0
+        stars: 0,
+        modal: 'middle'
     },
 
     {
@@ -57,7 +60,8 @@ const ourProductsCards = [
         rewardPoints: '',
         availability: 'In Stock',
         exTax: '$700.00',
-        stars: 5
+        stars: 5,
+        modal: ''
     },
 
     {
@@ -72,7 +76,8 @@ const ourProductsCards = [
         rewardPoints: '800',
         availability: 'In Stock',
         exTax: '$1000.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -87,7 +92,8 @@ const ourProductsCards = [
         rewardPoints: '700',
         availability: 'In Stock',
         exTax: '$900.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -102,7 +108,8 @@ const ourProductsCards = [
         rewardPoints: '600',
         availability: 'In Stock',
         exTax: '$400.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -117,7 +124,8 @@ const ourProductsCards = [
         rewardPoints: '100',
         availability: 'In Stock',
         exTax: '$90.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -132,7 +140,8 @@ const ourProductsCards = [
         rewardPoints: '',
         availability: 'In Stock',
         exTax: '$100.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     },
 
     {
@@ -147,7 +156,8 @@ const ourProductsCards = [
         rewardPoints: '300',
         availability: 'In Stock',
         exTax: '$50.00',
-        stars: 0
+        stars: 0,
+        modal: ''
     }
 ];
 

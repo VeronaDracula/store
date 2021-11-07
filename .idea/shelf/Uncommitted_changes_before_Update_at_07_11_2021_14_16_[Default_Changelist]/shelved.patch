@@ -1,0 +1,929 @@
+Index: blocks/tempus-dominus-widget/tempus-dominus-widget.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/tempus-dominus-widget/tempus-dominus-widget.css	(date 1636230292141)
++++ blocks/tempus-dominus-widget/tempus-dominus-widget.css	(date 1636230292141)
+@@ -0,0 +1,78 @@
++.tempus-dominus-widget {
++    width: 240px;
++    height: 240px;
++    font-family: 'Poppins', sans-serif;
++    font-weight: 500;
++    line-height: 20px;
++    letter-spacing: 1px;
++    font-size: 14px;
++    padding-top: 10px;
++}
++
++.tempus-dominus-widget .date-container-days {
++    grid-auto-rows: 30px;
++
++}
++.tempus-dominus-widget .date-container-decades div:not(.no-highlight).today:before,
++.tempus-dominus-widget .date-container-years div:not(.no-highlight).today:before,
++.tempus-dominus-widget .date-container-months div:not(.no-highlight).today:before,
++.tempus-dominus-widget .date-container-days div:not(.no-highlight).today:before,
++.tempus-dominus-widget .time-container-clock div:not(.no-highlight).today:before,
++.tempus-dominus-widget .time-container-hour div:not(.no-highlight).today:before,
++.tempus-dominus-widget .time-container-minute div:not(.no-highlight).today:before,
++.tempus-dominus-widget .time-container-second div:not(.no-highlight).today:before {
++    border: none;
++}
++
++.tempus-dominus-widget .date-container-decades div:not(.no-highlight).active,
++.tempus-dominus-widget .date-container-years div:not(.no-highlight).active,
++.tempus-dominus-widget .date-container-months div:not(.no-highlight).active,
++.tempus-dominus-widget .date-container-days div:not(.no-highlight).active,
++.tempus-dominus-widget .time-container-clock div:not(.no-highlight).active,
++.tempus-dominus-widget .time-container-hour div:not(.no-highlight).active,
++.tempus-dominus-widget .time-container-minute div:not(.no-highlight).active,
++.tempus-dominus-widget .time-container-second div:not(.no-highlight).active {
++    background-color: #000;
++    color: #fff;
++    text-shadow: none;
++    border-radius: 4px;
++}
++
++.tempus-dominus-widget .date-container-decades div:not(.no-highlight),
++.tempus-dominus-widget .date-container-years div:not(.no-highlight),
++.tempus-dominus-widget .date-container-months div:not(.no-highlight),
++.tempus-dominus-widget .date-container-days div:not(.no-highlight),
++.tempus-dominus-widget .time-container-clock div:not(.no-highlight),
++.tempus-dominus-widget .time-container-hour div:not(.no-highlight),
++.tempus-dominus-widget .time-container-minute div:not(.no-highlight),
++.tempus-dominus-widget .time-container-second div:not(.no-highlight) {
++    text-shadow: none;
++    border-radius: 4px;
++}
++
++
++.tempus-dominus-widget .time-container {
++    width: 100%;
++    height: 100%;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++}
++
++.tempus-dominus-widget .time-container .time-container-clock{
++    display: grid;
++    grid-template-rows: repeat(3, 65px);
++    grid-template-columns: repeat(3, 65px);
++    grid-auto-rows: 0;
++    grid-auto-columns: 0;
++    font-weight: 700;
++    font-size: 1.2em;
++}
++
++.tempus-dominus-widget .toggleMeridiem {
++    display: none;
++}
++
++
++
++
+Index: blocks/modal-actions/__buttons/modal-actions__buttons.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.modal-actions__buttons {\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-actions/__buttons/modal-actions__buttons.css	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ blocks/modal-actions/__buttons/modal-actions__buttons.css	(date 1636283749879)
+@@ -1,3 +1,3 @@
+ .modal-actions__buttons {
+-
++    padding-bottom: 30px;
+ }
+\ No newline at end of file
+Index: blocks/product-info/__star-img/_active/product-info__star-img_active.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.product-info__star-img_active {\r\n\r\n}\r\n\r\n.product-info__star-img_active::before {\r\n    content: \"\\f005\";\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/product-info/__star-img/_active/product-info__star-img_active.css	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ blocks/product-info/__star-img/_active/product-info__star-img_active.css	(date 1636205180167)
+@@ -1,7 +1,3 @@
+-.product-info__star-img_active {
+-
+-}
+-
+ .product-info__star-img_active::before {
+     content: "\f005";
+ }
+\ No newline at end of file
+Index: blocks/products-card/__open-popup/products-card__open-popup.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.products-card__open-popup {\r\n    font-size: 15px;\r\n    color: #999;\r\n    position: absolute;\r\n    top: 15px;\r\n    right: 15px;\r\n    display: none;\r\n}\r\n\r\n.products-card__open-popup:hover {\r\n    cursor: pointer;\r\n}\r\n\r\n.products-card__open-popup-button {\r\n    background: transparent;\r\n    border: 0;\r\n\r\n    height: 20px;\r\n    width: 20px;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/products-card/__open-popup/products-card__open-popup.css	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ blocks/products-card/__open-popup/products-card__open-popup.css	(date 1636204918806)
+@@ -11,12 +11,3 @@
+     cursor: pointer;
+ }
+ 
+-.products-card__open-popup-button {
+-    background: transparent;
+-    border: 0;
+-
+-    height: 20px;
+-    width: 20px;
+-    display: flex;
+-    justify-content: center;
+-}
+Index: blocks/modal-window/__container-info/modal-window__container-info.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.modal-window__container-info {\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-window/__container-info/modal-window__container-info.css	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ blocks/modal-window/__container-info/modal-window__container-info.css	(date 1636282103886)
+@@ -1,3 +1,3 @@
+ .modal-window__container-info {
+-
++    width: 50%;
+ }
+\ No newline at end of file
+Index: scripts/plugins.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//карусели\r\n$(function() {\r\n    var owl=$(\".banner-carousel__carousel\");\r\n    owl.owlCarousel({\r\n        loop: true,\r\n        autoplay: true,\r\n        autoplayTimeout: 4000,\r\n        responsive:{\r\n            0: {\r\n                items: 1\r\n            }\r\n        }\r\n    });\r\n\r\n    $(\".banner-carousel__carousel-button_type_next\").click(function(){\r\n        owl.trigger(\"next.owl.carousel\");\r\n    });\r\n    $(\".banner-carousel__carousel-button_type_prev\").click(function(){\r\n        owl.trigger(\"prev.owl.carousel\");\r\n    });\r\n});\r\n\r\n\r\n$(function() {\r\n    var owl=$(\".products__carousel\");\r\n    owl.owlCarousel({\r\n        rewind:true,\r\n        responsive:{\r\n            0: {\r\n                items: 1\r\n            },\r\n\r\n            769: {\r\n                items: 3\r\n            },\r\n\r\n            1025: {\r\n                items: 4\r\n            },\r\n\r\n            1281: {\r\n                items: 5\r\n            }\r\n        }\r\n    });\r\n\r\n    $(\".products__carousel-button_type_next\").click(function(){\r\n        owl.trigger(\"next.owl.carousel\");\r\n    });\r\n    $(\".products__carousel-button_type_prev\").click(function(){\r\n        owl.trigger(\"prev.owl.carousel\");\r\n    });\r\n});\r\n\r\n\r\n$(function() {\r\n    var owl=$(\".brands-carousel__carousel\");\r\n    owl.owlCarousel({\r\n        rewind:true,\r\n        margin: 20,\r\n        responsive:{\r\n            0: {\r\n                items: 1\r\n            },\r\n\r\n            769: {\r\n                items: 3\r\n            },\r\n\r\n            1025: {\r\n                items: 4\r\n            },\r\n\r\n            1281: {\r\n                items: 5\r\n            }\r\n        }\r\n    });\r\n\r\n    $(\".products__carousel-button_type_brands-carousel-next\").click(function(){\r\n        owl.trigger(\"next.owl.carousel\");\r\n    });\r\n    $(\".products__carousel-button_type_brands-carousel-prev\").click(function(){\r\n        owl.trigger(\"prev.owl.carousel\");\r\n    });\r\n});\r\n\r\n\r\n$(function() {\r\n    var owl=$(\".blog__carousel\");\r\n    owl.owlCarousel({\r\n        rewind:true,\r\n        margin: 10,\r\n        autoplay: true,\r\n        autoplayTimeout: 4000,\r\n        responsive:{\r\n            0: {\r\n                items: 1\r\n            },\r\n\r\n            769: {\r\n                items: 2\r\n            },\r\n\r\n            1025: {\r\n                items: 4\r\n            },\r\n        }\r\n    });\r\n\r\n});\r\n\r\n\r\njQuery(document).ready(function() {\r\n    //выпадающее меню\r\n    jQuery('ul.sf-menu').superfish(\r\n        {\r\n            cssArrows: false,\r\n            delay: 0,\r\n            animation: {opacity:'show'},\r\n            speed: 100,\r\n        }\r\n    );\r\n\r\n\r\n    //раскрывающиеся списки\r\n    $(\".footer__container-table\").collapse({\r\n        open: function() {\r\n            this.slideDown(150);\r\n        },\r\n        close: function() {\r\n            this.slideUp(150);\r\n        }\r\n\r\n    });\r\n\r\n    $(\".header__menu-collapse\").collapse({\r\n        clickQuery: \".footer__title-icon\",\r\n        open: function() {\r\n            this.slideDown(150);\r\n        },\r\n        close: function() {\r\n            this.slideUp(150);\r\n        }\r\n\r\n    });\r\n\r\n    $(\".header__menu-collapse-main\").collapse({\r\n        open: function() {\r\n            this.slideDown(150);\r\n        },\r\n        close: function() {\r\n            this.slideUp(150);\r\n        }\r\n\r\n    });\r\n\r\n\r\n    //галерея\r\n    lightbox.option({\r\n        'wrapAround': false\r\n    })\r\n\r\n\r\n\r\n    //модально окно\r\n    //$('.modal-window__product-img').elevateZoom({\r\n     //   zoomType: \"inner\",\r\n     //   cursor: \"crosshair\",\r\n      //  zoomWindowFadeIn: 500,\r\n      //  zoomWindowFadeOut: 750\r\n   // });\r\n\r\n});\r\n\r\n\r\n\r\n//модально окно\r\njQuery(document).ready(function($){\r\n    $('[data-fancybox]').fancybox({\r\n        maxWidth: 900,\r\n        maxHeight: 506,\r\n        animationEffect: \"fade\",\r\n        animationDuration: 600,\r\n\r\n        //увеличение изображения\r\n        //afterShow: function() {\r\n        //      $('.modal-window__product-img').elevateZoom({\r\n        //         zoomType: \"inner\",\r\n        //          cursor: \"crosshair\",\r\n        //          zoomWindowFadeIn: 500,\r\n        //          zoomWindowFadeOut: 750\r\n        //      })\r\n        //  },\r\n\r\n        // afterClose: function() {\r\n        //     $('.zoomContainer').remove();\r\n        //  }\r\n    });\r\n\r\n});\r\n\r\n\r\n//кнопка подъема\r\njQuery(document).ready(function($){\r\n    $(window).scroll(function (){\r\n        if ($(this).scrollTop() > 100){\r\n            $(\".button-up\").fadeIn();\r\n        } else{\r\n            $(\".button-up\").fadeOut();\r\n        }\r\n    });\r\n\r\n    $(function(){\r\n        $(\".button-up\").bind('click', function(e){\r\n            e.preventDefault();\r\n            $('body,html').animate({scrollTop: 0}, 600);\r\n        });\r\n    });\r\n});\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- scripts/plugins.js	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ scripts/plugins.js	(date 1636283020955)
+@@ -1,3 +1,49 @@
++new tempusDominus.TempusDominus(document.querySelector('.datetimepicker1'), {
++    display: {
++        components: {
++            decades: true,
++            year: true,
++            month: true,
++            date: true,
++            hours: false,
++            minutes: false,
++            seconds: false,
++        },
++        icons: {
++            date: 'fa fa-calendar',
++            previous: 'fa fa-chevron-left',
++            next: 'fa fa-chevron-right',
++            today: 'fa fa-check',
++        },
++    }
++});
++
++new tempusDominus.TempusDominus(document.getElementById('datetimepicker3'), {
++    display: {
++        viewMode: 'clock',
++        components: {
++            decades: false,
++            year: false,
++            month: false,
++            date: false,
++            hours: true,
++            minutes: true,
++            seconds: false
++        },
++        icons: {
++            time: 'fa fa-clock-o',
++            up: 'fa fa-chevron-up',
++            down: 'fa fa-chevron-down',
++            today: 'fa fa-check',
++        },
++    }
++});
++
++
++
++
++
++
+ //карусели
+ $(function() {
+     var owl=$(".banner-carousel__carousel");
+@@ -159,9 +205,7 @@
+     //галерея
+     lightbox.option({
+         'wrapAround': false
+-    })
+-
+-
++    });
+ 
+     //модально окно
+     //$('.modal-window__product-img').elevateZoom({
+@@ -219,3 +263,4 @@
+     });
+ });
+ 
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4e903315-8f83-4e63-ba0e-00bf65a2de45\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/blocks/product-info/__star-img/_active/product-info__star-img_active.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/blocks/modal-window/_is-opened/modal-window_is-opened.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/blocks/modal-window/_is-opened/modal-window_is-opened.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/blocks/modal-window/modal-window.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/blocks/modal-window/modal-window.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pages/index.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pages/index.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pages/index.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pages/index.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/scripts/utils.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/scripts/utils.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1yin1iwtYCl9dEEEHvaCFQU73EG\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\User\\gitWebsormProjects\\test\\blocks\\banners\\__banner-text\\_type\" />\r\n      <recent name=\"C:\\Users\\User\\gitWebsormProjects\\test\\blocks\\footer\\__mail-form\\_type\" />\r\n      <recent name=\"C:\\Users\\User\\gitWebsormProjects\\test\\blocks\" />\r\n      <recent name=\"C:\\Users\\User\\gitWebsormProjects\\test\\blocks\\banners-main\\banner-carousel\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"index\" type=\"JavascriptDebugType\" uri=\"http://localhost:63342/test/index.html\" useBuiltInWebServerPort=\"true\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4e903315-8f83-4e63-ba0e-00bf65a2de45\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1632743062609</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1632743062609</updated>\r\n      <workItem from=\"1632743063644\" duration=\"13172000\" />\r\n      <workItem from=\"1632767497627\" duration=\"54543000\" />\r\n      <workItem from=\"1635516982802\" duration=\"184204000\" />\r\n      <workItem from=\"1636018696099\" duration=\"2589000\" />\r\n      <workItem from=\"1636025992858\" duration=\"24979000\" />\r\n      <workItem from=\"1636133607843\" duration=\"10273000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"user-info icons\">\r\n      <created>1632919566375</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1632919566375</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"user-card-actions mobile\">\r\n      <created>1632922080630</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1632922080630</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"form__button\">\r\n      <created>1632929375149</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1632929375149</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Buttons\">\r\n      <created>1632931042992</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1632931042992</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Buttons\">\r\n      <created>1632931204711</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1632931204711</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"files\">\r\n      <created>1635517347462</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635517347462</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"top\">\r\n      <created>1635523174023</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635523174023</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"header__container\">\r\n      <created>1635591879169</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635591879169</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"header__container\">\r\n      <created>1635591974605</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635591974605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"header__container\">\r\n      <created>1635592160702</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635592160702</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"header__container\">\r\n      <created>1635592302647</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635592302647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"header__container\">\r\n      <created>1635592477442</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635592477442</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"header__menu\">\r\n      <created>1635598283487</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635598283487</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"banner-carousel\">\r\n      <created>1635605804420</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635605804420</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"banners-main\">\r\n      <created>1635616534440</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635616534440</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00030\" summary=\"our-products\">\r\n      <created>1635682198927</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635682198927</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"banners\">\r\n      <created>1635684631460</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635684631460</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00032\" summary=\"specials\">\r\n      <created>1635688811238</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635688811238</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00033\" summary=\"brands-carousel\">\r\n      <created>1635694376661</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635694376661</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00034\" summary=\"blog\">\r\n      <created>1635703582217</created>\r\n      <option name=\"number\" value=\"00034\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635703582217</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00035\" summary=\"options\">\r\n      <created>1635706578998</created>\r\n      <option name=\"number\" value=\"00035\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635706578998</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00036\" summary=\"footer\">\r\n      <created>1635709898897</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635709898897</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00037\" summary=\"footer\">\r\n      <created>1635713224766</created>\r\n      <option name=\"number\" value=\"00037\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635713224766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00038\" summary=\"bottom\">\r\n      <created>1635714162867</created>\r\n      <option name=\"number\" value=\"00038\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635714162867</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00039\" summary=\"dropdown\">\r\n      <created>1635767509841</created>\r\n      <option name=\"number\" value=\"00039\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00039\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635767509841</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00040\" summary=\"footer__container-table\">\r\n      <created>1635790585498</created>\r\n      <option name=\"number\" value=\"00040\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00040\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635790585498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00041\" summary=\"header__menu-collapse\">\r\n      <created>1635797432820</created>\r\n      <option name=\"number\" value=\"00041\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635797432820</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00042\" summary=\"header__menu-collapse\">\r\n      <created>1635798551720</created>\r\n      <option name=\"number\" value=\"00042\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00042\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635798551720</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00043\" summary=\"header table\">\r\n      <created>1635842721445</created>\r\n      <option name=\"number\" value=\"00043\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00043\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635842721445</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00044\" summary=\"header adaptive\">\r\n      <created>1635844876341</created>\r\n      <option name=\"number\" value=\"00044\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00044\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635844876341</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00045\" summary=\"banners-main adaptive\">\r\n      <created>1635846493884</created>\r\n      <option name=\"number\" value=\"00045\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00045\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635846493884</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00046\" summary=\"our-products adaptive\">\r\n      <created>1635850036615</created>\r\n      <option name=\"number\" value=\"00046\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00046\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635850036615</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00047\" summary=\"banners adaptive\">\r\n      <created>1635855563256</created>\r\n      <option name=\"number\" value=\"00047\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00047\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635855563256</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00048\" summary=\"options adaptive\">\r\n      <created>1635858162134</created>\r\n      <option name=\"number\" value=\"00048\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00048\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635858162134</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00049\" summary=\"lightbox\">\r\n      <created>1635865090619</created>\r\n      <option name=\"number\" value=\"00049\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00049\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635865090619</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00050\" summary=\"modal-window\">\r\n      <created>1635878687317</created>\r\n      <option name=\"number\" value=\"00050\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00050\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635878687318</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00051\" summary=\"modal-window\">\r\n      <created>1635879143759</created>\r\n      <option name=\"number\" value=\"00051\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00051\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635879143759</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00052\" summary=\"options animate\">\r\n      <created>1635879868368</created>\r\n      <option name=\"number\" value=\"00052\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00052\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635879868368</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00053\" summary=\"products-card animate\">\r\n      <created>1635882746104</created>\r\n      <option name=\"number\" value=\"00053\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00053\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635882746104</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00054\" summary=\"product card button\">\r\n      <created>1635884724110</created>\r\n      <option name=\"number\" value=\"00054\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00054\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635884724110</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00055\" summary=\"zoom\">\r\n      <created>1635885337938</created>\r\n      <option name=\"number\" value=\"00055\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00055\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635885337938</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00056\" summary=\"banners animate\">\r\n      <created>1635923445148</created>\r\n      <option name=\"number\" value=\"00056\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00056\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635923445148</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00057\" summary=\"button-up\">\r\n      <created>1635924246334</created>\r\n      <option name=\"number\" value=\"00057\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00057\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635924246334</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00058\" summary=\"header menu\">\r\n      <created>1635926681522</created>\r\n      <option name=\"number\" value=\"00058\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00058\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635926681522</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00059\" summary=\"final\">\r\n      <created>1635940220007</created>\r\n      <option name=\"number\" value=\"00059\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00059\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635940220007</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00060\" summary=\"final\">\r\n      <created>1635941054651</created>\r\n      <option name=\"number\" value=\"00060\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00060\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635941054651</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00061\" summary=\"render cards\">\r\n      <created>1636133520257</created>\r\n      <option name=\"number\" value=\"00061\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00061\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1636133520257</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00062\" summary=\"modal windows data\">\r\n      <created>1636199267183</created>\r\n      <option name=\"number\" value=\"00062\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00062\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1636199267183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00063\" summary=\"modal windows data2\">\r\n      <created>1636200666198</created>\r\n      <option name=\"number\" value=\"00063\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00063\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1636200666198</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"64\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"options\" />\r\n    <MESSAGE value=\"footer\" />\r\n    <MESSAGE value=\"bottom\" />\r\n    <MESSAGE value=\"dropdown\" />\r\n    <MESSAGE value=\"footer__container-table\" />\r\n    <MESSAGE value=\"header__menu-collapse\" />\r\n    <MESSAGE value=\"header table\" />\r\n    <MESSAGE value=\"header adaptive\" />\r\n    <MESSAGE value=\"banners-main adaptive\" />\r\n    <MESSAGE value=\"our-products adaptive\" />\r\n    <MESSAGE value=\"banners adaptive\" />\r\n    <MESSAGE value=\"options adaptive\" />\r\n    <MESSAGE value=\"lightbox\" />\r\n    <MESSAGE value=\"modal-window\" />\r\n    <MESSAGE value=\"options animate\" />\r\n    <MESSAGE value=\"products-card animate\" />\r\n    <MESSAGE value=\"product card button\" />\r\n    <MESSAGE value=\"zoom\" />\r\n    <MESSAGE value=\"banners animate\" />\r\n    <MESSAGE value=\"button-up\" />\r\n    <MESSAGE value=\"header menu\" />\r\n    <MESSAGE value=\"final\" />\r\n    <MESSAGE value=\"render cards\" />\r\n    <MESSAGE value=\"modal windows data\" />\r\n    <MESSAGE value=\"modal windows data2\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"modal windows data2\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"223\" y=\"67\" width=\"1089\" height=\"713\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1636025963749\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"223\" y=\"67\" width=\"1089\" height=\"713\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1636025963749\" />\r\n    <state x=\"297\" y=\"238\" width=\"941\" height=\"348\" key=\"#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog\" timestamp=\"1635712022319\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"297\" y=\"238\" width=\"941\" height=\"348\" key=\"#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1635712022319\" />\r\n    <state x=\"393\" y=\"0\" key=\"CommitChangelistDialog2\" timestamp=\"1636200665794\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"393\" y=\"0\" key=\"CommitChangelistDialog2/0.0.1536.824@0.0.1536.824\" timestamp=\"1636200665794\" />\r\n    <state x=\"548\" y=\"165\" key=\"FileChooserDialogImpl\" timestamp=\"1636025989872\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"548\" y=\"165\" key=\"FileChooserDialogImpl/0.0.1536.824@0.0.1536.824\" timestamp=\"1636025989872\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1635977546835\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546835\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.center\" timestamp=\"1635977546835\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546835\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.left\" timestamp=\"1635977546834\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546834\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.right\" timestamp=\"1635977546835\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546835\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.center\" timestamp=\"1635977546835\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546835\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.left\" timestamp=\"1635977546835\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546835\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.right\" timestamp=\"1635977546835\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546835\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.bottom\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.center\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.left\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.right\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.bottom\" timestamp=\"1635977546837\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546837\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.center\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.left\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.right\" timestamp=\"1635977546836\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1515\" height=\"261\" key=\"GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1635977546836\" />\r\n    <state x=\"361\" y=\"145\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1635941056817\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"361\" y=\"145\" key=\"Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824\" timestamp=\"1635941056817\" />\r\n    <state x=\"586\" y=\"326\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1632934619485\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"586\" y=\"326\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824\" timestamp=\"1632934619485\" />\r\n    <state x=\"0\" y=\"0\" width=\"1304\" height=\"810\" key=\"dock-window-1\" timestamp=\"1635925859227\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"0\" y=\"0\" width=\"1304\" height=\"810\" key=\"dock-window-1/0.0.1536.824@0.0.1536.824\" timestamp=\"1635925859227\" />\r\n    <state x=\"431\" y=\"145\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1636132909244\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"431\" y=\"145\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1536.824@0.0.1536.824\" timestamp=\"1636132909243\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ .idea/workspace.xml	(date 1636283600220)
+@@ -5,13 +5,22 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4e903315-8f83-4e63-ba0e-00bf65a2de45" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/blocks/product-info/__star-img/_active/product-info__star-img_active.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form-datetime-button/modal-actions__form-datetime-button.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form-datetime/modal-actions__form-datetime.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form-input-button/modal-actions__form-input-button.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form-input/_type/modal-actions__form-input_type_datetime.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/modal-actions/__form-label-symbol/modal-actions__form-label-symbol.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/modal-window/__middle-block/modal-window__middle-block.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/product-info/__price-with-points/product-info__price-with-points.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/blocks/tempus-dominus-widget/tempus-dominus-widget.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/blocks/modal-window/_is-opened/modal-window_is-opened.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/modal-window/_is-opened/modal-window_is-opened.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/blocks/modal-window/modal-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/modal-window/modal-window.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/blocks/modal-window/__container-info/modal-window__container-info.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/modal-window/__container-info/modal-window__container-info.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/blocks/product-info/__star-img/_active/product-info__star-img_active.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/product-info/__star-img/_active/product-info__star-img_active.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/blocks/products-card/__open-popup/products-card__open-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/products-card/__open-popup/products-card__open-popup.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/scripts/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/plugins.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/scripts/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -43,10 +52,12 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
++    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\User\gitWebsormProjects\test\blocks\product-info" />
+       <recent name="C:\Users\User\gitWebsormProjects\test\blocks\banners\__banner-text\_type" />
+       <recent name="C:\Users\User\gitWebsormProjects\test\blocks\footer\__mail-form\_type" />
+       <recent name="C:\Users\User\gitWebsormProjects\test\blocks" />
+@@ -71,14 +82,7 @@
+       <workItem from="1635516982802" duration="184204000" />
+       <workItem from="1636018696099" duration="2589000" />
+       <workItem from="1636025992858" duration="24979000" />
+-      <workItem from="1636133607843" duration="10273000" />
+-    </task>
+-    <task id="LOCAL-00015" summary="user-info icons">
+-      <created>1632919566375</created>
+-      <option name="number" value="00015" />
+-      <option name="presentableId" value="LOCAL-00015" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1632919566375</updated>
++      <workItem from="1636133607843" duration="32953000" />
+     </task>
+     <task id="LOCAL-00016" summary="user-card-actions mobile">
+       <created>1632922080630</created>
+@@ -416,14 +420,20 @@
+       <option name="project" value="LOCAL" />
+       <updated>1636200666198</updated>
+     </task>
+-    <option name="localTasksCounter" value="64" />
++    <task id="LOCAL-00064" summary="modal windows data2 + stars">
++      <created>1636202564838</created>
++      <option name="number" value="00064" />
++      <option name="presentableId" value="LOCAL-00064" />
++      <option name="project" value="LOCAL" />
++      <updated>1636202564838</updated>
++    </task>
++    <option name="localTasksCounter" value="65" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value="options" />
+     <MESSAGE value="footer" />
+     <MESSAGE value="bottom" />
+     <MESSAGE value="dropdown" />
+@@ -448,89 +458,94 @@
+     <MESSAGE value="render cards" />
+     <MESSAGE value="modal windows data" />
+     <MESSAGE value="modal windows data2" />
+-    <option name="LAST_COMMIT_MESSAGE" value="modal windows data2" />
++    <MESSAGE value="modal windows data2 + stars" />
++    <option name="LAST_COMMIT_MESSAGE" value="modal windows data2 + stars" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636025963749">
++    <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636206247909">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1636025963749" />
++    <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1636206247909" />
+     <state x="297" y="238" width="941" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1635712022319">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="297" y="238" width="941" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1635712022319" />
+-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1636200665794">
++    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1636202564329">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1636200665794" />
++    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1636202564329" />
+     <state x="548" y="165" key="FileChooserDialogImpl" timestamp="1636025989872">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="548" y="165" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636025989872" />
+-    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1635977546835">
++    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1636206983608">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635977546835" />
+-    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1635977546835">
++    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635977546835" />
+-    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1635977546834">
++    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635977546834" />
+-    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1635977546835">
++    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635977546835" />
+-    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
+-    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1635977546835">
++    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1635977546835" />
+-    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1635977546835">
++    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1635977546835" />
+-    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1635977546835">
++    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.2.bottom" timestamp="1636206983609">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1635977546835" />
+-    <state width="1515" height="261" key="GridCell.Tab.2.bottom" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636206983609" />
++    <state width="1515" height="261" key="GridCell.Tab.2.center" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
+-    <state width="1515" height="261" key="GridCell.Tab.2.center" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.2.left" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
+-    <state width="1515" height="261" key="GridCell.Tab.2.left" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.2.right" timestamp="1636206983608">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
+-    <state width="1515" height="261" key="GridCell.Tab.2.right" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1636206983608" />
++    <state width="1515" height="261" key="GridCell.Tab.3.bottom" timestamp="1636206983609">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
+-    <state width="1515" height="261" key="GridCell.Tab.3.bottom" timestamp="1635977546837">
++    <state width="1515" height="261" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636206983609" />
++    <state width="1515" height="261" key="GridCell.Tab.3.center" timestamp="1636206983609">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635977546837" />
+-    <state width="1515" height="261" key="GridCell.Tab.3.center" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1636206983609" />
++    <state width="1515" height="261" key="GridCell.Tab.3.left" timestamp="1636206983609">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
+-    <state width="1515" height="261" key="GridCell.Tab.3.left" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1636206983609" />
++    <state width="1515" height="261" key="GridCell.Tab.3.right" timestamp="1636206983609">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
+-    <state width="1515" height="261" key="GridCell.Tab.3.right" timestamp="1635977546836">
++    <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1636206983609" />
++    <state x="277" y="57" key="SettingsEditor" timestamp="1636206085709">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1635977546836" />
++    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636206085709" />
+     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635941056817">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+@@ -543,9 +558,13 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="0" y="0" width="1304" height="810" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1635925859227" />
+-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1636132909244">
++    <state x="425" y="187" key="run.anything.popup" timestamp="1636226041253">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1636226041253" />
++    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1636226553746">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1636132909243" />
++    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1636226553746" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: pages/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//элементы popup__card\r\nconst popupGeneralCard = document.querySelector('.modal-window_type_general-card');\r\n\r\nconst popupGeneralCardCloseButton = popupGeneralCard.querySelector('.modal-window__close');\r\n\r\nconst cardTemplateContent = document.querySelector('.products-card-template').content;\r\n\r\nconst containerOurProductsCards = document.querySelector('.products__carousel_type_our-products');\r\nconst containerSpecialsCards = document.querySelector('.products__carousel_type_specials');\r\n\r\nconst cardElement = cardTemplateContent.cloneNode(true);\r\n\r\n\r\n//данные модального окна\r\nconst imageElement = popupGeneralCard.querySelector('.modal-window__product-img');\r\nconst productNameElement = popupGeneralCard.querySelector('.product-info__title');\r\nconst brandsElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_brands');\r\nconst productCodeElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_productCode');\r\nconst rewardPointsElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_rewardPoints');\r\nconst availabilityElement = popupGeneralCard.querySelector('.product-info__list-item-data_type_availability');\r\nconst exTaxElement = popupGeneralCard.querySelector('.product-info__price-tax');\r\nconst priceElement = popupGeneralCard.querySelector('.product-info__price-new');\r\nconst oldPriceElement = popupGeneralCard.querySelector('.product-info__price-old');\r\nconst starsElement = popupGeneralCard.querySelector('.product-info__stars');\r\nconst starsArrayElement = Array.from(starsElement.querySelectorAll('.product-info__star'));\r\n\r\n\r\n\r\n\r\n\r\n\r\n//функция закрытия popup\r\nfunction popupClose (popup){\r\n    popup.classList.remove('modal-window_is-opened');\r\n\r\n    for (let i = 0; i < 5; i++) {\r\n        starsArrayElement[i].querySelector('.product-info__star-img').classList.remove('product-info__star-img_active');\r\n    }\r\n}\r\n\r\n\r\n//функция открытия popup\r\nfunction popupOpen (popup){\r\n    popup.classList.add('modal-window_is-opened');\r\n}\r\n\r\n\r\n//загрузка данных popup__photo\r\n\r\nfunction loadPopupPhotoData(event) {\r\n    const cardParentsElement =  event.target.closest('.products-card');\r\n\r\n    imageElement.setAttribute('src', cardParentsElement.querySelector('.products-card__img').getAttribute('src'));\r\n    imageElement.setAttribute('alt', cardParentsElement.querySelector('.products-card__img').getAttribute('alt'));\r\n    productNameElement.textContent = cardParentsElement.querySelector('.products-card__title').textContent;\r\n    productCodeElement.textContent = cardParentsElement.querySelector('.products-card__product-code').textContent;\r\n    availabilityElement.textContent = cardParentsElement.querySelector('.products-card__availability').textContent;\r\n    exTaxElement.textContent = cardParentsElement.querySelector('.products-card__ex-tax').textContent;\r\n    priceElement.textContent = cardParentsElement.querySelector('.products-card__price').textContent;\r\n    oldPriceElement.textContent = cardParentsElement.querySelector('.products-card__old-price').textContent;\r\n\r\n    const starsAmount = cardParentsElement.querySelector('.products-card__stars-amount').textContent;\r\n\r\n    for (let i = 0; i < starsAmount; i++) {\r\n        starsArrayElement[i].querySelector('.product-info__star-img').classList.add('product-info__star-img_active');\r\n    }\r\n\r\n\r\n    const cardBrandsData = cardParentsElement.querySelector('.products-card__brands').textContent;\r\n    const cardBrandsBox = popupGeneralCard.querySelector('.product-info__list-item_type_brands');\r\n\r\n    if ( cardBrandsData === '') {\r\n        cardBrandsBox.classList.add('display-none');\r\n    }\r\n    else {\r\n        cardBrandsBox.classList.remove('display-none');\r\n        brandsElement.textContent = cardBrandsData;\r\n    }\r\n\r\n    const cardRewardPointsData = cardParentsElement.querySelector('.products-card__reward-points').textContent;\r\n    const cardRewardPointsBox = popupGeneralCard.querySelector('.product-info__list-item_type_reward-points');\r\n\r\n    if ( cardRewardPointsData === '') {\r\n        cardRewardPointsBox.classList.add('display-none');\r\n    }\r\n    else {\r\n        cardRewardPointsBox.classList.remove('display-none');\r\n        rewardPointsElement.textContent = cardRewardPointsData;\r\n    }\r\n\r\n}\r\n\r\n\r\n\r\n//обработчик для кнопок внутри карточек\r\nfunction setEventListeners(cardElement) {\r\n    cardElement.querySelector('.products-card__open-popup').addEventListener('click', () => popupOpen(popupGeneralCard));\r\n    cardElement.querySelector('.products-card__open-popup').addEventListener('click', loadPopupPhotoData);\r\n}\r\n\r\n\r\n\r\n\r\n\r\n//создание карточки\r\nfunction renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax /*modal*/) {\r\n    const cardElement = cardTemplateContent.cloneNode(true);\r\n    const cardTitleElement = cardElement.querySelector('.products-card__title');\r\n    const cardImageElement = cardElement.querySelector('.products-card__img');\r\n    const cardImageHoverElement = cardElement.querySelector('.products-card__img-hover');\r\n    const cardPriceElement = cardElement.querySelector('.products-card__price');\r\n    const cardOldPriceElement = cardElement.querySelector('.products-card__old-price');\r\n    const cardDiscountElement= cardElement.querySelector('.products-card__discount');\r\n    const brandsElement = cardElement.querySelector('.products-card__brands');\r\n    const productCodeElement = cardElement.querySelector('.products-card__product-code');\r\n    const rewardPointsElement = cardElement.querySelector('.products-card__reward-points');\r\n    const availabilityElement = cardElement.querySelector('.products-card__availability');\r\n    const exTaxElement = cardElement.querySelector('.products-card__ex-tax');\r\n\r\n    const amountCardStarsElement = cardElement.querySelector('.products-card__stars-amount');\r\n\r\n    const cardStarsElement = cardElement.querySelector('.products-card__stars');\r\n    const cardStarElements = Array.from(cardStarsElement.querySelectorAll('.products-card__star'));\r\n\r\n    //const cardQQ = cardElement.querySelector('.products-card');\r\n\r\n\r\n    cardTitleElement.textContent = name;\r\n    cardImageElement.setAttribute('src', img);\r\n    cardImageElement.setAttribute('alt', name);\r\n    cardImageHoverElement.setAttribute('src', imgHover);\r\n    cardImageHoverElement.setAttribute('alt', name);\r\n    cardPriceElement.textContent = price;\r\n\r\n    brandsElement.textContent = brands;\r\n    productCodeElement.textContent = productCode;\r\n    rewardPointsElement.textContent = rewardPoints;\r\n    availabilityElement.textContent = availability;\r\n    exTaxElement.textContent = exTax;\r\n    amountCardStarsElement.textContent = stars;\r\n\r\n    //if (modal === 'ok') {\r\n     //   cardQQ.classList.add('card-modal');\r\n\r\n    //}\r\n\r\n    if (discount === '') {\r\n        cardDiscountElement.classList.add('display-none');\r\n    }\r\n    else {\r\n        cardDiscountElement.textContent = discount;\r\n    }\r\n\r\n    if (oldPrice === '') {\r\n        cardOldPriceElement.classList.add('display-none');\r\n    }\r\n    else {\r\n        cardOldPriceElement.textContent = oldPrice;\r\n    }\r\n\r\n    for (let i = 0; i < stars; i++) {\r\n        cardStarElements[i].querySelector('.products-card__star-img').classList.add('products-card__star-img_active');\r\n    }\r\n\r\n\r\n    setEventListeners(cardElement);\r\n\r\n    return cardElement;\r\n}\r\n\r\n\r\n\r\n//добавление карточек в контейнер\r\n\r\nfunction addCard (container, cardElement){\r\n    container.appendChild(cardElement);\r\n}\r\n\r\n\r\n\r\n//получение данных карточек\r\nfunction receivingData (cardData, container) {\r\n    cardData.forEach(function (cardData) {\r\n        const name = cardData.name;\r\n        const img = cardData.img;\r\n        const imgHover = cardData.imgHover;\r\n        const price = cardData.price;\r\n        const discount = cardData.discount;\r\n        const oldPrice = cardData.oldPrice;\r\n        const stars = cardData.stars;\r\n\r\n        const brands = cardData.brands;\r\n        const productCode = cardData.productCode;\r\n        const rewardPoints = cardData.rewardPoints;\r\n        const availability = cardData.availability;\r\n        const exTax = cardData.exTax;\r\n        //const modal = ourProductsCards.modal;\r\n\r\n        const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax/*modal*/);\r\n        addCard(container, card);\r\n    })\r\n}\r\n\r\n\r\nreceivingData(ourProductsCards, containerOurProductsCards);\r\nreceivingData(specialsCards, containerSpecialsCards);\r\n\r\n//кнопка закрытия popup\r\npopupGeneralCardCloseButton.addEventListener('click', () => popupClose(popupGeneralCard));
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pages/index.js	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ pages/index.js	(date 1636283599850)
+@@ -23,6 +23,7 @@
+ const oldPriceElement = popupGeneralCard.querySelector('.product-info__price-old');
+ const starsElement = popupGeneralCard.querySelector('.product-info__stars');
+ const starsArrayElement = Array.from(starsElement.querySelectorAll('.product-info__star'));
++const popupMiddleBlock = popupGeneralCard.querySelector('.modal-window__middle-block');
+ 
+ 
+ 
+@@ -42,6 +43,7 @@
+ //функция открытия popup
+ function popupOpen (popup){
+     popup.classList.add('modal-window_is-opened');
++    popupMiddleBlock.classList.add('display-none');
+ }
+ 
+ 
+@@ -59,6 +61,13 @@
+     priceElement.textContent = cardParentsElement.querySelector('.products-card__price').textContent;
+     oldPriceElement.textContent = cardParentsElement.querySelector('.products-card__old-price').textContent;
+ 
++
++
++    if (cardParentsElement.classList.contains('card-modal-middle')) {
++        popupMiddleBlock.classList.remove('display-none');
++
++    }
++
+     const starsAmount = cardParentsElement.querySelector('.products-card__stars-amount').textContent;
+ 
+     for (let i = 0; i < starsAmount; i++) {
+@@ -103,7 +112,7 @@
+ 
+ 
+ //создание карточки
+-function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax /*modal*/) {
++function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax,modal) {
+     const cardElement = cardTemplateContent.cloneNode(true);
+     const cardTitleElement = cardElement.querySelector('.products-card__title');
+     const cardImageElement = cardElement.querySelector('.products-card__img');
+@@ -122,7 +131,7 @@
+     const cardStarsElement = cardElement.querySelector('.products-card__stars');
+     const cardStarElements = Array.from(cardStarsElement.querySelectorAll('.products-card__star'));
+ 
+-    //const cardQQ = cardElement.querySelector('.products-card');
++    const cardMainElement = cardElement.querySelector('.products-card');
+ 
+ 
+     cardTitleElement.textContent = name;
+@@ -139,10 +148,9 @@
+     exTaxElement.textContent = exTax;
+     amountCardStarsElement.textContent = stars;
+ 
+-    //if (modal === 'ok') {
+-     //   cardQQ.classList.add('card-modal');
+-
+-    //}
++    if (modal === 'middle') {
++        cardMainElement.classList.add('card-modal-middle');
++    }
+ 
+     if (discount === '') {
+         cardDiscountElement.classList.add('display-none');
+@@ -194,9 +202,9 @@
+         const rewardPoints = cardData.rewardPoints;
+         const availability = cardData.availability;
+         const exTax = cardData.exTax;
+-        //const modal = ourProductsCards.modal;
++        const modal = cardData.modal;
+ 
+-        const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax/*modal*/);
++        const card = renderCard(name, img, imgHover, price, discount, oldPrice, stars, brands, productCode, rewardPoints, availability, exTax, modal);
+         addCard(container, card);
+     })
+ }
+Index: scripts/utils.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//массив начальных карточек our products\r\nconst ourProductsCards = [\r\n    {\r\n        name: 'Foramationdi Venkash',\r\n        img: './images/product-1.jpg',\r\n        imgHover: './images/product-2.jpg',\r\n        price: '$122.00',\r\n        discount: '50%',\r\n        oldPrice: '241.99',\r\n        brands: '',\r\n        productCode: 'Sam1',\r\n        rewardPoints: '1000',\r\n        availability: 'Pre-Order',\r\n        exTax: '$100.00',\r\n        stars: 0,\r\n    },\r\n\r\n    {\r\n        name: 'Varius Neque At Enim',\r\n        img: './images/product-3.jpg',\r\n        imgHover: './images/product-4.jpg',\r\n        price: '$122.00',\r\n        discount: '',\r\n        oldPrice: '',\r\n        brands: 'APPLE',\r\n        productCode: 'product 20',\r\n        rewardPoints: '',\r\n        availability: 'In Stock',\r\n        exTax: '$100.00',\r\n        stars: 3\r\n    },\r\n\r\n    {\r\n        name: 'Suspendisse Massa Nulla',\r\n        img: './images/product-5.jpg',\r\n        imgHover: './images/product-2.jpg',\r\n        price: '$62.00',\r\n        discount: '50%',\r\n        oldPrice: '$122.00',\r\n        brands: 'HEWLETT-PACKARD',\r\n        productCode: 'product 21',\r\n        rewardPoints: '300',\r\n        availability: 'In Stock',\r\n        exTax: '$50.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Bhumitationa Centyraon',\r\n        img: './images/product-3.jpg',\r\n        imgHover: './images/product-4.jpg',\r\n        price: '$842.00',\r\n        discount: '30%',\r\n        oldPrice: '$1,202.00',\r\n        brands: 'SONY',\r\n        productCode: 'product 19',\r\n        rewardPoints: '',\r\n        availability: 'In Stock',\r\n        exTax: '$700.00',\r\n        stars: 5\r\n    },\r\n\r\n    {\r\n        name: 'Mauris Blandit Vehicula',\r\n        img: './images/product-6.jpg',\r\n        imgHover: './images/product-7.jpg',\r\n        price: '$1000.00',\r\n        discount: '50%',\r\n        oldPrice: '$2000.00',\r\n        brands: 'APPLE',\r\n        productCode: 'product 18',\r\n        rewardPoints: '800',\r\n        availability: 'In Stock',\r\n        exTax: '$1000.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Aminatiom Descentation',\r\n        img: './images/product-9.jpg',\r\n        imgHover: './images/product-8.jpg',\r\n        price: '$1,082.00',\r\n        discount: '10%',\r\n        oldPrice: '$1,202.00',\r\n        brands: 'apple',\r\n        productCode: 'product 17',\r\n        rewardPoints: '700',\r\n        availability: 'In Stock',\r\n        exTax: '$900.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Tarundecf Beseking',\r\n        img: './images/product-10.jpg',\r\n        imgHover: './images/product-11.jpg',\r\n        price: '$482.00',\r\n        discount: '20%',\r\n        oldPrice: '$602.00',\r\n        brands: 'apple',\r\n        productCode: 'product 16',\r\n        rewardPoints: '600',\r\n        availability: 'In Stock',\r\n        exTax: '$400.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Curabitur Dolor Nunc',\r\n        img: './images/product-7.jpg',\r\n        imgHover: './images/product-12.jpg',\r\n        price: '$110.00',\r\n        discount: '10%',\r\n        oldPrice: '$122.00',\r\n        brands: 'apple',\r\n        productCode: 'product 15',\r\n        rewardPoints: '100',\r\n        availability: 'In Stock',\r\n        exTax: '$90.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Suspendisse Potenti',\r\n        img: './images/product-13.jpg',\r\n        imgHover: './images/product-8.jpg',\r\n        price: '$122.00',\r\n        discount: '',\r\n        oldPrice: '',\r\n        brands: 'apple',\r\n        productCode: 'product 14',\r\n        rewardPoints: '',\r\n        availability: 'In Stock',\r\n        exTax: '$100.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Tellus Eu Volutpat Varius',\r\n        img: './images/product-14.jpg',\r\n        imgHover: './images/product-3.jpg',\r\n        price: '$122.00',\r\n        discount: '1%',\r\n        oldPrice: '$123.20',\r\n        brands: 'HEWLETT-PACKARD',\r\n        productCode: 'product 21',\r\n        rewardPoints: '300',\r\n        availability: 'In Stock',\r\n        exTax: '$50.00',\r\n        stars: 0\r\n    }\r\n];\r\n\r\n\r\n\r\n//массив начальных карточек specials\r\nconst specialsCards = [\r\n    {\r\n        name: 'Aminatiom Descentation',\r\n        img: './images/product-9.jpg',\r\n        imgHover: './images/product-8.jpg',\r\n        price: '$1,082.00',\r\n        discount: '10%',\r\n        oldPrice: '$1,202.00',\r\n        brands: 'apple',\r\n        productCode: 'product 17',\r\n        rewardPoints: '700',\r\n        availability: 'In Stock',\r\n        exTax: '$900.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Bhumitationa Centyraon',\r\n        img: './images/product-3.jpg',\r\n        imgHover: './images/product-4.jpg',\r\n        price: '$842.00',\r\n        discount: '30%',\r\n        oldPrice: '$1,202.00',\r\n        brands: 'SONY',\r\n        productCode: 'product 19',\r\n        rewardPoints: '',\r\n        availability: 'In Stock',\r\n        exTax: '$700.00',\r\n        stars: 5\r\n    },\r\n\r\n    {\r\n        name: 'Cum Sociis Natoque',\r\n        img: './images/product-12.jpg',\r\n        imgHover: './images/product-13.jpg',\r\n        price: '$98.00',\r\n        discount: '20%',\r\n        oldPrice: '$122.99',\r\n        brands: 'canon',\r\n        productCode: 'Product 3',\r\n        rewardPoints: '200',\r\n        availability: 'In Stock',\r\n        exTax: '$80.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Curabitur Dolor Nunc',\r\n        img: './images/product-7.jpg',\r\n        imgHover: './images/product-12.jpg',\r\n        price: '$110.00',\r\n        discount: '10%',\r\n        oldPrice: '$122.00',\r\n        brands: 'apple',\r\n        productCode: 'product 15',\r\n        rewardPoints: '100',\r\n        availability: 'In Stock',\r\n        exTax: '$90.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Foramationdi Venkash',\r\n        img: './images/product-1.jpg',\r\n        imgHover: './images/product-2.jpg',\r\n        price: '$122.00',\r\n        discount: '50%',\r\n        oldPrice: '241.99',\r\n        brands: '',\r\n        productCode: 'Sam1',\r\n        rewardPoints: '1000',\r\n        availability: 'Pre-Order',\r\n        exTax: '$100.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Mauris Blandit Vehicula',\r\n        img: './images/product-6.jpg',\r\n        imgHover: './images/product-7.jpg',\r\n        price: '$1000.00',\r\n        discount: '50%',\r\n        oldPrice: '$2000.00',\r\n        brands: 'APPLE',\r\n        productCode: 'product 18',\r\n        rewardPoints: '800',\r\n        availability: 'In Stock',\r\n        exTax: '$1000.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Meghpolo Nepturis',\r\n        img: './images/product-15.jpg',\r\n        imgHover: './images/product-14.jpg',\r\n        price: '$242.00',\r\n        discount: '29%',\r\n        oldPrice: '$337.99',\r\n        brands: 'palm',\r\n        productCode: 'product 2',\r\n        rewardPoints: '',\r\n        availability: 'In Stock',\r\n        exTax: '$200.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Suspendisse Massa Nulla',\r\n        img: './images/product-5.jpg',\r\n        imgHover: './images/product-2.jpg',\r\n        price: '$62.00',\r\n        discount: '50%',\r\n        oldPrice: '$122.00',\r\n        brands: 'HEWLETT-PACKARD',\r\n        productCode: 'product 21',\r\n        rewardPoints: '300',\r\n        availability: 'In Stock',\r\n        exTax: '$50.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Tarundecf Beseking',\r\n        img: './images/product-10.jpg',\r\n        imgHover: './images/product-11.jpg',\r\n        price: '$482.00',\r\n        discount: '20%',\r\n        oldPrice: '$602.00',\r\n        brands: 'apple',\r\n        productCode: 'product 16',\r\n        rewardPoints: '600',\r\n        availability: 'In Stock',\r\n        exTax: '$400.00',\r\n        stars: 0\r\n    },\r\n\r\n    {\r\n        name: 'Tellus Eu Volutpat Varius',\r\n        img: './images/product-14.jpg',\r\n        imgHover: './images/product-3.jpg',\r\n        price: '$122.00',\r\n        discount: '1%',\r\n        oldPrice: '$123.20',\r\n        brands: 'HEWLETT-PACKARD',\r\n        productCode: 'product 21',\r\n        rewardPoints: '300',\r\n        availability: 'In Stock',\r\n        exTax: '$50.00',\r\n        stars: 0\r\n    }\r\n];
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- scripts/utils.js	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ scripts/utils.js	(date 1636283247126)
+@@ -13,6 +13,7 @@
+         availability: 'Pre-Order',
+         exTax: '$100.00',
+         stars: 0,
++        modal: ''
+     },
+ 
+     {
+@@ -27,7 +28,8 @@
+         rewardPoints: '',
+         availability: 'In Stock',
+         exTax: '$100.00',
+-        stars: 3
++        stars: 3,
++        modal: ''
+     },
+ 
+     {
+@@ -42,7 +44,8 @@
+         rewardPoints: '300',
+         availability: 'In Stock',
+         exTax: '$50.00',
+-        stars: 0
++        stars: 0,
++        modal: 'middle'
+     },
+ 
+     {
+@@ -57,7 +60,8 @@
+         rewardPoints: '',
+         availability: 'In Stock',
+         exTax: '$700.00',
+-        stars: 5
++        stars: 5,
++        modal: ''
+     },
+ 
+     {
+@@ -72,7 +76,8 @@
+         rewardPoints: '800',
+         availability: 'In Stock',
+         exTax: '$1000.00',
+-        stars: 0
++        stars: 0,
++        modal: ''
+     },
+ 
+     {
+@@ -87,7 +92,8 @@
+         rewardPoints: '700',
+         availability: 'In Stock',
+         exTax: '$900.00',
+-        stars: 0
++        stars: 0,
++        modal: ''
+     },
+ 
+     {
+@@ -102,7 +108,8 @@
+         rewardPoints: '600',
+         availability: 'In Stock',
+         exTax: '$400.00',
+-        stars: 0
++        stars: 0,
++        modal: ''
+     },
+ 
+     {
+@@ -117,7 +124,8 @@
+         rewardPoints: '100',
+         availability: 'In Stock',
+         exTax: '$90.00',
+-        stars: 0
++        stars: 0,
++        modal: ''
+     },
+ 
+     {
+@@ -132,7 +140,8 @@
+         rewardPoints: '',
+         availability: 'In Stock',
+         exTax: '$100.00',
+-        stars: 0
++        stars: 0,
++        modal: ''
+     },
+ 
+     {
+@@ -147,7 +156,8 @@
+         rewardPoints: '300',
+         availability: 'In Stock',
+         exTax: '$50.00',
+-        stars: 0
++        stars: 0,
++        modal: ''
+     }
+ ];
+ 
+Index: pages/index.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import url(../vendor/normalize.css);\r\n@import url(../vendor/fonts.css);\r\n\r\n@import url(../blocks/page/page.css);\r\n@import url(../blocks/page/__content/page__content.css);\r\n@import url(../blocks/page/__container/page__container.css);\r\n\r\n\r\n@import url(../blocks/top/top.css);\r\n@import url(../blocks/top/__contacts/top__contacts.css);\r\n@import url(../blocks/top/__links/top__links.css);\r\n@import url(../blocks/top/__link/top__link.css);\r\n@import url(../blocks/top/__link-img/top__link-img.css);\r\n@import url(../blocks/top/__link-text/top__link-text.css);\r\n\r\n@import url(../blocks/header/header.css);\r\n@import url(../blocks/header/__container/header__container.css);\r\n@import url(../blocks/header/__form/header__form.css);\r\n@import url(../blocks/header/__form-input/header__form-input.css);\r\n@import url(../blocks/header/__button-search/header__button-search.css);\r\n@import url(../blocks/header/__menu/header__menu.css);\r\n@import url(../blocks/header/__menu-collapse-title/header__menu-collapse-title.css);\r\n@import url(../blocks/header/__menu-collapse-container/header__menu-collapse-container.css);\r\n@import url(../blocks/header/__menu-collapse-main/header__menu-collapse-main.css);\r\n@import url(../blocks/header/__menu-collapse-box/header__menu-collapse-box.css);\r\n@import url(../blocks/header/__menu-collapse-button/header__menu-collapse-button.css);\r\n@import url(../blocks/header/__content-desktop/header__content-desktop.css);\r\n@import url(../blocks/header/__form/_type/header__form_type-desktop.css);\r\n@import url(../blocks/header/__content-menu-logo/header__content-menu-logo.css);\r\n@import url(../blocks/header/__logo/header__logo.css);\r\n@import url(../blocks/header/__logo/_type/header__logo_type_mobile.css);\r\n\r\n@import url(../blocks/user-actions/user-actions.css);\r\n@import url(../blocks/user-actions/__link/user-actions__link.css);\r\n@import url(../blocks/user-actions/__link-img/user-actions__link-img.css);\r\n@import url(../blocks/user-actions/__link-img/_type/user-actions__link-img_type_shopping.css);\r\n@import url(../blocks/user-actions/__link-img/_type/user-actions__link-img_type_human.css);\r\n@import url(../blocks/user-actions/__link-text/user-actions__link-text.css);\r\n@import url(../blocks/user-actions/__link-text/_type/user-actions__link-text_type_account.css);\r\n@import url(../blocks/user-actions/__link-number/user-actions__link-number.css);\r\n\r\n@import url(../blocks/menu/menu.css);\r\n@import url(../blocks/sf-menu/_theme/sf-menu_theme_menu.css);\r\n@import url(../blocks/menu/__item/menu__item.css);\r\n@import url(../blocks/menu/__item-link/menu__item-link.css);\r\n@import url(../blocks/menu/__dropdown/menu__dropdown.css);\r\n@import url(../blocks/menu/__dropdown-item/menu__dropdown-item.css);\r\n@import url(../blocks/menu/__dropdown-item/_type/menu__dropdown-item_type_title.css);\r\n@import url(../blocks/menu/__dropdown-item-link/menu__dropdown-item-link.css);\r\n@import url(../blocks/menu/__dropdown-item-link/_type/menu__dropdown-item-link_type_title.css);\r\n@import url(../blocks/menu/__dropdown-list/menu__dropdown-list.css);\r\n@import url(../blocks/menu/__dropdown-list-item/menu__dropdown-list-item.css);\r\n\r\n@import url(../blocks/banners-main/banners-main.css);\r\n@import url(../blocks/banners-main/__container/banners-main__container.css);\r\n\r\n@import url(../blocks/banner-carousel/banner-carousel.css);\r\n@import url(../blocks/banner-carousel/__carousel-button/banner-carousel__carousel-button.css);\r\n@import url(../blocks/banner-carousel/__carousel-button/_type/banner-carousel__carousel-button_type_prev.css);\r\n@import url(../blocks/banner-carousel/__carousel-button/_type/banner-carousel__carousel-button_type_next.css);\r\n@import url(../blocks/banner-carousel/__carousel/banner-carousel__carousel.css);\r\n@import url(../blocks/banner-carousel/__carousel-item/banner-carousel__carousel-item.css);\r\n@import url(../blocks/banner-carousel/__carousel-item-img/banner-carousel__carousel-item-img.css);\r\n\r\n@import url(../blocks/banner-cat/banner-cat.css);\r\n@import url(../blocks/banner-cat/__img/banner-cat__img.css);\r\n\r\n@import url(../blocks/sub-banners/sub-banners.css);\r\n@import url(../blocks/sub-banners/__banner-link/sub-banners__banner-link.css);\r\n@import url(../blocks/sub-banners/__banner/sub-banners__banner.css);\r\n@import url(../blocks/sub-banners/__banner-img/sub-banners__banner-img.css);\r\n@import url(../blocks/sub-banners/__banner-content/sub-banners__banner-content.css);\r\n@import url(../blocks/sub-banners/__banner-title/sub-banners__banner-title.css);\r\n@import url(../blocks/sub-banners/__banner-text/sub-banners__banner-text.css);\r\n@import url(../blocks/sub-banners/__banner-color/sub-banners__banner-color.css);\r\n@import url(../blocks/sub-banners/__banner-color/_type/sub-banners__banner-color_type_left.css);\r\n\r\n@import url(../blocks/our-products/our-products.css);\r\n@import url(../blocks/our-products/__menu/our-products__menu.css);\r\n@import url(../blocks/our-products/__items/our-products__items.css);\r\n@import url(../blocks/our-products/__item/our-products__item.css);\r\n@import url(../blocks/our-products/__item-link/our-products__item-link.css);\r\n@import url(../blocks/our-products/__item-link/_active/our-products__item-link_active.css);\r\n\r\n@import url(../blocks/products/products.css);\r\n@import url(../blocks/products/__header/products__header.css);\r\n@import url(../blocks/products/__title/products__title.css);\r\n@import url(../blocks/products/__carousel-buttons/products__carousel-buttons.css);\r\n@import url(../blocks/products/__carousel-button/products__carousel-button.css);\r\n@import url(../blocks/products/__carousel-button/_type/products__carousel-button_type_prev.css);\r\n@import url(../blocks/products/__carousel-button/_type/products__carousel-button_type_next.css);\r\n@import url(../blocks/products/__carousel-button/_type/products__carousel-button_type_brands-carousel-prev.css);\r\n@import url(../blocks/products/__carousel-button/_type/products__carousel-button_type_brands-carousel-next.css);\r\n@import url(../blocks/products/__carousel-button-img/products__carousel-button-img.css);\r\n@import url(../blocks/products/__carousel/products__carousel.css);\r\n\r\n@import url(../blocks/products-card/products-card.css);\r\n@import url(../blocks/products-card/__link/products-card__link.css);\r\n@import url(../blocks/products-card/__open-popup/products-card__open-popup.css);\r\n@import url(../blocks/products-card/__img-box/products-card__img-box.css);\r\n@import url(../blocks/products-card/__img/products-card__img.css);\r\n@import url(../blocks/products-card/__img-hover/products-card__img-hover.css);\r\n@import url(../blocks/products-card/__content/products-card__content.css);\r\n@import url(../blocks/products-card/__title/products-card__title.css);\r\n@import url(../blocks/products-card/__stars/products-card__stars.css);\r\n@import url(../blocks/products-card/__star/products-card__star.css);\r\n@import url(../blocks/products-card/__star-img/products-card__star-img.css);\r\n@import url(../blocks/products-card/__star-img/_active/products-card__star-img_active.css);\r\n@import url(../blocks/products-card/__price-texts/products-card__price-texts.css);\r\n@import url(../blocks/products-card/__price/products-card__price.css);\r\n@import url(../blocks/products-card/__discount/products-card__discount.css);\r\n@import url(../blocks/products-card/__old-price/products-card__old-price.css);\r\n@import url(../blocks/products-card/__button/products-card__button.css);\r\n\r\n@import url(../blocks/banners/banners.css);\r\n@import url(../blocks/banners/__banner/banners__banner.css);\r\n@import url(../blocks/banners/__banner/_type/banners__banner_type_offer-banner.css);\r\n@import url(../blocks/banners/__banner-img/banners__banner-img.css);\r\n@import url(../blocks/banners/__banner-content/banners__banner-content.css);\r\n@import url(../blocks/banners/__banner-content/_type/banners__banner-content_type_banner-02.css);\r\n@import url(../blocks/banners/__banner-content/_type/banners__banner-content_type_offer-banner.css);\r\n@import url(../blocks/banners/__banner-info/banners__banner-info.css);\r\n@import url(../blocks/banners/__banner-info/_type/banners__banner-info_type_offer-banner.css);\r\n@import url(../blocks/banners/__banner-title/banners__banner-title.css);\r\n@import url(../blocks/banners/__banner-title/_type/banners__banner-title_type_offer-banner.css);\r\n@import url(../blocks/banners/__banner-text/banners__banner-text.css);\r\n@import url(../blocks/banners/__banner-text/_type/banners__banner-text_type_offer-banner.css);\r\n\r\n@import url(../blocks/specials/specials.css);\r\n\r\n@import url(../blocks/brands-carousel/brands-carousel.css);\r\n@import url(../blocks/brands-carousel/__container/brands-carousel__container.css);\r\n@import url(../blocks/brands-carousel/__carousel/brands-carousel__carousel.css);\r\n\r\n@import url(../blocks/brand-card/brand-card.css);\r\n@import url(../blocks/brand-card/__img/brand-card__img.css);\r\n\r\n@import url(../blocks/blog/blog.css);\r\n@import url(../blocks/blog/__container/blog__container.css);\r\n@import url(../blocks/blog/__title/blog__title.css);\r\n@import url(../blocks/blog/__carousel/blog__carousel.css);\r\n\r\n@import url(../blocks/blog-card/blog-card.css);\r\n@import url(../blocks/blog-card/__content/blog-card__content.css);\r\n@import url(../blocks/blog-card/__img-box/blog-card__img-box.css);\r\n@import url(../blocks/blog-card/__img/blog-card__img.css);\r\n@import url(../blocks/blog-card/__buttons/blog-card__buttons.css);\r\n@import url(../blocks/blog-card/__button/blog-card__button.css);\r\n@import url(../blocks/blog-card/__button/_type/blog-card__button_type_open.css);\r\n@import url(../blocks/blog-card/__button/_type/blog-card__button_type_link.css);\r\n@import url(../blocks/blog-card/__data/blog-card__data.css);\r\n@import url(../blocks/blog-card/__text/blog-card__text.css);\r\n\r\n@import url(../blocks/options/options.css);\r\n@import url(../blocks/options/__container/options__container.css);\r\n@import url(../blocks/options/__items/options__items.css);\r\n@import url(../blocks/options/__item/options__item.css);\r\n@import url(../blocks/options/__item-img-box/options__item-img-box.css);\r\n@import url(../blocks/options/__item-img/options__item-img.css);\r\n@import url(../blocks/options/__item-content/options__item-content.css);\r\n@import url(../blocks/options/__item-title/options__item-title.css);\r\n@import url(../blocks/options/__item-text/options__item-text.css);\r\n\r\n@import url(../blocks/footer/footer.css);\r\n@import url(../blocks/footer/__container/footer__container.css);\r\n@import url(../blocks/footer/__contacts/footer__contacts.css);\r\n@import url(../blocks/footer/__contact/footer__contact.css);\r\n@import url(../blocks/footer/__contact-img/footer__contact-img.css);\r\n@import url(../blocks/footer/__title/footer__title.css);\r\n@import url(../blocks/footer/__title-icon/footer__title-icon.css);\r\n@import url(../blocks/footer/__list/footer__list.css);\r\n@import url(../blocks/footer/__list-items/footer__list-items.css);\r\n@import url(../blocks/footer/__list-item/footer__list-item.css);\r\n@import url(../blocks/footer/__list-item-link/footer__list-item-link.css);\r\n@import url(../blocks/footer/__list-item-img/footer__list-item-img.css);\r\n@import url(../blocks/footer/__mail-form/footer__mail-form.css);\r\n@import url(../blocks/footer/__mail-form/_type/footer__mail-form_type_collapse.css);\r\n@import url(../blocks/footer/__form/footer__form.css);\r\n@import url(../blocks/footer/__form-input/footer__form-input.css);\r\n@import url(../blocks/footer/__form-input/_type/footer__form-input_type_collapse.css);\r\n@import url(../blocks/footer/__form-button/footer__form-button.css);\r\n@import url(../blocks/footer/__social/footer__social.css);\r\n@import url(../blocks/footer/__social-item/footer__social-item.css);\r\n@import url(../blocks/footer/__social-item-link/footer__social-item-link.css);\r\n@import url(../blocks/footer/__social-item-img/footer__social-item-img.css);\r\n@import url(../blocks/footer/__container-table/footer__container-table.css);\r\n\r\n@import url(../blocks/bottom/bottom.css);\r\n@import url(../blocks/bottom/__copyright/bottom__copyright.css);\r\n@import url(../blocks/bottom/__copyright-link/bottom__copyright-link.css);\r\n@import url(../blocks/bottom/__cards/bottom__cards.css);\r\n@import url(../blocks/bottom/__card/bottom__card.css);\r\n@import url(../blocks/bottom/__card-img/bottom__card-img.css);\r\n\r\n@import url(../blocks/modal-window/modal-window.css);\r\n@import url(../blocks/modal-window/__container/modal-window__container.css);\r\n@import url(../blocks/modal-window/__container-img/modal-window__container-img.css);\r\n@import url(../blocks/modal-window/__product-img/modal-window__product-img.css);\r\n@import url(../blocks/modal-window/__container-info/modal-window__container-info.css);\r\n@import url(../blocks/modal-window/_is-opened/modal-window_is-opened.css);\r\n@import url(../blocks/modal-window/__close/modal-window__close.css);\r\n\r\n@import url(../blocks/product-info/__title/product-info__title.css);\r\n@import url(../blocks/product-info/__stars/product-info__stars.css);\r\n@import url(../blocks/product-info/__star/product-info__star.css);\r\n@import url(../blocks/product-info/__star-img/product-info__star-img.css);\r\n@import url(../blocks/product-info/__star-img/_active/product-info__star-img_active.css);\r\n@import url(../blocks/product-info/__list/product-info__list.css);\r\n@import url(../blocks/product-info/__list-item/product-info__list-item.css);\r\n@import url(../blocks/product-info/__list-item-data/product-info__list-item-data.css);\r\n@import url(../blocks/product-info/__price/product-info__price.css);\r\n@import url(../blocks/product-info/__price-new/product-info__price-new.css);\r\n@import url(../blocks/product-info/__ex-tax/product-info__ex-tax.css);\r\n@import url(../blocks/product-info/__price-tax/product-info__price-tax.css);\r\n@import url(../blocks/product-info/__list-item-title/product-info__list-item-title.css);\r\n@import url(../blocks/product-info/__price-old/product-info__price-old.css);\r\n\r\n@import url(../blocks/modal-actions/modal-actions.css);\r\n@import url(../blocks/modal-actions/__form/modal-actions__form.css);\r\n@import url(../blocks/modal-actions/__form-label/modal-actions__form-label.css);\r\n@import url(../blocks/modal-actions/__form-input/modal-actions__form-input.css);\r\n@import url(../blocks/modal-actions/__buttons/modal-actions__buttons.css);\r\n@import url(../blocks/modal-actions/__button/modal-actions__button.css);\r\n@import url(../blocks/modal-actions/__button/_type/modal-actions__button_type_add.css);\r\n@import url(../blocks/modal-actions/__button-img/modal-actions__button-img.css);\r\n\r\n@import url(../blocks/button-up/button-up.css);\r\n\r\n@import url(../blocks/display-none/display-none.css);\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pages/index.css	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ pages/index.css	(date 1636282103891)
+@@ -193,6 +193,7 @@
+ @import url(../blocks/bottom/__card-img/bottom__card-img.css);
+ 
+ @import url(../blocks/modal-window/modal-window.css);
++@import url(../blocks/modal-window/__middle-block/modal-window__middle-block.css);
+ @import url(../blocks/modal-window/__container/modal-window__container.css);
+ @import url(../blocks/modal-window/__container-img/modal-window__container-img.css);
+ @import url(../blocks/modal-window/__product-img/modal-window__product-img.css);
+@@ -214,16 +215,24 @@
+ @import url(../blocks/product-info/__price-tax/product-info__price-tax.css);
+ @import url(../blocks/product-info/__list-item-title/product-info__list-item-title.css);
+ @import url(../blocks/product-info/__price-old/product-info__price-old.css);
++@import url(../blocks/product-info/__price-with-points/product-info__price-with-points.css);
+ 
+ @import url(../blocks/modal-actions/modal-actions.css);
+ @import url(../blocks/modal-actions/__form/modal-actions__form.css);
++@import url(../blocks/modal-actions/__form-datetime/modal-actions__form-datetime.css);
+ @import url(../blocks/modal-actions/__form-label/modal-actions__form-label.css);
++@import url(../blocks/modal-actions/__form-label-symbol/modal-actions__form-label-symbol.css);
+ @import url(../blocks/modal-actions/__form-input/modal-actions__form-input.css);
++@import url(../blocks/modal-actions/__form-input-button/modal-actions__form-input-button.css);
++@import url(../blocks/modal-actions/__form-input/_type/modal-actions__form-input_type_datetime.css);
++@import url(../blocks/modal-actions/__form-datetime-button/modal-actions__form-datetime-button.css);
+ @import url(../blocks/modal-actions/__buttons/modal-actions__buttons.css);
+ @import url(../blocks/modal-actions/__button/modal-actions__button.css);
+ @import url(../blocks/modal-actions/__button/_type/modal-actions__button_type_add.css);
+ @import url(../blocks/modal-actions/__button-img/modal-actions__button-img.css);
+ 
++@import url(../blocks/tempus-dominus-widget/tempus-dominus-widget.css);
++
+ @import url(../blocks/button-up/button-up.css);
+ 
+ @import url(../blocks/display-none/display-none.css);
+Index: blocks/modal-actions/__form-label-symbol/modal-actions__form-label-symbol.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-actions/__form-label-symbol/modal-actions__form-label-symbol.css	(date 1636281521928)
++++ blocks/modal-actions/__form-label-symbol/modal-actions__form-label-symbol.css	(date 1636281521928)
+@@ -0,0 +1,5 @@
++.modal-actions__form-label-symbol {
++    color: #F00;
++    font-weight: bold;
++    margin-right: 4px;
++}
+\ No newline at end of file
+Index: blocks/modal-window/__middle-block/modal-window__middle-block.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-window/__middle-block/modal-window__middle-block.css	(date 1636280837647)
++++ blocks/modal-window/__middle-block/modal-window__middle-block.css	(date 1636280837647)
+@@ -0,0 +1,3 @@
++.modal-window__middle-block {
++
++}
+\ No newline at end of file
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Test</title>\r\n\r\n    <link rel=\"stylesheet\" href=\"./font-awesome/css/font-awesome.min.css\">\r\n    <link rel=\"stylesheet\" href=\"./owlcarousel/owl.carousel.min.css\">\r\n    <link rel=\"stylesheet\" href=\"./owlcarousel/owl.theme.default.min.css\">\r\n    <link href=\"./superfish/superfish.css\" rel=\"stylesheet\" media=\"screen\">\r\n    <link rel=\"stylesheet\" href=\"./fancybox/jquery.fancybox.css\" type=\"text/css\" media=\"screen\">\r\n    <link href=\"./lightbox/lightbox.css\" rel=\"stylesheet\">\r\n    <link rel=\"stylesheet\" href=\"./pages/index.css\">\r\n\r\n</head>\r\n<body>\r\n\r\n<div class=\"page\">\r\n    <div class=\"page__content\">\r\n        <header class=\"header\">\r\n            <div class=\"top\">\r\n                <p class=\"top__contacts\">Good Luck With Shopping. Call Us Free 24/7 : (555) 172-244-7888 | (555) 172-244</p>\r\n                <div class=\"top__links\">\r\n                    <a href=\"#\" class=\"top__link\"><i class=\"fa fa-heart top__link-img\" aria-hidden=\"true\"></i>\r\n                        <p class=\"top__link-text\">Wish List (0)</p></a>\r\n                    <a href=\"#\" class=\"top__link\"><i class=\"fa fa-share top__link-img\" aria-hidden=\"true\"></i>\r\n                        <p class=\"top__link-text\">Checkout</p></a>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"header__container page__container\">\r\n                <img class=\"header__logo header__logo_type_mobile\" src=\"./images/logo.png\" alt=\"logo\">\r\n\r\n                <div class=\"header__content-desktop\">\r\n                    <div class=\"header__content-menu-logo\">\r\n                        <div class=\"header__menu-collapse-main\">\r\n                            <h2 class=\"header__menu-collapse-title\"><i class=\"fa fa-bars header__menu-collapse-button\" aria-hidden=\"true\"></i></h2>\r\n                            <div class=\"header__menu-collapse-box\">\r\n                                <div>\r\n                                    <a class=\"header__menu-collapse-title\" href=\"#\">Home</a>\r\n                                </div>\r\n                                <div class=\"header__menu-collapse\">\r\n                                    <h2 class=\"header__menu-collapse-title\"><a href=\"#\">Clothes</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                                    <div>\r\n                                        <div class=\"header__menu-collapse header__menu-collapse-container\">\r\n                                            <h2 class=\"header__menu-collapse-title\"><a href=\"#\">Kids</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                                            <div class=\"header__menu-collapse-container\">\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Capri</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Jacket</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Shorts</a>\r\n                                            </div>\r\n                                        </div>\r\n                                        <div class=\"header__menu-collapse header__menu-collapse-container\">\r\n                                            <h2 class=\"header__menu-collapse-title\"><a href=\"#\">Women</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                                            <div class=\"header__menu-collapse-container\">\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Dresses</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Frocks</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Saree</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Suits</a>\r\n                                            </div>\r\n                                        </div>\r\n                                        <div class=\"header__menu-collapse header__menu-collapse-container\">\r\n                                            <h2 class=\"header__menu-collapse-title\"><a href=\"#\">Men</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                                            <div class=\"header__menu-collapse-container\">\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Dresses</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Frocks</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Saree</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Suits</a>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"header__menu-collapse\">\r\n                                    <h2 class=\"header__menu-collapse-title\"><a>Accessories</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                                    <div class=\"header__menu-collapse-container\">\r\n                                        <a class=\"header__menu-collapse-title\" href=\"#\">Cap</a>\r\n                                        <a class=\"header__menu-collapse-title\" href=\"#\">Handbags</a>\r\n                                    </div>\r\n                                </div>\r\n                                <div>\r\n                                    <a class=\"header__menu-collapse-title\" href=\"#\">Art</a>\r\n                                </div>\r\n\r\n                                <div class=\"header__menu-collapse\">\r\n                                    <h2 class=\"header__menu-collapse-title\"><a href=\"#\">Kitchen accessories</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                                    <div class=\"header__menu-collapse-container\">\r\n                                        <div class=\"header__menu-collapse\">\r\n                                            <h2 class=\"header__menu-collapse-title\"><a href=\"#\">Blender</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                                            <div class=\"header__menu-collapse-container\">\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Grater</a>\r\n                                                <a class=\"header__menu-collapse-title\" href=\"#\">Whisk</a>\r\n                                            </div>\r\n                                        </div>\r\n                                        <div>\r\n                                            <a class=\"header__menu-collapse-title\" href=\"#\">Colander</a>\r\n                                        </div>\r\n                                        <div>\r\n                                            <a class=\"header__menu-collapse-title\" href=\"#\">Cutting Board</a>\r\n                                        </div>\r\n                                        <div>\r\n                                            <a class=\"header__menu-collapse-title\" href=\"#\">Mixing Bowls.</a>\r\n                                        </div>\r\n                                        <div>\r\n                                            <a class=\"header__menu-collapse-title\" href=\"#\">Rolling Pin</a>\r\n                                        </div>\r\n\r\n                                    </div>\r\n                                </div>\r\n                                <div>\r\n                                    <a class=\"header__menu-collapse-title\" href=\"#\">Smart watch</a>\r\n                                </div>\r\n                                <div>\r\n                                    <a class=\"header__menu-collapse-title\" href=\"#\">Electronics</a>\r\n                                </div>\r\n                                <div>\r\n                                    <a class=\"header__menu-collapse-title\" href=\"#\">Home accessories</a>\r\n                                </div>\r\n                                <div>\r\n                                    <a class=\"header__menu-collapse-title\" href=\"#\">Blogs</a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <img class=\"header__logo\" src=\"./images/logo.png\" alt=\"logo\">\r\n                    </div>\r\n\r\n                    <form class=\"header__form header__form_type-desktop\">\r\n                        <label for=\"search-desktop\" class=\"header__form-label\"></label>\r\n                        <input type=\"text\" class=\"header__form-input\" id=\"search-desktop\" name=\"search\" placeholder=\"Search\">\r\n                        <button type=\"submit\" class=\"header__button-search\"></button>\r\n                    </form>\r\n\r\n\r\n                    <div class=\"user-actions\">\r\n                        <a href=\"#\" class=\"user-actions__link\"><div class=\"user-actions__link-img user-actions__link-img_type_human\"></div>\r\n                            <p class=\"user-actions__link-text user-actions__link-text_type_account\">My Account</p></a>\r\n                        <a href=\"#\" class=\"user-actions__link\"><div class=\"user-actions__link-img user-actions__link-img_type_shopping\"></div>\r\n                            <span class=\"user-actions__link-number\">0</span><p class=\"user-actions__link-text\">MY CART</p></a>\r\n                    </div>\r\n\r\n                </div>\r\n\r\n\r\n                <form class=\"header__form\">\r\n                    <label for=\"search\" class=\"header__form-label\"></label>\r\n                    <input type=\"text\" class=\"header__form-input\" id=\"search\" name=\"search\" placeholder=\"Search\">\r\n                    <button type=\"submit\" class=\"header__button-search\"></button>\r\n                </form>\r\n\r\n            </div>\r\n\r\n            <nav class=\"header__menu page__container\">\r\n                <ul class=\"menu sf-menu sf-menu_theme_menu\">\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">home</a>\r\n                    </li>\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">clothes</a>\r\n                        <ul class=\"menu__dropdown\">\r\n                            <li class=\"menu__dropdown-list\">\r\n                                <div class=\"menu__dropdown-list-item\">\r\n                                    <a class=\"menu__dropdown-item-link menu__dropdown-item-link_type_title\" href=\"#\">Kids</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Capri</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Jacket</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Shorts</a>\r\n                                </div>\r\n                                <div class=\"menu__dropdown-list-item\">\r\n                                    <a class=\"menu__dropdown-item-link menu__dropdown-item-link_type_title\" href=\"#\">Women</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Dresses</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Frocks</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Saree</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Suits</a>\r\n                                </div>\r\n                                <div class=\"menu__dropdown-list-item\">\r\n                                    <a class=\"menu__dropdown-item-link menu__dropdown-item-link_type_title\" href=\"#\">Men</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Dresses</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Frocks</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Saree</a>\r\n                                    <a class=\"menu__dropdown-item-link\" href=\"#\">Suits</a>\r\n                                </div>\r\n                            </li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">accessories</a>\r\n                        <ul class=\"menu__dropdown\">\r\n                            <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Cap</a></li>\r\n                            <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Handbags</a></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">art</a>\r\n                    </li>\r\n\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">kitchen accessories</a>\r\n                        <ul class=\"menu__dropdown\">\r\n                            <li class=\"menu__dropdown-item\">\r\n                                <a class=\"menu__dropdown-item-link\" href=\"#\">Blender</a>\r\n                                <ul class=\"menu__dropdown\">\r\n                                    <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Grater</a></li>\r\n                                    <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Whisk</a></li>\r\n                                </ul>\r\n                            </li>\r\n                            <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Colander</a></li>\r\n                            <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Cutting Board</a></li>\r\n                            <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Mixing Bowls.</a></li>\r\n                            <li class=\"menu__dropdown-item\"><a class=\"menu__dropdown-item-link\" href=\"#\">Rolling Pin</a></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">smart watch</a>\r\n                    </li>\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">electronics</a>\r\n                    </li>\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">home accessories</a>\r\n                    </li>\r\n                    <li class=\"menu__item\">\r\n                        <a class=\"menu__item-link\" href=\"#\">blogs</a>\r\n                    </li>\r\n                </ul>\r\n            </nav>\r\n        </header>\r\n\r\n        <main class=\"content\">\r\n            <section class=\"banners-main page__container\">\r\n                <div class=\"banners-main__container\">\r\n                    <div class=\"banner-carousel\">\r\n                        <button class=\"banner-carousel__carousel-button banner-carousel__carousel-button_type_prev\">\r\n                            <i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i>\r\n                        </button>\r\n\r\n                        <div class=\"owl-carousel banner-carousel__carousel\">\r\n                            <a class=\"banner-carousel__carousel-item\" href=\"#\">\r\n                                <img class=\"banner-carousel__carousel-item-img\" src=\"./images/main-banner-1.jpg\" alt=\"\">\r\n                            </a>\r\n                            <a class=\"banner-carousel__carousel-item\" href=\"#\">\r\n                                <img class=\"banner-carousel__carousel-item-img\" src=\"./images/main-banner-2.jpg\" alt=\"\">\r\n                            </a>\r\n                        </div>\r\n\r\n                        <button class=\"banner-carousel__carousel-button banner-carousel__carousel-button_type_next\">\r\n                            <i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>\r\n                        </button>\r\n                    </div>\r\n\r\n                    <a class=\"banner-cat__link\" href=\"#\"><div class=\"banner-cat\">\r\n                        <img class=\"banner-cat__img\" src=\"./images/cat-banner-1.jpg\" alt=\"banner\">\r\n                    </div></a>\r\n\r\n                    <a class=\"banner-cat__link\" href=\"#\"><div class=\"banner-cat\">\r\n                        <img class=\"banner-cat__img\" src=\"./images/cat-banner-2.jpg\" alt=\"banner\">\r\n                    </div></a>\r\n\r\n                </div>\r\n\r\n                <div class=\"sub-banners\">\r\n                    <a class=\"sub-banners__banner-link\" href=\"#\"><div class=\"sub-banners__banner\">\r\n                        <img class=\"sub-banners__banner-img\" src=\"./images/Sub-banner-01.jpg\" alt=\"banner\">\r\n                        <div class=\"sub-banners__banner-content\">\r\n                            <p class=\"sub-banners__banner-title\">extraordinary</p>\r\n                            <p class=\"sub-banners__banner-text\">Handbags</p>\r\n                            <p class=\"sub-banners__banner-color\">Hot</p>\r\n                        </div>\r\n                    </div></a>\r\n\r\n                    <a class=\"sub-banners__banner-link\" href=\"#\"><div class=\"sub-banners__banner\">\r\n                        <img class=\"sub-banners__banner-img\" src=\"./images/Sub-banner-02.jpg\" alt=\"banner\">\r\n                        <div class=\"sub-banners__banner-content\">\r\n                            <p class=\"sub-banners__banner-title\">ready lighting?</p>\r\n                            <p class=\"sub-banners__banner-color sub-banners__banner-color_type_left\">Colorful</p>\r\n                            <p class=\"sub-banners__banner-text\">Hot Offer!!</p>\r\n                        </div>\r\n                    </div></a>\r\n\r\n                    <a class=\"sub-banners__banner-link\" href=\"#\"><div class=\"sub-banners__banner\">\r\n                        <img class=\"sub-banners__banner-img\" src=\"./images/Sub-banner-03.jpg\" alt=\"banner\">\r\n                        <div class=\"sub-banners__banner-content\">\r\n                            <p class=\"sub-banners__banner-title\">neckless</p>\r\n                            <p class=\"sub-banners__banner-color\">Limited</p>\r\n                            <p class=\"sub-banners__banner-text\">Extraordinary</p>\r\n                        </div>\r\n                    </div></a>\r\n                </div>\r\n            </section>\r\n\r\n            <section class=\"our-products page__container\">\r\n                <div class=\"products\">\r\n                    <div class=\"products__header\">\r\n                        <h1 class=\"products__title\">our products</h1>\r\n\r\n                        <nav class=\"our-products__menu\">\r\n                            <ul class=\"our-products__items\">\r\n                                <li class=\"our-products__item\"><a class=\"our-products__item-link our-products__item-link_active\" href=\"#\">Latest</a></li>\r\n                                <li class=\"our-products__item\"><a class=\"our-products__item-link\" href=\"#\">Bestseller</a></li>\r\n                                <li class=\"our-products__item\"><a class=\"our-products__item-link\" href=\"#\">Special</a></li>\r\n                            </ul>\r\n                        </nav>\r\n\r\n                        <div class=\"products__carousel-buttons\">\r\n                            <button class=\"products__carousel-button products__carousel-button_type_prev\">\r\n                                <i class=\"fa fa-arrow-left products__carousel-button-img\" aria-hidden=\"true\"></i>\r\n                            </button>\r\n                            <button class=\"products__carousel-button products__carousel-button_type_next\">\r\n                                <i class=\"fa fa-arrow-right products__carousel-button-img\" aria-hidden=\"true\"></i>\r\n                            </button>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <div class=\"owl-carousel products__carousel products__carousel_type_our-products\">\r\n\r\n                    </div>\r\n                </div>\r\n\r\n            </section>\r\n\r\n            <section class=\"banners page__container\">\r\n                <div class=\"banners__banner\">\r\n                    <img class=\"banners__banner-img\" src=\"./images/Cms-banner-01.jpg\" alt=\"Cms-banner-01\">\r\n                    <div class=\"banners__banner-content\">\r\n                        <p class=\"banners__banner-info\">40% OFF</p>\r\n                        <h2 class=\"banners__banner-title\">fashion lab</h2>\r\n                        <p class=\"banners__banner-text\">Explore Our Range</p>\r\n                    </div>\r\n                </div>\r\n                <div class=\"banners__banner\">\r\n                    <img class=\"banners__banner-img\" src=\"./images/Cms-banner-02.jpg\" alt=\"Cms-banner-02\">\r\n                    <div class=\"banners__banner-content banners__banner-content_type_banner-02\">\r\n                        <p class=\"banners__banner-info\">50% OFF</p>\r\n                        <h2 class=\"banners__banner-title\">elect dron</h2>\r\n                        <p class=\"banners__banner-text\">Stylish Designs</p>\r\n                    </div>\r\n\r\n                </div>\r\n                <div class=\"banners__banner banners__banner_type_offer-banner\">\r\n                    <img class=\"banners__banner-img\" src=\"./images/Offer-banner-01.jpg\" alt=\"Offer-banner\">\r\n                    <div class=\"banners__banner-content banners__banner-content_type_offer-banner\">\r\n                        <p class=\"banners__banner-info banners__banner-info_type_offer-banner\">limited edition</p>\r\n                        <h2 class=\"banners__banner-title banners__banner-title_type_offer-banner\">summer special off</h2>\r\n                        <p class=\"banners__banner-text banners__banner-text_type_offer-banner\">Lorem Ipsum is simply dummy text of the printing and tyeseting industry.</p>\r\n                    </div>\r\n                </div>\r\n            </section>\r\n\r\n            <section class=\"specials page__container\">\r\n                <div class=\"products\">\r\n                    <div class=\"products__header\">\r\n                        <h2 class=\"products__title\">specials</h2>\r\n                        <div class=\"products__carousel-buttons\">\r\n                            <button class=\"products__carousel-button products__carousel-button_type_prev\">\r\n                                <i class=\"fa fa-arrow-left products__carousel-button-img\" aria-hidden=\"true\"></i>\r\n                            </button>\r\n                            <button class=\"products__carousel-button products__carousel-button_type_next\">\r\n                                <i class=\"fa fa-arrow-right products__carousel-button-img\" aria-hidden=\"true\"></i>\r\n                            </button>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"owl-carousel products__carousel products__carousel_type_specials\">\r\n\r\n                    </div>\r\n                </div>\r\n\r\n            </section>\r\n\r\n            <section class=\"brands-carousel page__container\">\r\n                <div class=\"brands-carousel__container\">\r\n                    <button class=\"products__carousel-button products__carousel-button_type_brands-carousel-prev\">\r\n                        <i class=\"fa fa-arrow-left products__carousel-button-img\" aria-hidden=\"true\"></i>\r\n                    </button>\r\n\r\n                    <div class=\"owl-carousel brands-carousel__carousel\">\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-3.png\" alt=\"brand-3\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-2.png\" alt=\"brand-2\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-1.png\" alt=\"brand-1\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-4.png\" alt=\"brand-4\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-3.png\" alt=\"brand-3\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-2.png\" alt=\"brand-2\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-1.png\" alt=\"brand-1\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-4.png\" alt=\"brand-4\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-3.png\" alt=\"brand-3\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-2.png\" alt=\"brand-2\"></a>\r\n                        </div>\r\n                        <div class=\"brand-card\">\r\n                            <a class=\"brand-card__link\" href=\"#\"><img class=\"brand-card__img\" src=\"./images/brand-1.png\" alt=\"brand-1\"></a>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <button class=\"products__carousel-button products__carousel-button_type_brands-carousel-next\">\r\n                        <i class=\"fa fa-arrow-right products__carousel-button-img\" aria-hidden=\"true\"></i>\r\n                    </button>\r\n                </div>\r\n            </section>\r\n\r\n            <section class=\"blog page__container\">\r\n                <div class=\"blog__container\">\r\n                    <h2 class=\"blog__title products__title\">latest blog</h2>\r\n\r\n                    <div class=\"owl-carousel blog__carousel\">\r\n                        <div class=\"blog-card\">\r\n                            <div class=\"blog-card__img-box\">\r\n                               <img class=\"blog-card__img\" src=\"./images/blog-6.jpg\" alt=\"blog-6\">\r\n                                <div class=\"blog-card__buttons\">\r\n                                    <a class=\"blog-card__button blog-card__button_type_open\" data-lightbox=\"roadtrip\"\r\n                                       data-title=\"Click to view Full Image\" href=\"./images/blog-6.jpg\"  data-caption=\"\">\r\n                                        <i class=\"fa fa-search-plus\"></i></a>\r\n                                    <button class=\"blog-card__button blog-card__button_type_link\" type=\"button\"><i class=\"fa fa-link\"></i></button>\r\n                                </div>\r\n                            </div>\r\n                            <p class=\"blog-card__data\">18, 09, 2018</p>\r\n                            <a class=\"blog-card__text\" href=\"\">ligula quam Vestibulum consequat convallis</a>\r\n                        </div>\r\n\r\n                        <div class=\"blog-card\">\r\n                            <div class=\"blog-card__img-box\">\r\n                                <img class=\"blog-card__img\" src=\"./images/blog-1.jpg\" alt=\"blog-1\">\r\n                                <div class=\"blog-card__buttons\">\r\n                                    <a class=\"blog-card__button blog-card__button_type_open\" data-lightbox=\"roadtrip\"\r\n                                       data-title=\"Click to view Full Image\" href=\"./images/blog-1.jpg\"  data-caption=\"\">\r\n                                        <i class=\"fa fa-search-plus\"></i></a>\r\n                                    <button class=\"blog-card__button blog-card__button_type_link\" type=\"button\"><i class=\"fa fa-link\"></i></button>\r\n                                </div>\r\n                            </div>\r\n                            <p class=\"blog-card__data\">18, 09, 2018</p>\r\n                            <a class=\"blog-card__text\">Laoreet Vestibulum lacinia massa a commodo habitasse velit</a>\r\n                        </div>\r\n\r\n                        <div class=\"blog-card\">\r\n                            <div class=\"blog-card__img-box\">\r\n                                <img class=\"blog-card__img\" src=\"./images/blog-2.jpg\" alt=\"blog-2\">\r\n                                <div class=\"blog-card__buttons\">\r\n                                    <a class=\"blog-card__button blog-card__button_type_open\" data-lightbox=\"roadtrip\" data-title=\"Click to view Full Image\"\r\n                                       href=\"./images/blog-2.jpg\"  data-caption=\"\">\r\n                                        <i class=\"fa fa-search-plus\"></i></a>\r\n                                    <button class=\"blog-card__button blog-card__button_type_link\" type=\"button\"><i class=\"fa fa-link\"></i></button>\r\n                                </div>\r\n                            </div>\r\n                            <p class=\"blog-card__data\">18, 09, 2018</p>\r\n                            <a class=\"blog-card__text\" href=\"\">Nullam ullamcorper nisl quis ornare molestie</a>\r\n                        </div>\r\n\r\n                        <div class=\"blog-card\">\r\n                            <div class=\"blog-card__img-box\">\r\n                                <img class=\"blog-card__img\" src=\"./images/blog-3.jpg\" alt=\"blog-3\">\r\n                                <div class=\"blog-card__buttons\">\r\n                                    <a class=\"blog-card__button blog-card__button_type_open\" data-lightbox=\"roadtrip\" data-title=\"Click to view Full Image\"\r\n                                       href=\"./images/blog-3.jpg\"  data-caption=\"\">\r\n                                        <i class=\"fa fa-search-plus\"></i></a>\r\n                                    <button class=\"blog-card__button blog-card__button_type_link\" type=\"button\"><i class=\"fa fa-link\"></i></button>\r\n                                </div>\r\n                            </div>\r\n                            <p class=\"blog-card__data\">18, 09, 2018</p>\r\n                            <a class=\"blog-card__text\" href=\"\">Turpis at eleifend ps mi elit Aenean porta ac sed faucibus</a>\r\n                        </div>\r\n\r\n                        <div class=\"blog-card\">\r\n                            <div class=\"blog-card__img-box\">\r\n                                <img class=\"blog-card__img\" src=\"./images/blog-4.jpg\" alt=\"blog-4\">\r\n                                <div class=\"blog-card__buttons\">\r\n                                    <a class=\"blog-card__button blog-card__button_type_open\" data-lightbox=\"roadtrip\" data-title=\"Click to view Full Image\"\r\n                                       href=\"./images/blog-4.jpg\"  data-caption=\"\">\r\n                                        <i class=\"fa fa-search-plus\"></i></a>\r\n                                    <button class=\"blog-card__button blog-card__button_type_link\" type=\"button\"><i class=\"fa fa-link\"></i></button>\r\n                                </div>\r\n                            </div>\r\n                            <p class=\"blog-card__data\">18, 09, 2018</p>\r\n                            <a class=\"blog-card__text\" href=\"\"> Morbi condimentum molestie Nam enim odio sodales</a>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </section>\r\n\r\n            <section class=\"options\">\r\n                <div class=\"options__container page__container\">\r\n                    <ul class=\"options__items\">\r\n                        <li class=\"options__item\">\r\n                            <div class=\"options__item-img-box\">\r\n                                <img class=\"options__item-img\" src=\"./images/car.png\" alt=\"car\">\r\n                            </div>\r\n                            <div class=\"options__item-content\">\r\n                                <h2 class=\"options__item-title\">free world delivery</h2>\r\n                                <p class=\"options__item-text\">Orders Over $100</p>\r\n                            </div>\r\n                        </li>\r\n\r\n                        <li class=\"options__item\">\r\n                            <div class=\"options__item-img-box\">\r\n                                <img class=\"options__item-img\" src=\"./images/money.png\" alt=\"money\">\r\n                            </div>\r\n                            <div class=\"options__item-content\">\r\n                                <h2 class=\"options__item-title\">money back guarantee</h2>\r\n                                <p class=\"options__item-text\">With A 30 Day</p>\r\n                            </div>\r\n                        </li>\r\n\r\n                        <li class=\"options__item\">\r\n                            <div class=\"options__item-img-box\">\r\n                                <img class=\"options__item-img\" src=\"./images/headphones.png\" alt=\"headphones\">\r\n                            </div>\r\n                            <div class=\"options__item-content\">\r\n                                <h2 class=\"options__item-title\">best online support</h2>\r\n                                <p class=\"options__item-text\">Hours: 8AM - 11PM</p>\r\n                            </div>\r\n                        </li>\r\n\r\n                        <li class=\"options__item\">\r\n                            <div class=\"options__item-img-box\">\r\n                                <img class=\"options__item-img\" src=\"./images/arrow.png\" alt=\"arrow\">\r\n                            </div>\r\n                            <div class=\"options__item-content\">\r\n                                <h2 class=\"options__item-title\">east & free returns</h2>\r\n                                <p class=\"options__item-text\">Hours: 8AM - 11PM</p>\r\n                            </div>\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n            </section>\r\n\r\n            <button class=\"button-up\" type=\"button\"></button>\r\n\r\n            <section class=\"products-template\">\r\n                <template class=\"products-card-template\">\r\n                    <div class=\"products-card\">\r\n                        <a class=\"products-card__link\" href=\"#\">\r\n                            <div class=\"products-card__img-box\">\r\n                                <img class=\"products-card__img\" src=\"\" alt=\"product-1\">\r\n                                <img class=\"products-card__img-hover\" src=\"\" alt=\"product-2\">\r\n                            </div>\r\n                            <i class=\"fa fa-eye products-card__open-popup\" aria-hidden=\"true\"></i>\r\n                            <h2 class=\"products-card__title\"></h2>\r\n                        </a>\r\n                        <div class=\"products-card__content\">\r\n                            <ul class=\"products-card__stars\">\r\n                                <li class=\"products-card__star\"><i class=\"fa fa-star-o products-card__star-img\"></i></li>\r\n                                <li class=\"products-card__star\"><i class=\"fa fa-star-o products-card__star-img\"></i></li>\r\n                                <li class=\"products-card__star\"><i class=\"fa fa-star-o products-card__star-img\"></i></li>\r\n                                <li class=\"products-card__star\"><i class=\"fa fa-star-o products-card__star-img\"></i></li>\r\n                                <li class=\"products-card__star\"><i class=\"fa fa-star-o products-card__star-img\"></i></li>\r\n                            </ul>\r\n                            <div class=\"products-card__price-texts\">\r\n                                <p class=\"products-card__price\"></p>\r\n                                <p class=\"products-card__discount\"></p>\r\n                                <p class=\"products-card__old-price\"></p>\r\n                            </div>\r\n\r\n                            <div class=\"display-none\">\r\n                                <p class=\"products-card__brands\"></p>\r\n                                <p class=\"products-card__product-code\"></p>\r\n                                <p class=\"products-card__reward-points\"></p>\r\n                                <p class=\"products-card__availability\"></p>\r\n                                <p class=\"products-card__ex-tax\"></p>\r\n                                <p class=\"products-card__stars-amount\"></p>\r\n                            </div>\r\n\r\n                        </div>\r\n                        <button class=\"products-card__button\" type=\"button\">add to cart</button>\r\n                    </div>\r\n                </template>\r\n            </section>\r\n\r\n            <section class=\"modal-window modal-window_type_general-card\">\r\n                <div class=\"modal-window__container\">\r\n                    <button class=\"modal-window__close\" type=\"button\">x</button>\r\n                    <div class=\"modal-window__container-img\">\r\n                        <img class=\"modal-window__product-img\" src=\"\"\r\n                             alt=\"product-1\"\r\n                             data-zoom-image=\"http://opencart.templatemela.com/OPCADD3/OPC059/image/cache/catalog/9-1000x1000.jpg\">\r\n                    </div>\r\n\r\n                    <div class=\"modal-window__container-info\">\r\n                        <div class=\"product-info\">\r\n                            <h2 class=\"product-info__title\"></h2>\r\n                            <ul class=\"product-info__stars\">\r\n                                <li class=\"product-info__star\"><i class=\"fa fa-star-o product-info__star-img\"></i></li>\r\n                                <li class=\"product-info__star\"><i class=\"fa fa-star-o product-info__star-img\"></i></li>\r\n                                <li class=\"product-info__star\"><i class=\"fa fa-star-o product-info__star-img\"></i></li>\r\n                                <li class=\"product-info__star\"><i class=\"fa fa-star-o product-info__star-img\"></i></li>\r\n                                <li class=\"product-info__star\"><i class=\"fa fa-star-o product-info__star-img\"></i></li>\r\n                            </ul>\r\n\r\n                            <ul class=\"product-info__list\">\r\n                                <li class=\"product-info__list-item product-info__list-item_type_brands\">\r\n                                    <p class=\"product-info__list-item-title\">Brands</p>\r\n                                    <p class=\"product-info__list-item-data product-info__list-item-data_type_brands\">SAM1</p>\r\n                                </li>\r\n                                <li class=\"product-info__list-item\">\r\n                                    <p class=\"product-info__list-item-title\">Product Code:</p>\r\n                                    <p class=\"product-info__list-item-data product-info__list-item-data_type_productCode\">SAM1</p>\r\n                                </li>\r\n                                <li class=\"product-info__list-item product-info__list-item_type_reward-points\">\r\n                                    <p class=\"product-info__list-item-title\">Reward Points:</p>\r\n                                    <p class=\"product-info__list-item-data product-info__list-item-data_type_rewardPoints\">1000</p>\r\n                                </li>\r\n                                <li class=\"product-info__list-item\">\r\n                                    <p class=\"product-info__list-item-title\">Availability:</p>\r\n                                    <p class=\"product-info__list-item-data product-info__list-item-data_type_availability\">Pre-Order</p>\r\n                                </li>\r\n                            </ul>\r\n\r\n                            <div class=\"product-info__price\">\r\n                                <p class=\"product-info__price-old\">$241.99</p>\r\n                                <p class=\"product-info__price-new\">$122.00</p>\r\n                            </div>\r\n\r\n                            <p class=\"product-info__ex-tax\">Ex Tax:<span class=\"product-info__price-tax\">$100.00</span></p>\r\n\r\n                            <div class=\"modal-actions\">\r\n                                <form class=\"modal-actions__form\">\r\n                                    <label for=\"amount\" class=\"modal-actions__form-label\">Qty</label>\r\n                                    <input type=\"number\" class=\"modal-actions__form-input\" id=\"amount\" name=\"amount\">\r\n                                </form>\r\n\r\n                                <div class=\"modal-actions__buttons\">\r\n                                    <button class=\"modal-actions__button modal-actions__button_type_add\" type=\"button\">Add to Cart</button>\r\n                                    <button class=\"modal-actions__button\" type=\"button\">\r\n                                        <i class=\"fa fa-heart modal-actions__button-img\" aria-hidden=\"true\"></i>\r\n                                    </button>\r\n                                    <button class=\"modal-actions__button\" type=\"button\">\r\n                                        <i class=\"fa fa-area-chart modal-actions__button-img\" aria-hidden=\"true\"></i>\r\n                                    </button>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </section>\r\n\r\n\r\n\r\n\r\n        </main>\r\n\r\n        <footer class=\"footer page__container\">\r\n            <div class=\"footer__container\">\r\n                <ul class=\"footer__contacts\">\r\n                    <li class=\"footer__contact\">\r\n                        <img class=\"footer__contact-img\" src=\"./images/map.png\" alt=\"map\">\r\n                        705-Infinity Centre, Beside trafy building, united state\r\n                    </li>\r\n                    <li class=\"footer__contact\">\r\n                        <img class=\"footer__contact-img\" src=\"./images/phone.png\" alt=\"phone\">\r\n                        Call us: 0123-456-789\r\n                    </li>\r\n                    <li class=\"footer__contact\">\r\n                        <img class=\"footer__contact-img\" src=\"./images/mail.png\" alt=\"mail\">\r\n                        Support@Yourstore.Com\r\n                    </li>\r\n                </ul>\r\n\r\n                <nav class=\"footer__information\">\r\n                    <h2 class=\"footer__title\">information</h2>\r\n                    <ul class=\"footer__list-items\">\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                About Us\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Delivery Information\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Privacy Policy\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Terms & Conditions\r\n                            </a>\r\n                        </li>\r\n                    </ul>\r\n                </nav>\r\n\r\n                <nav class=\"footer__my-account\">\r\n                    <h2 class=\"footer__title\">my account</h2>\r\n                    <ul class=\"footer__list-items\">\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                My Account\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Specials\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Contact Us\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Site Map\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Brands\r\n                            </a>\r\n                        </li>\r\n                    </ul>\r\n                </nav>\r\n\r\n                <div>\r\n                    <div class=\"footer__mail-form\">\r\n                        <h2 class=\"footer__title\">sign up for newsletter</h2>\r\n                        <form class=\"footer__form\">\r\n                            <label for=\"email\" class=\"footer__form-label\"></label>\r\n                            <input type=\"email\" class=\"footer__form-input\" id=\"email\" name=\"email\" placeholder=\"E-Mail\">\r\n                            <button type=\"submit\" class=\"footer__form-button\">subscribe</button>\r\n                        </form>\r\n                    </div>\r\n\r\n                    <ul class=\"footer__social\">\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-facebook footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item \"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-google footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-twitter footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-pinterest footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-instagram footer__social-item-img\"></i></a></li>\r\n                    </ul>\r\n\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"footer__container-table page__container\">\r\n                <h2 class=\"footer__title\"><a>Store information</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                <div>\r\n                    <ul class=\"footer__contacts\">\r\n                        <li class=\"footer__contact\">\r\n                            <img class=\"footer__contact-img\" src=\"./images/map.png\" alt=\"map\">\r\n                            705-Infinity Centre, Beside trafy building, united state\r\n                        </li>\r\n                        <li class=\"footer__contact\">\r\n                            <img class=\"footer__contact-img\" src=\"./images/phone.png\" alt=\"phone\">\r\n                            Call us: 0123-456-789\r\n                        </li>\r\n                        <li class=\"footer__contact\">\r\n                            <img class=\"footer__contact-img\" src=\"./images/mail.png\" alt=\"mail\">\r\n                            Support@Yourstore.Com\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n\r\n                <h2 class=\"footer__title\"><a>Information</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                <div>\r\n                    <ul class=\"footer__list-items\">\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                About Us\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Delivery Information\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Privacy Policy\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Terms & Conditions\r\n                            </a>\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n\r\n                <h2 class=\"footer__title\"><a>My Account</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                <nav>\r\n                    <ul class=\"footer__list-items\">\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                My Account\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Specials\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Contact Us\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Site Map\r\n                            </a>\r\n                        </li>\r\n                        <li class=\"footer__list-item\">\r\n                            <a class=\"footer__list-item-link\" href=\"#\">\r\n                                <div class=\"footer__list-item-img\"></div>\r\n                                Brands\r\n                            </a>\r\n                        </li>\r\n                    </ul>\r\n                </nav>\r\n\r\n\r\n                <h2 class=\"footer__title\"><a>Sign Up for Newsletter</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                <div class=\"footer__mail-form footer__mail-form_type_collapse\">\r\n                    <form class=\"footer__form\">\r\n                        <label for=\"email-table\" class=\"footer__form-label\"></label>\r\n                        <input type=\"email\" class=\"footer__form-input footer__form-input_type_collapse\" id=\"email-table\" name=\"email\" placeholder=\"E-Mail\">\r\n                        <button type=\"submit\" class=\"footer__form-button\">subscribe</button>\r\n                    </form>\r\n                </div>\r\n\r\n\r\n                <h2 class=\"footer__title\"><a>Social Media</a><i class=\"fa fa-angle-down footer__title-icon\" aria-hidden=\"true\"></i></h2>\r\n                <div>\r\n                    <ul class=\"footer__social\">\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-facebook footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item \"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-google footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-twitter footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-pinterest footer__social-item-img\"></i></a></li>\r\n                        <li class=\"footer__social-item\"><a class=\"footer__social-item-link\" href=\"#\">\r\n                            <i class=\"fa fa-instagram footer__social-item-img\"></i></a></li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"bottom\">\r\n                <p class=\"bottom__copyright\"><a class=\"bottom__copyright-link\" href=\"#\">Powered By</a>\r\n                    <a class=\"bottom__copyright-link\" href=\"#\">&nbsp; OpenCart &nbsp;</a>Your Store © 2021</p>\r\n                <ul class=\"bottom__cards\">\r\n                    <li class=\"bottom__card\"><img class=\"bottom__card-img\" src=\"./images/Discover.png\" alt=\"Discover\"></li>\r\n                    <li class=\"bottom__card\"><img class=\"bottom__card-img\" src=\"./images/Wallte.png\" alt=\"Wallte\"></li>\r\n                    <li class=\"bottom__card\"><img class=\"bottom__card-img\" src=\"./images/Mestro.png\" alt=\"Mestro\"></li>\r\n                    <li class=\"bottom__card\"><img class=\"bottom__card-img\" src=\"./images/Master.png\" alt=\"Master\"></li>\r\n                    <li class=\"bottom__card\"><img class=\"bottom__card-img\" src=\"./images/Paypal.png\" alt=\"Paypal\"></li>\r\n                </ul>\r\n            </div>\r\n        </footer>\r\n\r\n    </div>\r\n</div>\r\n<script type=\"text/javascript\" src=\"./scripts/jquery-3.5.1.js\"></script>\r\n<script type=\"text/javascript\" src=\"./scripts/utils.js\"></script>\r\n<script type=\"text/javascript\" src=\"./pages/index.js\"></script>\r\n<script type=\"text/javascript\" src=\"./scripts/plugins.js\"></script>\r\n\r\n<script src=\"owlcarousel/owl.carousel.min.js\"></script>\r\n<script src=\"./superfish/superfish.js\"></script>\r\n<script src=\"./collapse/jquery.collapse.js \"></script>\r\n<script src=\"./collapse/jquery.collapse_storage.js \"></script>\r\n<script type=\"text/javascript\" src=\"./fancybox/jquery.fancybox.js\"></script>\r\n<script src=\"./lightbox/lightbox.js\"></script>\r\n<script src=\"./elevatezoom/jquery.elevatezoom.js\" type=\"text/javascript\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision e75f8da6cba493de9d23567a0edc9335f3a5630a)
++++ index.html	(date 1636283020949)
+@@ -5,6 +5,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Test</title>
+ 
++    <link rel="stylesheet" type="text/css" href="./tempus-dominus-master/tempus-dominus.css">
+     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
+@@ -630,6 +631,27 @@
+ 
+                             <p class="product-info__ex-tax">Ex Tax:<span class="product-info__price-tax">$100.00</span></p>
+ 
++                            <div class="modal-window__middle-block display-none">
++                                <p class="product-info__price-with-points product-info__ex-tax">Price in reward points:
++                                    <span class="product-info__price-tax">400</span>
++                                </p>
++                                <hr class="modal-window__line">
++                                <form class='input-group datetimepicker1 modal-actions__form-datetime'
++                                      data-td-target-input='nearest' data-td-target-toggle='nearest'>
++                                    <h3 class="modal-actions__form-title">Available Options</h3>
++                                    <label for="datetimepicker1Input" class="modal-actions__form-label"><span class="modal-actions__form-label-symbol">*</span>Delivery Date</label>
++                                    <div class="modal-actions__form-input-button">
++                                        <input id='datetimepicker1Input' type='text' class='modal-actions__form-input modal-actions__form-input_type_datetime'
++                                               data-td-target='.datetimepicker1'>
++                                        <button class='input-group-text modal-actions__form-datetime-button' type="button" data-td-target='.datetimepicker1'
++                                                data-td-toggle='datetimepicker'>
++                                            <i class='fa fa-calendar'></i>
++                                        </button>
++                                    </div>
++                                </form>
++
++                            </div>
++
+                             <div class="modal-actions">
+                                 <form class="modal-actions__form">
+                                     <label for="amount" class="modal-actions__form-label">Qty</label>
+@@ -656,6 +678,30 @@
+ 
+         </main>
+ 
++
++
++
++
++
++
++        <div class='input-group' id='datetimepicker3' data-td-target-input='nearest' data-td-target-toggle='nearest'>
++            <input id='datetimepicker3Input' type='text' class='form-control' data-td-target='#datetimepicker3'>
++            <span class='input-group-text' data-td-target='#datetimepicker3' data-td-toggle='datetimepicker'>
++                <span class='fa fa-clock-o'></span>
++            </span>
++        </div>
++
++
++
++
++
++
++
++
++
++
++
++
+         <footer class="footer page__container">
+             <div class="footer__container">
+                 <ul class="footer__contacts">
+@@ -893,10 +939,12 @@
+ 
+     </div>
+ </div>
++
++
+ <script type="text/javascript" src="./scripts/jquery-3.5.1.js"></script>
+-<script type="text/javascript" src="./scripts/utils.js"></script>
+-<script type="text/javascript" src="./pages/index.js"></script>
+-<script type="text/javascript" src="./scripts/plugins.js"></script>
++
++
++
+ 
+ <script src="owlcarousel/owl.carousel.min.js"></script>
+ <script src="./superfish/superfish.js"></script>
+@@ -905,5 +953,13 @@
+ <script type="text/javascript" src="./fancybox/jquery.fancybox.js"></script>
+ <script src="./lightbox/lightbox.js"></script>
+ <script src="./elevatezoom/jquery.elevatezoom.js" type="text/javascript"></script>
++
++<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
++<script type="text/javascript" src="./tempus-dominus-master/tempus-dominus.js"></script>
++
++<script type="text/javascript" src="./scripts/utils.js"></script>
++<script type="text/javascript" src="./pages/index.js"></script>
++<script type="text/javascript" src="./scripts/plugins.js"></script>
++
+ </body>
+ </html>
+\ No newline at end of file
+Index: blocks/product-info/__price-with-points/product-info__price-with-points.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/product-info/__price-with-points/product-info__price-with-points.css	(date 1636282529272)
++++ blocks/product-info/__price-with-points/product-info__price-with-points.css	(date 1636282529272)
+@@ -0,0 +1,19 @@
++.product-info__price-with-points {
++    padding-bottom: 14px;
++}
++
++.modal-window__line {
++    margin-top: 20px;
++    margin-bottom: 20px;
++    border: 0;
++    border-top: 1px solid #eee;
++}
++
++.modal-actions__form-title {
++    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
++    font-size: 14px;
++    font-weight: 600;
++    margin: 0 0 10px;
++    padding: 0;
++    color: #333333;
++}
+\ No newline at end of file
+Index: blocks/modal-actions/__form-datetime-button/modal-actions__form-datetime-button.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-actions/__form-datetime-button/modal-actions__form-datetime-button.css	(date 1636280688006)
++++ blocks/modal-actions/__form-datetime-button/modal-actions__form-datetime-button.css	(date 1636280688006)
+@@ -0,0 +1,20 @@
++.modal-actions__form-datetime-button {
++    color: #000;
++    background: #f5f5f5;
++    border: 1px solid #f5f5f5;
++    line-height: inherit;
++    font-weight: 500;
++    font-size: 14px;
++    padding: 6px 12px;
++    box-sizing: border-box;
++    width: 39px;
++    height: 35px;
++    border-bottom-right-radius: 4px;
++    border-top-right-radius: 4px;
++}
++
++.modal-actions__form-datetime-button:hover {
++    color: #FFFFFF;
++    background: #9174ce;
++    cursor: pointer;
++}
+Index: blocks/modal-actions/__form-datetime/modal-actions__form-datetime.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-actions/__form-datetime/modal-actions__form-datetime.css	(date 1636280571498)
++++ blocks/modal-actions/__form-datetime/modal-actions__form-datetime.css	(date 1636280571498)
+@@ -0,0 +1,4 @@
++.modal-actions__form-datetime {
++    display: flex;
++    flex-direction: column;
++}
+\ No newline at end of file
+Index: blocks/modal-actions/__form-input-button/modal-actions__form-input-button.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-actions/__form-input-button/modal-actions__form-input-button.css	(date 1636282614169)
++++ blocks/modal-actions/__form-input-button/modal-actions__form-input-button.css	(date 1636282614169)
+@@ -0,0 +1,5 @@
++.modal-actions__form-input-button {
++    display: flex;
++    align-items: flex-end;
++    margin-bottom: 15px;
++}
+\ No newline at end of file
+Index: blocks/modal-actions/__form-input/_type/modal-actions__form-input_type_datetime.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- blocks/modal-actions/__form-input/_type/modal-actions__form-input_type_datetime.css	(date 1636282614160)
++++ blocks/modal-actions/__form-input/_type/modal-actions__form-input_type_datetime.css	(date 1636282614160)
+@@ -0,0 +1,5 @@
++.modal-actions__form-input_type_datetime {
++    border-bottom-right-radius: 0;
++    border-top-right-radius: 0;
++    border-right: none;
++}
+\ No newline at end of file

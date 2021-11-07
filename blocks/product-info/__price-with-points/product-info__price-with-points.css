@@ -1,0 +1,19 @@
+.product-info__price-with-points {
+    padding-bottom: 14px;
+}
+
+.modal-window__line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.modal-actions__form-title {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #333333;
+}

@@ -1,3 +1,49 @@
+new tempusDominus.TempusDominus(document.querySelector('.datetimepicker1'), {
+    display: {
+        components: {
+            decades: true,
+            year: true,
+            month: true,
+            date: true,
+            hours: false,
+            minutes: false,
+            seconds: false,
+        },
+        icons: {
+            date: 'fa fa-calendar',
+            previous: 'fa fa-chevron-left',
+            next: 'fa fa-chevron-right',
+            today: 'fa fa-check',
+        },
+    }
+});
+
+new tempusDominus.TempusDominus(document.getElementById('datetimepicker3'), {
+    display: {
+        viewMode: 'clock',
+        components: {
+            decades: false,
+            year: false,
+            month: false,
+            date: false,
+            hours: true,
+            minutes: true,
+            seconds: false
+        },
+        icons: {
+            time: 'fa fa-clock-o',
+            up: 'fa fa-chevron-up',
+            down: 'fa fa-chevron-down',
+            today: 'fa fa-check',
+        },
+    }
+});
+
+
+
+
+
+
 //карусели
 $(function() {
     var owl=$(".banner-carousel__carousel");
@@ -159,9 +205,7 @@ jQuery(document).ready(function() {
     //галерея
     lightbox.option({
         'wrapAround': false
-    })
-
-
+    });
 
     //модально окно
     //$('.modal-window__product-img').elevateZoom({
@@ -218,4 +262,5 @@ jQuery(document).ready(function($){
         });
     });
 });
+
 
