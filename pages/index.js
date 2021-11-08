@@ -224,8 +224,6 @@ function addCard (container, cardElement){
     container.appendChild(cardElement);
 }
 
-
-
 //получение данных карточек
 function receivingData (cardData, container) {
     cardData.forEach(function (cardData) {
