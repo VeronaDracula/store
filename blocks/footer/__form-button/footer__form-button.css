@@ -9,3 +9,9 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+
+.footer__form-button:hover {
+    background: #000;
+    cursor: pointer;
+    color: #FFFFFF;
+}
