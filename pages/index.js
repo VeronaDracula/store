@@ -220,7 +220,6 @@ function renderCard(name, img, imgHover, price, discount, oldPrice, stars, brand
 
 
 //добавление карточек в контейнер
-
 function addCard (container, cardElement){
     container.appendChild(cardElement);
 }
